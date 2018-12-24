@@ -1,0 +1,3488 @@
+MPI initialized with 4 MPI processes
+AMReX (18.12-348-g766aa20522d6) initialized
+
+Starting run at 08:54:41 UTC on 2018-12-21.
+Successfully read inputs file ... 
+
+PeleC git hash: 5125bd1
+AMReX git hash: 18.12-348-g766aa2052
+PelePhysics git hash: 6767379
+
+reading extern runtime parameters ...
+
+Time in set_method_params: 0.0005613419926
+9 Species: 
+H2  O2  H2O  H  O  OH  HO2  H2O2  N2  
+0 Auxiliary Variables: 
+
+Flame tracer will be Y(HO2)
+Successfully read inputs file ... 
+Starting to call amrex_probinit ... 
+Successfully run amrex_probinit
+Initializing the data at level 0
+Done initializing level 0 data 
+...estimated hydro-limited timestep at level 0: 2.58384366e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.58384366e-07
+grid_places() time: 0.000856894 new finest: 1
+Initializing the data at level 1
+Done initializing level 1 data 
+grid_places() time: 0.000890006 new finest: 2
+Initializing the data at level 2
+Done initializing level 2 data 
+Now regridding at level lbase = 0
+grid_places() time: 0.001356976 new finest: 2
+Initializing the data at level 1
+Done initializing level 1 data 
+Initializing the data at level 2
+Done initializing level 2 data 
+STEP = 0 TIME = 0 : REGRID  with lbase = 0
+  Level 1   5 grids  640 cells  15.625 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 8
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+Now regridding at level lbase = 0
+grid_places() time: 0.002507215 new finest: 2
+Initializing the data at level 1
+Done initializing level 1 data 
+Initializing the data at level 2
+Done initializing level 2 data 
+STEP = 0 TIME = 0 : REGRID  with lbase = 0
+  Level 1   5 grids  640 cells  15.625 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 8
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+... Initializing reactions, using interval dt = 7.751530979e-08
+
+TIME= 0 MASS        = 0.000853569167
+TIME= 0 XMOM        = 0
+TIME= 0 YMOM        = 0.03641441872
+TIME= 0 ZMOM        = 0
+TIME= 0 RHO*e       = -1590694.339
+TIME= 0 RHO*K       = 1.267145337
+TIME= 0 RHO*E       = -1590693.072
+TIME= 0 ENSTROPHY   = 0.5308547572
+TIME= 0 FUEL PROD   = 0
+TIME= 0 TEMP        = 1516.809741
+... Initializing reactions, using interval dt = 3.875765489e-08
+... Initializing reactions, using interval dt = 1.937882745e-08
+INITIAL GRIDS 
+  Level 0   4 grids  1024 cells  100 % of domain
+            smallest grid: 8 x 32  biggest grid: 8 x 32
+  Level 1   5 grids  640 cells  15.625 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 8
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+PLOTFILE: file = FIAB-2d_plt00000
+Write plotfile time = 0.017788037  seconds
+
+...estimated hydro-limited timestep at level 0: 2.58384366e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.58384366e-07
+...estimated hydro-limited timestep at level 1: 1.292188042e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292188042e-07
+...estimated hydro-limited timestep at level 2: 6.467921569e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467921569e-08
+[Level 0 step 1] ADVANCE with dt = 7.751530979e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 7.751530979e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 7.751530979e-08
+[Level 0 step 1] Advanced 1024 cells
+[Level 1 step 1] ADVANCE with dt = 3.875765489e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 3.875765489e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 3.875765489e-08
+[Level 1 step 1] Advanced 640 cells
+[Level 2 step 1] ADVANCE with dt = 1.937882745e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.937882745e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.937882745e-08
+[Level 2 step 1] Advanced 1280 cells
+[Level 2 step 2] ADVANCE with dt = 1.937882745e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.937882745e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.937882745e-08
+[Level 2 step 2] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.008570868988
+[Level 1 step 2] ADVANCE with dt = 3.875765489e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 3.875765489e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 3.875765489e-08
+[Level 1 step 2] Advanced 640 cells
+[Level 2 step 3] ADVANCE with dt = 1.937882745e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.937882745e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.937882745e-08
+[Level 2 step 3] Advanced 1280 cells
+[Level 2 step 4] ADVANCE with dt = 1.937882745e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.937882745e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.937882745e-08
+[Level 2 step 4] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.008429610985
+PeleC::reflux() at level 0 : time = 9.779498214e-05
+
+TIME= 7.751530979e-08 MASS        = 0.000853569167
+TIME= 7.751530979e-08 XMOM        = -3.97046694e-23
+TIME= 7.751530979e-08 YMOM        = 0.03641437441
+TIME= 7.751530979e-08 ZMOM        = 0
+TIME= 7.751530979e-08 RHO*e       = -1590694.339
+TIME= 7.751530979e-08 RHO*K       = 1.26712146
+TIME= 7.751530979e-08 RHO*E       = -1590693.072
+TIME= 7.751530979e-08 ENSTROPHY   = 0.5171701639
+TIME= 7.751530979e-08 FUEL PROD   = 0
+TIME= 7.751530979e-08 TEMP        = 1516.809718
+
+[STEP 1] Coarse TimeStep time: 0.214848133
+[STEP 1] FAB kilobyte spread across MPI nodes: [1926 ... 2759]
+
+STEP = 1 TIME = 7.751530979e-08 DT = 7.751530979e-08
+
+...estimated hydro-limited timestep at level 0: 2.583843624e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583843624e-07
+...estimated hydro-limited timestep at level 1: 1.292188081e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292188081e-07
+...estimated hydro-limited timestep at level 2: 6.467923829e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467923829e-08
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 2.583843624e-07
+ ... but limiting to: 8.526684076e-08 = 1.1 * 7.751530979e-08
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 1.292188081e-07
+ ... but limiting to: 4.263342038e-08 = 1.1 * 3.875765489e-08
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 6.467923829e-08
+ ... but limiting to: 2.131671019e-08 = 1.1 * 1.937882745e-08
+Now regridding at level lbase = 1
+grid_places() time: 0.001163025 new finest: 2
+TIME = 7.751530979e-08 : REGRID  with lbase = 1
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 2] ADVANCE with dt = 8.526684076e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 8.526684076e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 8.526684076e-08
+[Level 0 step 2] Advanced 1024 cells
+[Level 1 step 3] ADVANCE with dt = 4.263342038e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 4.263342038e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 4.263342038e-08
+[Level 1 step 3] Advanced 640 cells
+[Level 2 step 5] ADVANCE with dt = 2.131671019e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.131671019e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.131671019e-08
+[Level 2 step 5] Advanced 1280 cells
+[Level 2 step 6] ADVANCE with dt = 2.131671019e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.131671019e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.131671019e-08
+[Level 2 step 6] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.008346504997
+[Level 1 step 4] ADVANCE with dt = 4.263342038e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 4.263342038e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 4.263342038e-08
+[Level 1 step 4] Advanced 640 cells
+[Level 2 step 7] ADVANCE with dt = 2.131671019e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.131671019e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.131671019e-08
+[Level 2 step 7] Advanced 1280 cells
+[Level 2 step 8] ADVANCE with dt = 2.131671019e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.131671019e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.131671019e-08
+[Level 2 step 8] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.008924344031
+PeleC::reflux() at level 0 : time = 8.836400229e-05
+
+TIME= 1.627821505e-07 MASS        = 0.000853569167
+TIME= 1.627821505e-07 XMOM        = -4.764560328e-22
+TIME= 1.627821505e-07 YMOM        = 0.03641432527
+TIME= 1.627821505e-07 ZMOM        = 0
+TIME= 1.627821505e-07 RHO*e       = -1590694.339
+TIME= 1.627821505e-07 RHO*K       = 1.26710942
+TIME= 1.627821505e-07 RHO*E       = -1590693.072
+TIME= 1.627821505e-07 ENSTROPHY   = 0.4668707427
+TIME= 1.627821505e-07 FUEL PROD   = 0
+TIME= 1.627821505e-07 TEMP        = 1516.809687
+
+[STEP 2] Coarse TimeStep time: 0.21797724
+[STEP 2] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 2 TIME = 1.627821505e-07 DT = 8.526684076e-08
+
+...estimated hydro-limited timestep at level 0: 2.583843581e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583843581e-07
+...estimated hydro-limited timestep at level 1: 1.292188128e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292188128e-07
+...estimated hydro-limited timestep at level 2: 6.467926653e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467926653e-08
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 2.583843581e-07
+ ... but limiting to: 9.379352484e-08 = 1.1 * 8.526684076e-08
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 1.292188128e-07
+ ... but limiting to: 4.689676242e-08 = 1.1 * 4.263342038e-08
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 6.467926653e-08
+ ... but limiting to: 2.344838121e-08 = 1.1 * 2.131671019e-08
+Now regridding at level lbase = 0
+grid_places() time: 0.001792077 new finest: 2
+STEP = 2 TIME = 1.627821505e-07 : REGRID  with lbase = 0
+  Level 1   5 grids  640 cells  15.625 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 8
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 3] ADVANCE with dt = 9.379352484e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 9.379352484e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 9.379352484e-08
+[Level 0 step 3] Advanced 1024 cells
+[Level 1 step 5] ADVANCE with dt = 4.689676242e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 4.689676242e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 4.689676242e-08
+[Level 1 step 5] Advanced 640 cells
+[Level 2 step 9] ADVANCE with dt = 2.344838121e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.344838121e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.344838121e-08
+[Level 2 step 9] Advanced 1280 cells
+[Level 2 step 10] ADVANCE with dt = 2.344838121e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.344838121e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.344838121e-08
+[Level 2 step 10] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.008388685994
+[Level 1 step 6] ADVANCE with dt = 4.689676242e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 4.689676242e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 4.689676242e-08
+[Level 1 step 6] Advanced 640 cells
+[Level 2 step 11] ADVANCE with dt = 2.344838121e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.344838121e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.344838121e-08
+[Level 2 step 11] Advanced 1280 cells
+[Level 2 step 12] ADVANCE with dt = 2.344838121e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.344838121e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.344838121e-08
+[Level 2 step 12] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.009268042981
+PeleC::reflux() at level 0 : time = 0.0001026670216
+
+TIME= 2.565756754e-07 MASS        = 0.000853569167
+TIME= 2.565756754e-07 XMOM        = 4.235164736e-22
+TIME= 2.565756754e-07 YMOM        = 0.03641427078
+TIME= 2.565756754e-07 ZMOM        = 0
+TIME= 2.565756754e-07 RHO*e       = -1590694.339
+TIME= 2.565756754e-07 RHO*K       = 1.267139478
+TIME= 2.565756754e-07 RHO*E       = -1590693.072
+TIME= 2.565756754e-07 ENSTROPHY   = 0.3875134819
+TIME= 2.565756754e-07 FUEL PROD   = 0
+TIME= 2.565756754e-07 TEMP        = 1516.80964
+
+[STEP 3] Coarse TimeStep time: 0.217806594
+[STEP 3] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 3 TIME = 2.565756754e-07 DT = 9.379352484e-08
+
+...estimated hydro-limited timestep at level 0: 2.583843528e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583843528e-07
+...estimated hydro-limited timestep at level 1: 1.292188181e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292188181e-07
+...estimated hydro-limited timestep at level 2: 6.467930175e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467930175e-08
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 2.583843528e-07
+ ... but limiting to: 1.031728773e-07 = 1.1 * 9.379352484e-08
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 1.292188181e-07
+ ... but limiting to: 5.158643866e-08 = 1.1 * 4.689676242e-08
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 6.467930175e-08
+ ... but limiting to: 2.579321933e-08 = 1.1 * 2.344838121e-08
+Now regridding at level lbase = 1
+grid_places() time: 0.001240053 new finest: 2
+TIME = 2.565756754e-07 : REGRID  with lbase = 1
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 4] ADVANCE with dt = 1.031728773e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.031728773e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.031728773e-07
+[Level 0 step 4] Advanced 1024 cells
+[Level 1 step 7] ADVANCE with dt = 5.158643866e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 5.158643866e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 5.158643866e-08
+[Level 1 step 7] Advanced 640 cells
+[Level 2 step 13] ADVANCE with dt = 2.579321933e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.579321933e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.579321933e-08
+[Level 2 step 13] Advanced 1280 cells
+[Level 2 step 14] ADVANCE with dt = 2.579321933e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.579321933e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.579321933e-08
+[Level 2 step 14] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.00838043401
+[Level 1 step 8] ADVANCE with dt = 5.158643866e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 5.158643866e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 5.158643866e-08
+[Level 1 step 8] Advanced 640 cells
+[Level 2 step 15] ADVANCE with dt = 2.579321933e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.579321933e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.579321933e-08
+[Level 2 step 15] Advanced 1280 cells
+[Level 2 step 16] ADVANCE with dt = 2.579321933e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.579321933e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.579321933e-08
+[Level 2 step 16] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.008468115004
+PeleC::reflux() at level 0 : time = 8.669600356e-05
+
+TIME= 3.597485527e-07 MASS        = 0.000853569167
+TIME= 3.597485527e-07 XMOM        = 4.235164736e-22
+TIME= 3.597485527e-07 YMOM        = 0.03641421033
+TIME= 3.597485527e-07 ZMOM        = 0
+TIME= 3.597485527e-07 RHO*e       = -1590694.339
+TIME= 3.597485527e-07 RHO*K       = 1.267239015
+TIME= 3.597485527e-07 RHO*E       = -1590693.072
+TIME= 3.597485527e-07 ENSTROPHY   = 0.297517052
+TIME= 3.597485527e-07 FUEL PROD   = 0
+TIME= 3.597485527e-07 TEMP        = 1516.809567
+
+[STEP 4] Coarse TimeStep time: 0.218027816
+[STEP 4] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 4 TIME = 3.597485527e-07 DT = 1.031728773e-07
+
+...estimated hydro-limited timestep at level 0: 2.583843464e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583843464e-07
+...estimated hydro-limited timestep at level 1: 1.292188236e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292188236e-07
+...estimated hydro-limited timestep at level 2: 6.467934221e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467934221e-08
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 2.583843464e-07
+ ... but limiting to: 1.134901651e-07 = 1.1 * 1.031728773e-07
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 1.292188236e-07
+ ... but limiting to: 5.674508253e-08 = 1.1 * 5.158643866e-08
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 6.467934221e-08
+ ... but limiting to: 2.837254126e-08 = 1.1 * 2.579321933e-08
+Now regridding at level lbase = 0
+grid_places() time: 0.001718392 new finest: 2
+STEP = 4 TIME = 3.597485527e-07 : REGRID  with lbase = 0
+  Level 1   5 grids  640 cells  15.625 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 8
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 5] ADVANCE with dt = 1.134901651e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.134901651e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.134901651e-07
+[Level 0 step 5] Advanced 1024 cells
+[Level 1 step 9] ADVANCE with dt = 5.674508253e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 5.674508253e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 5.674508253e-08
+[Level 1 step 9] Advanced 640 cells
+[Level 2 step 17] ADVANCE with dt = 2.837254126e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.837254126e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.837254126e-08
+[Level 2 step 17] Advanced 1280 cells
+[Level 2 step 18] ADVANCE with dt = 2.837254126e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.837254126e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.837254126e-08
+[Level 2 step 18] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.008481680998
+[Level 1 step 10] ADVANCE with dt = 5.674508253e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 5.674508253e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 5.674508253e-08
+[Level 1 step 10] Advanced 640 cells
+[Level 2 step 19] ADVANCE with dt = 2.837254126e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.837254126e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.837254126e-08
+[Level 2 step 19] Advanced 1280 cells
+[Level 2 step 20] ADVANCE with dt = 2.837254126e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.837254126e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.837254126e-08
+[Level 2 step 20] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.008512838976
+PeleC::reflux() at level 0 : time = 0.000103777973
+
+TIME= 4.732387178e-07 MASS        = 0.0008535691669
+TIME= 4.732387178e-07 XMOM        = -8.470329473e-22
+TIME= 4.732387178e-07 YMOM        = 0.03641414322
+TIME= 4.732387178e-07 ZMOM        = 0
+TIME= 4.732387178e-07 RHO*e       = -1590694.339
+TIME= 4.732387178e-07 RHO*K       = 1.267390399
+TIME= 4.732387178e-07 RHO*E       = -1590693.071
+TIME= 4.732387178e-07 ENSTROPHY   = 0.2199568677
+TIME= 4.732387178e-07 FUEL PROD   = 0
+TIME= 4.732387178e-07 TEMP        = 1516.809462
+
+[STEP 5] Coarse TimeStep time: 0.219974345
+[STEP 5] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 5 TIME = 4.732387178e-07 DT = 1.134901651e-07
+
+...estimated hydro-limited timestep at level 0: 2.583843387e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583843387e-07
+...estimated hydro-limited timestep at level 1: 1.292188287e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292188287e-07
+...estimated hydro-limited timestep at level 2: 6.467938283e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467938283e-08
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 2.583843387e-07
+ ... but limiting to: 1.248391816e-07 = 1.1 * 1.134901651e-07
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 1.292188287e-07
+ ... but limiting to: 6.241959078e-08 = 1.1 * 5.674508253e-08
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 6.467938283e-08
+ ... but limiting to: 3.120979539e-08 = 1.1 * 2.837254126e-08
+Now regridding at level lbase = 1
+grid_places() time: 0.001145435 new finest: 2
+TIME = 4.732387178e-07 : REGRID  with lbase = 1
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 6] ADVANCE with dt = 1.248391816e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.248391816e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.248391816e-07
+[Level 0 step 6] Advanced 1024 cells
+[Level 1 step 11] ADVANCE with dt = 6.241959078e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.241959078e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.241959078e-08
+[Level 1 step 11] Advanced 640 cells
+[Level 2 step 21] ADVANCE with dt = 3.120979539e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 3.120979539e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 3.120979539e-08
+[Level 2 step 21] Advanced 1280 cells
+[Level 2 step 22] ADVANCE with dt = 3.120979539e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 3.120979539e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 3.120979539e-08
+[Level 2 step 22] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.009115433029
+[Level 1 step 12] ADVANCE with dt = 6.241959078e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.241959078e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.241959078e-08
+[Level 1 step 12] Advanced 640 cells
+[Level 2 step 23] ADVANCE with dt = 3.120979539e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 3.120979539e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 3.120979539e-08
+[Level 2 step 23] Advanced 1280 cells
+[Level 2 step 24] ADVANCE with dt = 3.120979539e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 3.120979539e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 3.120979539e-08
+[Level 2 step 24] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.008802536991
+PeleC::reflux() at level 0 : time = 8.437997894e-05
+
+TIME= 5.980778993e-07 MASS        = 0.0008535691669
+TIME= 5.980778993e-07 XMOM        = 1.694065895e-21
+TIME= 5.980778993e-07 YMOM        = 0.03641406865
+TIME= 5.980778993e-07 ZMOM        = 0
+TIME= 5.980778993e-07 RHO*e       = -1590694.339
+TIME= 5.980778993e-07 RHO*K       = 1.267506024
+TIME= 5.980778993e-07 RHO*E       = -1590693.071
+TIME= 5.980778993e-07 ENSTROPHY   = 0.1705172269
+TIME= 5.980778993e-07 FUEL PROD   = 0
+TIME= 5.980778993e-07 TEMP        = 1516.809325
+
+[STEP 6] Coarse TimeStep time: 0.222666045
+[STEP 6] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 6 TIME = 5.980778993e-07 DT = 1.248391816e-07
+
+...estimated hydro-limited timestep at level 0: 2.583843296e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583843296e-07
+...estimated hydro-limited timestep at level 1: 1.292188322e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292188322e-07
+...estimated hydro-limited timestep at level 2: 6.467941653e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467941653e-08
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 2.583843296e-07
+ ... but limiting to: 1.373230997e-07 = 1.1 * 1.248391816e-07
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 1.292188322e-07
+ ... but limiting to: 6.866154986e-08 = 1.1 * 6.241959078e-08
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 6.467941653e-08
+ ... but limiting to: 3.433077493e-08 = 1.1 * 3.120979539e-08
+Now regridding at level lbase = 0
+grid_places() time: 0.001718293 new finest: 2
+STEP = 6 TIME = 5.980778993e-07 : REGRID  with lbase = 0
+  Level 1   5 grids  640 cells  15.625 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 8
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 7] ADVANCE with dt = 1.373230997e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.373230997e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.373230997e-07
+[Level 0 step 7] Advanced 1024 cells
+[Level 1 step 13] ADVANCE with dt = 6.866154986e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.866154986e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.866154986e-08
+[Level 1 step 13] Advanced 640 cells
+[Level 2 step 25] ADVANCE with dt = 3.433077493e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 3.433077493e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 3.433077493e-08
+[Level 2 step 25] Advanced 1280 cells
+[Level 2 step 26] ADVANCE with dt = 3.433077493e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 3.433077493e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 3.433077493e-08
+[Level 2 step 26] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.008829309023
+[Level 1 step 14] ADVANCE with dt = 6.866154986e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.866154986e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.866154986e-08
+[Level 1 step 14] Advanced 640 cells
+[Level 2 step 27] ADVANCE with dt = 3.433077493e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 3.433077493e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 3.433077493e-08
+[Level 2 step 27] Advanced 1280 cells
+[Level 2 step 28] ADVANCE with dt = 3.433077493e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 3.433077493e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 3.433077493e-08
+[Level 2 step 28] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.008878023014
+PeleC::reflux() at level 0 : time = 9.898102144e-05
+
+TIME= 7.354009991e-07 MASS        = 0.0008535691668
+TIME= 7.354009991e-07 XMOM        = -1.016439537e-20
+TIME= 7.354009991e-07 YMOM        = 0.03641398562
+TIME= 7.354009991e-07 ZMOM        = 0
+TIME= 7.354009991e-07 RHO*e       = -1590694.339
+TIME= 7.354009991e-07 RHO*K       = 1.267484718
+TIME= 7.354009991e-07 RHO*E       = -1590693.071
+TIME= 7.354009991e-07 ENSTROPHY   = 0.1552369024
+TIME= 7.354009991e-07 FUEL PROD   = 0
+TIME= 7.354009991e-07 TEMP        = 1516.809167
+
+[STEP 7] Coarse TimeStep time: 0.22597519
+[STEP 7] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 7 TIME = 7.354009991e-07 DT = 1.373230997e-07
+
+...estimated hydro-limited timestep at level 0: 2.583843189e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583843189e-07
+...estimated hydro-limited timestep at level 1: 1.292188347e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292188347e-07
+...estimated hydro-limited timestep at level 2: 6.467944091e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467944091e-08
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 2.583843189e-07
+ ... but limiting to: 1.510554097e-07 = 1.1 * 1.373230997e-07
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 1.292188347e-07
+ ... but limiting to: 7.552770485e-08 = 1.1 * 6.866154986e-08
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 6.467944091e-08
+ ... but limiting to: 3.776385242e-08 = 1.1 * 3.433077493e-08
+Now regridding at level lbase = 1
+grid_places() time: 0.001144233 new finest: 2
+TIME = 7.354009991e-07 : REGRID  with lbase = 1
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 8] ADVANCE with dt = 1.510554097e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.510554097e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.510554097e-07
+[Level 0 step 8] Advanced 1024 cells
+[Level 1 step 15] ADVANCE with dt = 7.552770485e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 7.552770485e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 7.552770485e-08
+[Level 1 step 15] Advanced 640 cells
+[Level 2 step 29] ADVANCE with dt = 3.776385242e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 3.776385242e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 3.776385242e-08
+[Level 2 step 29] Advanced 1280 cells
+[Level 2 step 30] ADVANCE with dt = 3.776385242e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 3.776385242e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 3.776385242e-08
+[Level 2 step 30] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.009033368027
+[Level 1 step 16] ADVANCE with dt = 7.552770485e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 7.552770485e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 7.552770485e-08
+[Level 1 step 16] Advanced 640 cells
+[Level 2 step 31] ADVANCE with dt = 3.776385242e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 3.776385242e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 3.776385242e-08
+[Level 2 step 31] Advanced 1280 cells
+[Level 2 step 32] ADVANCE with dt = 3.776385242e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 3.776385242e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 3.776385242e-08
+[Level 2 step 32] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.00945275597
+PeleC::reflux() at level 0 : time = 8.373602759e-05
+
+TIME= 8.864564087e-07 MASS        = 0.0008535691668
+TIME= 8.864564087e-07 XMOM        = -1.694065895e-21
+TIME= 8.864564087e-07 YMOM        = 0.036413893
+TIME= 8.864564087e-07 ZMOM        = 0
+TIME= 8.864564087e-07 RHO*e       = -1590694.338
+TIME= 8.864564087e-07 RHO*K       = 1.267332649
+TIME= 8.864564087e-07 RHO*E       = -1590693.071
+TIME= 8.864564087e-07 ENSTROPHY   = 0.1809943927
+TIME= 8.864564087e-07 FUEL PROD   = 0
+TIME= 8.864564087e-07 TEMP        = 1516.80901
+
+[STEP 8] Coarse TimeStep time: 0.225716386
+[STEP 8] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 8 TIME = 8.864564087e-07 DT = 1.510554097e-07
+
+...estimated hydro-limited timestep at level 0: 2.583843068e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583843068e-07
+...estimated hydro-limited timestep at level 1: 1.292188367e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292188367e-07
+...estimated hydro-limited timestep at level 2: 6.467946461e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467946461e-08
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 2.583843068e-07
+ ... but limiting to: 1.661609507e-07 = 1.1 * 1.510554097e-07
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 1.292188367e-07
+ ... but limiting to: 8.308047533e-08 = 1.1 * 7.552770485e-08
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 6.467946461e-08
+ ... but limiting to: 4.154023766e-08 = 1.1 * 3.776385242e-08
+Now regridding at level lbase = 0
+grid_places() time: 0.001682202 new finest: 2
+STEP = 8 TIME = 8.864564087e-07 : REGRID  with lbase = 0
+  Level 1   5 grids  640 cells  15.625 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 8
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 9] ADVANCE with dt = 1.661609507e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.661609507e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.661609507e-07
+[Level 0 step 9] Advanced 1024 cells
+[Level 1 step 17] ADVANCE with dt = 8.308047533e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 8.308047533e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 8.308047533e-08
+[Level 1 step 17] Advanced 640 cells
+[Level 2 step 33] ADVANCE with dt = 4.154023766e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 4.154023766e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 4.154023766e-08
+[Level 2 step 33] Advanced 1280 cells
+[Level 2 step 34] ADVANCE with dt = 4.154023766e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 4.154023766e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 4.154023766e-08
+[Level 2 step 34] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.009567208996
+[Level 1 step 18] ADVANCE with dt = 8.308047533e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 8.308047533e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 8.308047533e-08
+[Level 1 step 18] Advanced 640 cells
+[Level 2 step 35] ADVANCE with dt = 4.154023766e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 4.154023766e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 4.154023766e-08
+[Level 2 step 35] Advanced 1280 cells
+[Level 2 step 36] ADVANCE with dt = 4.154023766e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 4.154023766e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 4.154023766e-08
+[Level 2 step 36] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.009263966989
+PeleC::reflux() at level 0 : time = 9.797199164e-05
+
+TIME= 1.052617359e-06 MASS        = 0.0008535691666
+TIME= 1.052617359e-06 XMOM        = -3.388131789e-21
+TIME= 1.052617359e-06 YMOM        = 0.03641378947
+TIME= 1.052617359e-06 ZMOM        = 0
+TIME= 1.052617359e-06 RHO*e       = -1590694.338
+TIME= 1.052617359e-06 RHO*K       = 1.267154157
+TIME= 1.052617359e-06 RHO*E       = -1590693.071
+TIME= 1.052617359e-06 ENSTROPHY   = 0.2470323706
+TIME= 1.052617359e-06 FUEL PROD   = 0
+TIME= 1.052617359e-06 TEMP        = 1516.808875
+
+[STEP 9] Coarse TimeStep time: 0.238223978
+[STEP 9] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 9 TIME = 1.052617359e-06 DT = 1.661609507e-07
+
+...estimated hydro-limited timestep at level 0: 2.583842932e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583842932e-07
+...estimated hydro-limited timestep at level 1: 1.292188415e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292188415e-07
+...estimated hydro-limited timestep at level 2: 6.4679503e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.4679503e-08
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 2.583842932e-07
+ ... but limiting to: 1.827770457e-07 = 1.1 * 1.661609507e-07
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 1.292188415e-07
+ ... but limiting to: 9.138852286e-08 = 1.1 * 8.308047533e-08
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 6.4679503e-08
+ ... but limiting to: 4.569426143e-08 = 1.1 * 4.154023766e-08
+Now regridding at level lbase = 1
+grid_places() time: 0.0011462 new finest: 2
+TIME = 1.052617359e-06 : REGRID  with lbase = 1
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 10] ADVANCE with dt = 1.827770457e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.827770457e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.827770457e-07
+[Level 0 step 10] Advanced 1024 cells
+[Level 1 step 19] ADVANCE with dt = 9.138852286e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 9.138852286e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 9.138852286e-08
+[Level 1 step 19] Advanced 640 cells
+[Level 2 step 37] ADVANCE with dt = 4.569426143e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 4.569426143e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 4.569426143e-08
+[Level 2 step 37] Advanced 1280 cells
+[Level 2 step 38] ADVANCE with dt = 4.569426143e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 4.569426143e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 4.569426143e-08
+[Level 2 step 38] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01017740497
+[Level 1 step 20] ADVANCE with dt = 9.138852286e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 9.138852286e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 9.138852286e-08
+[Level 1 step 20] Advanced 640 cells
+[Level 2 step 39] ADVANCE with dt = 4.569426143e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 4.569426143e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 4.569426143e-08
+[Level 2 step 39] Advanced 1280 cells
+[Level 2 step 40] ADVANCE with dt = 4.569426143e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 4.569426143e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 4.569426143e-08
+[Level 2 step 40] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.010052784
+PeleC::reflux() at level 0 : time = 8.533097571e-05
+
+TIME= 1.235394405e-06 MASS        = 0.0008535691665
+TIME= 1.235394405e-06 XMOM        = 1.694065895e-21
+TIME= 1.235394405e-06 YMOM        = 0.03641367348
+TIME= 1.235394405e-06 ZMOM        = 0
+TIME= 1.235394405e-06 RHO*e       = -1590694.338
+TIME= 1.235394405e-06 RHO*K       = 1.267030802
+TIME= 1.235394405e-06 RHO*E       = -1590693.071
+TIME= 1.235394405e-06 ENSTROPHY   = 0.3152663509
+TIME= 1.235394405e-06 FUEL PROD   = 0
+TIME= 1.235394405e-06 TEMP        = 1516.808763
+
+[STEP 10] Coarse TimeStep time: 0.24404406
+[STEP 10] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 10 TIME = 1.235394405e-06 DT = 1.827770457e-07
+
+...estimated hydro-limited timestep at level 0: 2.583842784e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583842784e-07
+...estimated hydro-limited timestep at level 1: 1.292188497e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292188497e-07
+...estimated hydro-limited timestep at level 2: 6.467956858e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467956858e-08
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 2.583842784e-07
+ ... but limiting to: 2.010547503e-07 = 1.1 * 1.827770457e-07
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 1.292188497e-07
+ ... but limiting to: 1.005273751e-07 = 1.1 * 9.138852286e-08
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 6.467956858e-08
+ ... but limiting to: 5.026368757e-08 = 1.1 * 4.569426143e-08
+Now regridding at level lbase = 0
+grid_places() time: 0.001988967 new finest: 2
+STEP = 10 TIME = 1.235394405e-06 : REGRID  with lbase = 0
+  Level 1   5 grids  640 cells  15.625 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 8
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 11] ADVANCE with dt = 2.010547503e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.010547503e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.010547503e-07
+[Level 0 step 11] Advanced 1024 cells
+[Level 1 step 21] ADVANCE with dt = 1.005273751e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.005273751e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.005273751e-07
+[Level 1 step 21] Advanced 640 cells
+[Level 2 step 41] ADVANCE with dt = 5.026368757e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 5.026368757e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 5.026368757e-08
+[Level 2 step 41] Advanced 1280 cells
+[Level 2 step 42] ADVANCE with dt = 5.026368757e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 5.026368757e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 5.026368757e-08
+[Level 2 step 42] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.010066622
+[Level 1 step 22] ADVANCE with dt = 1.005273751e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.005273751e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.005273751e-07
+[Level 1 step 22] Advanced 640 cells
+[Level 2 step 43] ADVANCE with dt = 5.026368757e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 5.026368757e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 5.026368757e-08
+[Level 2 step 43] Advanced 1280 cells
+[Level 2 step 44] ADVANCE with dt = 5.026368757e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 5.026368757e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 5.026368757e-08
+[Level 2 step 44] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.009469181008
+PeleC::reflux() at level 0 : time = 9.848200716e-05
+
+TIME= 1.436449155e-06 MASS        = 0.0008535691663
+TIME= 1.436449155e-06 XMOM        = -2.117582368e-21
+TIME= 1.436449155e-06 YMOM        = 0.03641354335
+TIME= 1.436449155e-06 ZMOM        = 0
+TIME= 1.436449155e-06 RHO*e       = -1590694.338
+TIME= 1.436449155e-06 RHO*K       = 1.267006937
+TIME= 1.436449155e-06 RHO*E       = -1590693.071
+TIME= 1.436449155e-06 ENSTROPHY   = 0.3306124224
+TIME= 1.436449155e-06 FUEL PROD   = 0
+TIME= 1.436449155e-06 TEMP        = 1516.808654
+
+[STEP 11] Coarse TimeStep time: 0.245988622
+[STEP 11] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 11 TIME = 1.436449155e-06 DT = 2.010547503e-07
+
+...estimated hydro-limited timestep at level 0: 2.583842627e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583842627e-07
+...estimated hydro-limited timestep at level 1: 1.292188599e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292188599e-07
+...estimated hydro-limited timestep at level 2: 6.467967447e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467967447e-08
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 2.583842627e-07
+ ... but limiting to: 2.211602253e-07 = 1.1 * 2.010547503e-07
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 1.292188599e-07
+ ... but limiting to: 1.105801127e-07 = 1.1 * 1.005273751e-07
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 6.467967447e-08
+ ... but limiting to: 5.529005633e-08 = 1.1 * 5.026368757e-08
+Now regridding at level lbase = 1
+grid_places() time: 0.001175085 new finest: 2
+TIME = 1.436449155e-06 : REGRID  with lbase = 1
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 12] ADVANCE with dt = 2.211602253e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.211602253e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.211602253e-07
+[Level 0 step 12] Advanced 1024 cells
+[Level 1 step 23] ADVANCE with dt = 1.105801127e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.105801127e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.105801127e-07
+[Level 1 step 23] Advanced 640 cells
+[Level 2 step 45] ADVANCE with dt = 5.529005633e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 5.529005633e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 5.529005633e-08
+[Level 2 step 45] Advanced 1280 cells
+[Level 2 step 46] ADVANCE with dt = 5.529005633e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 5.529005633e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 5.529005633e-08
+[Level 2 step 46] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.009530443
+[Level 1 step 24] ADVANCE with dt = 1.105801127e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.105801127e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.105801127e-07
+[Level 1 step 24] Advanced 640 cells
+[Level 2 step 47] ADVANCE with dt = 5.529005633e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 5.529005633e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 5.529005633e-08
+[Level 2 step 47] Advanced 1280 cells
+[Level 2 step 48] ADVANCE with dt = 5.529005633e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 5.529005633e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 5.529005633e-08
+[Level 2 step 48] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.009519576037
+PeleC::reflux() at level 0 : time = 8.449499728e-05
+
+TIME= 1.657609381e-06 MASS        = 0.000853569166
+TIME= 1.657609381e-06 XMOM        = 0
+TIME= 1.657609381e-06 YMOM        = 0.03641339733
+TIME= 1.657609381e-06 ZMOM        = 0
+TIME= 1.657609381e-06 RHO*e       = -1590694.338
+TIME= 1.657609381e-06 RHO*K       = 1.267064326
+TIME= 1.657609381e-06 RHO*E       = -1590693.071
+TIME= 1.657609381e-06 ENSTROPHY   = 0.2979384332
+TIME= 1.657609381e-06 FUEL PROD   = 0
+TIME= 1.657609381e-06 TEMP        = 1516.808517
+
+[STEP 12] Coarse TimeStep time: 0.238704487
+[STEP 12] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 12 TIME = 1.657609381e-06 DT = 2.211602253e-07
+
+...estimated hydro-limited timestep at level 0: 2.583842458e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583842458e-07
+...estimated hydro-limited timestep at level 1: 1.2921887e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.2921887e-07
+...estimated hydro-limited timestep at level 2: 6.467985758e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467985758e-08
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 2.583842458e-07
+ ... but limiting to: 2.432762479e-07 = 1.1 * 2.211602253e-07
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 1.2921887e-07
+ ... but limiting to: 1.216381239e-07 = 1.1 * 1.105801127e-07
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 6.467985758e-08
+ ... but limiting to: 6.081906197e-08 = 1.1 * 5.529005633e-08
+Now regridding at level lbase = 0
+grid_places() time: 0.001694775 new finest: 2
+STEP = 12 TIME = 1.657609381e-06 : REGRID  with lbase = 0
+  Level 1   5 grids  640 cells  15.625 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 8
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 13] ADVANCE with dt = 2.432762479e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.432762479e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.432762479e-07
+[Level 0 step 13] Advanced 1024 cells
+[Level 1 step 25] ADVANCE with dt = 1.216381239e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.216381239e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.216381239e-07
+[Level 1 step 25] Advanced 640 cells
+[Level 2 step 49] ADVANCE with dt = 6.081906197e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.081906197e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.081906197e-08
+[Level 2 step 49] Advanced 1280 cells
+[Level 2 step 50] ADVANCE with dt = 6.081906197e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.081906197e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.081906197e-08
+[Level 2 step 50] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.009685449011
+[Level 1 step 26] ADVANCE with dt = 1.216381239e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.216381239e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.216381239e-07
+[Level 1 step 26] Advanced 640 cells
+[Level 2 step 51] ADVANCE with dt = 6.081906197e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.081906197e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.081906197e-08
+[Level 2 step 51] Advanced 1280 cells
+[Level 2 step 52] ADVANCE with dt = 6.081906197e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.081906197e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.081906197e-08
+[Level 2 step 52] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.009651514003
+PeleC::reflux() at level 0 : time = 0.00011111598
+
+TIME= 1.900885629e-06 MASS        = 0.0008535691657
+TIME= 1.900885629e-06 XMOM        = -9.264422861e-22
+TIME= 1.900885629e-06 YMOM        = 0.03641323341
+TIME= 1.900885629e-06 ZMOM        = 0
+TIME= 1.900885629e-06 RHO*e       = -1590694.337
+TIME= 1.900885629e-06 RHO*K       = 1.267065932
+TIME= 1.900885629e-06 RHO*E       = -1590693.07
+TIME= 1.900885629e-06 ENSTROPHY   = 0.2662144542
+TIME= 1.900885629e-06 FUEL PROD   = 0
+TIME= 1.900885629e-06 TEMP        = 1516.808345
+
+[STEP 13] Coarse TimeStep time: 0.241952412
+[STEP 13] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 13 TIME = 1.900885629e-06 DT = 2.432762479e-07
+
+...estimated hydro-limited timestep at level 0: 2.583842274e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583842274e-07
+...estimated hydro-limited timestep at level 1: 1.292188802e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292188802e-07
+...estimated hydro-limited timestep at level 2: 6.468002605e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.468002605e-08
+Now regridding at level lbase = 1
+grid_places() time: 0.001115213 new finest: 2
+TIME = 1.900885629e-06 : REGRID  with lbase = 1
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 14] ADVANCE with dt = 2.583842274e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.583842274e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.583842274e-07
+[Level 0 step 14] Advanced 1024 cells
+[Level 1 step 27] ADVANCE with dt = 1.291921137e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291921137e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291921137e-07
+[Level 1 step 27] Advanced 640 cells
+[Level 2 step 53] ADVANCE with dt = 6.459605686e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459605686e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459605686e-08
+[Level 2 step 53] Advanced 1280 cells
+[Level 2 step 54] ADVANCE with dt = 6.459605686e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459605686e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459605686e-08
+[Level 2 step 54] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.009952541033
+[Level 1 step 28] ADVANCE with dt = 1.291921137e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291921137e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291921137e-07
+[Level 1 step 28] Advanced 640 cells
+[Level 2 step 55] ADVANCE with dt = 6.459605686e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459605686e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459605686e-08
+[Level 2 step 55] Advanced 1280 cells
+[Level 2 step 56] ADVANCE with dt = 6.459605686e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459605686e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459605686e-08
+[Level 2 step 56] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.00992333598
+PeleC::reflux() at level 0 : time = 8.417898789e-05
+
+TIME= 2.159269856e-06 MASS        = 0.0008535691653
+TIME= 2.159269856e-06 XMOM        = -1.482307658e-21
+TIME= 2.159269856e-06 YMOM        = 0.03641305569
+TIME= 2.159269856e-06 ZMOM        = 0
+TIME= 2.159269856e-06 RHO*e       = -1590694.337
+TIME= 2.159269856e-06 RHO*K       = 1.2670219
+TIME= 2.159269856e-06 RHO*E       = -1590693.07
+TIME= 2.159269856e-06 ENSTROPHY   = 0.2664761654
+TIME= 2.159269856e-06 FUEL PROD   = 0
+TIME= 2.159269856e-06 TEMP        = 1516.808166
+
+[STEP 14] Coarse TimeStep time: 0.243372259
+[STEP 14] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 14 TIME = 2.159269856e-06 DT = 2.583842274e-07
+
+...estimated hydro-limited timestep at level 0: 2.583842077e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583842077e-07
+...estimated hydro-limited timestep at level 1: 1.292188934e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292188934e-07
+...estimated hydro-limited timestep at level 2: 6.467986858e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467986858e-08
+Now regridding at level lbase = 0
+grid_places() time: 0.001651381 new finest: 2
+STEP = 14 TIME = 2.159269856e-06 : REGRID  with lbase = 0
+  Level 1   5 grids  640 cells  15.625 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 8
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 15] ADVANCE with dt = 2.583842077e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.583842077e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.583842077e-07
+[Level 0 step 15] Advanced 1024 cells
+[Level 1 step 29] ADVANCE with dt = 1.291921038e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291921038e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291921038e-07
+[Level 1 step 29] Advanced 640 cells
+[Level 2 step 57] ADVANCE with dt = 6.459605192e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459605192e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459605192e-08
+[Level 2 step 57] Advanced 1280 cells
+[Level 2 step 58] ADVANCE with dt = 6.459605192e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459605192e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459605192e-08
+[Level 2 step 58] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.009904185019
+[Level 1 step 30] ADVANCE with dt = 1.291921038e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291921038e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291921038e-07
+[Level 1 step 30] Advanced 640 cells
+[Level 2 step 59] ADVANCE with dt = 6.459605192e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459605192e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459605192e-08
+[Level 2 step 59] Advanced 1280 cells
+[Level 2 step 60] ADVANCE with dt = 6.459605192e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459605192e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459605192e-08
+[Level 2 step 60] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.009881007019
+PeleC::reflux() at level 0 : time = 9.805196896e-05
+
+TIME= 2.417654064e-06 MASS        = 0.0008535691649
+TIME= 2.417654064e-06 XMOM        = -4.235164736e-22
+TIME= 2.417654064e-06 YMOM        = 0.03641287418
+TIME= 2.417654064e-06 ZMOM        = 0
+TIME= 2.417654064e-06 RHO*e       = -1590694.337
+TIME= 2.417654064e-06 RHO*K       = 1.267004182
+TIME= 2.417654064e-06 RHO*E       = -1590693.07
+TIME= 2.417654064e-06 ENSTROPHY   = 0.2797286048
+TIME= 2.417654064e-06 FUEL PROD   = 0
+TIME= 2.417654064e-06 TEMP        = 1516.808002
+
+[STEP 15] Coarse TimeStep time: 0.243449592
+[STEP 15] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 15 TIME = 2.417654064e-06 DT = 2.583842077e-07
+
+...estimated hydro-limited timestep at level 0: 2.583841873e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583841873e-07
+...estimated hydro-limited timestep at level 1: 1.292189111e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292189111e-07
+...estimated hydro-limited timestep at level 2: 6.467949304e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467949304e-08
+Now regridding at level lbase = 1
+grid_places() time: 0.001109772 new finest: 2
+TIME = 2.417654064e-06 : REGRID  with lbase = 1
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 16] ADVANCE with dt = 2.583841873e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.583841873e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.583841873e-07
+[Level 0 step 16] Advanced 1024 cells
+[Level 1 step 31] ADVANCE with dt = 1.291920936e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291920936e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291920936e-07
+[Level 1 step 31] Advanced 640 cells
+[Level 2 step 61] ADVANCE with dt = 6.459604682e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459604682e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459604682e-08
+[Level 2 step 61] Advanced 1280 cells
+[Level 2 step 62] ADVANCE with dt = 6.459604682e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459604682e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459604682e-08
+[Level 2 step 62] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.009880777972
+[Level 1 step 32] ADVANCE with dt = 1.291920936e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291920936e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291920936e-07
+[Level 1 step 32] Advanced 640 cells
+[Level 2 step 63] ADVANCE with dt = 6.459604682e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459604682e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459604682e-08
+[Level 2 step 63] Advanced 1280 cells
+[Level 2 step 64] ADVANCE with dt = 6.459604682e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459604682e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459604682e-08
+[Level 2 step 64] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01015919796
+PeleC::reflux() at level 0 : time = 8.459604578e-05
+
+TIME= 2.676038251e-06 MASS        = 0.0008535691644
+TIME= 2.676038251e-06 XMOM        = 0
+TIME= 2.676038251e-06 YMOM        = 0.03641268868
+TIME= 2.676038251e-06 ZMOM        = 0
+TIME= 2.676038251e-06 RHO*e       = -1590694.337
+TIME= 2.676038251e-06 RHO*K       = 1.267040298
+TIME= 2.676038251e-06 RHO*E       = -1590693.07
+TIME= 2.676038251e-06 ENSTROPHY   = 0.2801227881
+TIME= 2.676038251e-06 FUEL PROD   = 0
+TIME= 2.676038251e-06 TEMP        = 1516.807834
+
+[STEP 16] Coarse TimeStep time: 0.243388069
+[STEP 16] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 16 TIME = 2.676038251e-06 DT = 2.583841873e-07
+
+...estimated hydro-limited timestep at level 0: 2.583841667e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583841667e-07
+...estimated hydro-limited timestep at level 1: 1.292189386e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292189386e-07
+...estimated hydro-limited timestep at level 2: 6.467952197e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467952197e-08
+Now regridding at level lbase = 0
+grid_places() time: 0.001653779 new finest: 2
+STEP = 16 TIME = 2.676038251e-06 : REGRID  with lbase = 0
+  Level 1   5 grids  640 cells  15.625 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 8
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 17] ADVANCE with dt = 2.583841667e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.583841667e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.583841667e-07
+[Level 0 step 17] Advanced 1024 cells
+[Level 1 step 33] ADVANCE with dt = 1.291920833e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291920833e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291920833e-07
+[Level 1 step 33] Advanced 640 cells
+[Level 2 step 65] ADVANCE with dt = 6.459604167e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459604167e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459604167e-08
+[Level 2 step 65] Advanced 1280 cells
+[Level 2 step 66] ADVANCE with dt = 6.459604167e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459604167e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459604167e-08
+[Level 2 step 66] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.010046223
+[Level 1 step 34] ADVANCE with dt = 1.291920833e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291920833e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291920833e-07
+[Level 1 step 34] Advanced 640 cells
+[Level 2 step 67] ADVANCE with dt = 6.459604167e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459604167e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459604167e-08
+[Level 2 step 67] Advanced 1280 cells
+[Level 2 step 68] ADVANCE with dt = 6.459604167e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459604167e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459604167e-08
+[Level 2 step 68] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01025769499
+PeleC::reflux() at level 0 : time = 9.981601033e-05
+
+TIME= 2.934422418e-06 MASS        = 0.0008535691638
+TIME= 2.934422418e-06 XMOM        = -2.117582368e-21
+TIME= 2.934422418e-06 YMOM        = 0.03641249906
+TIME= 2.934422418e-06 ZMOM        = 0
+TIME= 2.934422418e-06 RHO*e       = -1590694.337
+TIME= 2.934422418e-06 RHO*K       = 1.267079264
+TIME= 2.934422418e-06 RHO*E       = -1590693.07
+TIME= 2.934422418e-06 ENSTROPHY   = 0.2761665604
+TIME= 2.934422418e-06 FUEL PROD   = 0
+TIME= 2.934422418e-06 TEMP        = 1516.807658
+
+[STEP 17] Coarse TimeStep time: 0.243253868
+[STEP 17] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 17 TIME = 2.934422418e-06 DT = 2.583841667e-07
+
+...estimated hydro-limited timestep at level 0: 2.583841461e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583841461e-07
+...estimated hydro-limited timestep at level 1: 1.292189651e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292189651e-07
+...estimated hydro-limited timestep at level 2: 6.467990092e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467990092e-08
+Now regridding at level lbase = 1
+grid_places() time: 0.001159942 new finest: 2
+TIME = 2.934422418e-06 : REGRID  with lbase = 1
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 18] ADVANCE with dt = 2.583841461e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.583841461e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.583841461e-07
+[Level 0 step 18] Advanced 1024 cells
+[Level 1 step 35] ADVANCE with dt = 1.29192073e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.29192073e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.29192073e-07
+[Level 1 step 35] Advanced 640 cells
+[Level 2 step 69] ADVANCE with dt = 6.459603652e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459603652e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459603652e-08
+[Level 2 step 69] Advanced 1280 cells
+[Level 2 step 70] ADVANCE with dt = 6.459603652e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459603652e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459603652e-08
+[Level 2 step 70] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01014183799
+[Level 1 step 36] ADVANCE with dt = 1.29192073e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.29192073e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.29192073e-07
+[Level 1 step 36] Advanced 640 cells
+[Level 2 step 71] ADVANCE with dt = 6.459603652e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459603652e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459603652e-08
+[Level 2 step 71] Advanced 1280 cells
+[Level 2 step 72] ADVANCE with dt = 6.459603652e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459603652e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459603652e-08
+[Level 2 step 72] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01032710902
+PeleC::reflux() at level 0 : time = 8.748698747e-05
+
+TIME= 3.192806564e-06 MASS        = 0.0008535691632
+TIME= 3.192806564e-06 XMOM        = -4.235164736e-22
+TIME= 3.192806564e-06 YMOM        = 0.03641230528
+TIME= 3.192806564e-06 ZMOM        = 0
+TIME= 3.192806564e-06 RHO*e       = -1590694.337
+TIME= 3.192806564e-06 RHO*K       = 1.267097795
+TIME= 3.192806564e-06 RHO*E       = -1590693.069
+TIME= 3.192806564e-06 ENSTROPHY   = 0.2798433842
+TIME= 3.192806564e-06 FUEL PROD   = 0
+TIME= 3.192806564e-06 TEMP        = 1516.807485
+
+[STEP 18] Coarse TimeStep time: 0.243703098
+[STEP 18] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 18 TIME = 3.192806564e-06 DT = 2.583841461e-07
+
+...estimated hydro-limited timestep at level 0: 2.583841257e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583841257e-07
+...estimated hydro-limited timestep at level 1: 1.292190146e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292190146e-07
+...estimated hydro-limited timestep at level 2: 6.468036119e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.468036119e-08
+Now regridding at level lbase = 0
+grid_places() time: 0.00164902 new finest: 2
+STEP = 18 TIME = 3.192806564e-06 : REGRID  with lbase = 0
+  Level 1   5 grids  640 cells  15.625 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 8
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 19] ADVANCE with dt = 2.583841257e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.583841257e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.583841257e-07
+[Level 0 step 19] Advanced 1024 cells
+[Level 1 step 37] ADVANCE with dt = 1.291920628e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291920628e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291920628e-07
+[Level 1 step 37] Advanced 640 cells
+[Level 2 step 73] ADVANCE with dt = 6.459603142e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459603142e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459603142e-08
+[Level 2 step 73] Advanced 1280 cells
+[Level 2 step 74] ADVANCE with dt = 6.459603142e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459603142e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459603142e-08
+[Level 2 step 74] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01032196404
+[Level 1 step 38] ADVANCE with dt = 1.291920628e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291920628e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291920628e-07
+[Level 1 step 38] Advanced 640 cells
+[Level 2 step 75] ADVANCE with dt = 6.459603142e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459603142e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459603142e-08
+[Level 2 step 75] Advanced 1280 cells
+[Level 2 step 76] ADVANCE with dt = 6.459603142e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459603142e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459603142e-08
+[Level 2 step 76] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.010160451
+PeleC::reflux() at level 0 : time = 9.774399223e-05
+
+TIME= 3.451190689e-06 MASS        = 0.0008535691625
+TIME= 3.451190689e-06 XMOM        = -2.752857079e-21
+TIME= 3.451190689e-06 YMOM        = 0.03641210737
+TIME= 3.451190689e-06 ZMOM        = 0
+TIME= 3.451190689e-06 RHO*e       = -1590694.336
+TIME= 3.451190689e-06 RHO*K       = 1.267144492
+TIME= 3.451190689e-06 RHO*E       = -1590693.069
+TIME= 3.451190689e-06 ENSTROPHY   = 0.2775685959
+TIME= 3.451190689e-06 FUEL PROD   = 0
+TIME= 3.451190689e-06 TEMP        = 1516.807318
+
+[STEP 19] Coarse TimeStep time: 0.244318603
+[STEP 19] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 19 TIME = 3.451190689e-06 DT = 2.583841257e-07
+
+...estimated hydro-limited timestep at level 0: 2.583841054e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583841054e-07
+...estimated hydro-limited timestep at level 1: 1.292192206e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292192206e-07
+...estimated hydro-limited timestep at level 2: 6.468038325e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.468038325e-08
+Now regridding at level lbase = 1
+grid_places() time: 0.001149163 new finest: 2
+TIME = 3.451190689e-06 : REGRID  with lbase = 1
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 20] ADVANCE with dt = 2.583841054e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.583841054e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.583841054e-07
+[Level 0 step 20] Advanced 1024 cells
+[Level 1 step 39] ADVANCE with dt = 1.291920527e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291920527e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291920527e-07
+[Level 1 step 39] Advanced 640 cells
+[Level 2 step 77] ADVANCE with dt = 6.459602635e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459602635e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459602635e-08
+[Level 2 step 77] Advanced 1280 cells
+[Level 2 step 78] ADVANCE with dt = 6.459602635e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459602635e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459602635e-08
+[Level 2 step 78] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01021568198
+[Level 1 step 40] ADVANCE with dt = 1.291920527e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291920527e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291920527e-07
+[Level 1 step 40] Advanced 640 cells
+[Level 2 step 79] ADVANCE with dt = 6.459602635e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459602635e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459602635e-08
+[Level 2 step 79] Advanced 1280 cells
+[Level 2 step 80] ADVANCE with dt = 6.459602635e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459602635e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459602635e-08
+[Level 2 step 80] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01045698603
+PeleC::reflux() at level 0 : time = 8.476001676e-05
+
+TIME= 3.709574795e-06 MASS        = 0.0008535691618
+TIME= 3.709574795e-06 XMOM        = 1.482307658e-21
+TIME= 3.709574795e-06 YMOM        = 0.03641190537
+TIME= 3.709574795e-06 ZMOM        = 0
+TIME= 3.709574795e-06 RHO*e       = -1590694.336
+TIME= 3.709574795e-06 RHO*K       = 1.267222514
+TIME= 3.709574795e-06 RHO*E       = -1590693.069
+TIME= 3.709574795e-06 ENSTROPHY   = 0.2639236848
+TIME= 3.709574795e-06 FUEL PROD   = 0
+TIME= 3.709574795e-06 TEMP        = 1516.807145
+
+[STEP 20] Coarse TimeStep time: 0.242922732
+[STEP 20] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 20 TIME = 3.709574795e-06 DT = 2.583841054e-07
+
+...estimated hydro-limited timestep at level 0: 2.583840853e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583840853e-07
+...estimated hydro-limited timestep at level 1: 1.292194216e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292194216e-07
+...estimated hydro-limited timestep at level 2: 6.468048955e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.468048955e-08
+Now regridding at level lbase = 0
+grid_places() time: 0.001673504 new finest: 2
+STEP = 20 TIME = 3.709574795e-06 : REGRID  with lbase = 0
+  Level 1   5 grids  640 cells  15.625 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 8
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 21] ADVANCE with dt = 2.583840853e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.583840853e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.583840853e-07
+[Level 0 step 21] Advanced 1024 cells
+[Level 1 step 41] ADVANCE with dt = 1.291920426e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291920426e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291920426e-07
+[Level 1 step 41] Advanced 640 cells
+[Level 2 step 81] ADVANCE with dt = 6.459602131e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459602131e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459602131e-08
+[Level 2 step 81] Advanced 1280 cells
+[Level 2 step 82] ADVANCE with dt = 6.459602131e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459602131e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459602131e-08
+[Level 2 step 82] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01026049699
+[Level 1 step 42] ADVANCE with dt = 1.291920426e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291920426e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291920426e-07
+[Level 1 step 42] Advanced 640 cells
+[Level 2 step 83] ADVANCE with dt = 6.459602131e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459602131e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459602131e-08
+[Level 2 step 83] Advanced 1280 cells
+[Level 2 step 84] ADVANCE with dt = 6.459602131e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459602131e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459602131e-08
+[Level 2 step 84] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01053706999
+PeleC::reflux() at level 0 : time = 9.871501243e-05
+
+TIME= 3.96795888e-06 MASS        = 0.0008535691611
+TIME= 3.96795888e-06 XMOM        = -1.482307658e-21
+TIME= 3.96795888e-06 YMOM        = 0.03641169932
+TIME= 3.96795888e-06 ZMOM        = 0
+TIME= 3.96795888e-06 RHO*e       = -1590694.336
+TIME= 3.96795888e-06 RHO*K       = 1.267271095
+TIME= 3.96795888e-06 RHO*E       = -1590693.069
+TIME= 3.96795888e-06 ENSTROPHY   = 0.2531110114
+TIME= 3.96795888e-06 FUEL PROD   = 0
+TIME= 3.96795888e-06 TEMP        = 1516.806962
+
+[STEP 21] Coarse TimeStep time: 0.243570517
+[STEP 21] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 21 TIME = 3.96795888e-06 DT = 2.583840853e-07
+
+...estimated hydro-limited timestep at level 0: 2.583840651e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583840651e-07
+...estimated hydro-limited timestep at level 1: 1.29219422e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.29219422e-07
+...estimated hydro-limited timestep at level 2: 6.468037215e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.468037215e-08
+Now regridding at level lbase = 1
+grid_places() time: 0.001111523 new finest: 2
+TIME = 3.96795888e-06 : REGRID  with lbase = 1
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 22] ADVANCE with dt = 2.583840651e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.583840651e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.583840651e-07
+[Level 0 step 22] Advanced 1024 cells
+[Level 1 step 43] ADVANCE with dt = 1.291920326e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291920326e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291920326e-07
+[Level 1 step 43] Advanced 640 cells
+[Level 2 step 85] ADVANCE with dt = 6.459601628e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459601628e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459601628e-08
+[Level 2 step 85] Advanced 1280 cells
+[Level 2 step 86] ADVANCE with dt = 6.459601628e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459601628e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459601628e-08
+[Level 2 step 86] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01032334304
+[Level 1 step 44] ADVANCE with dt = 1.291920326e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291920326e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291920326e-07
+[Level 1 step 44] Advanced 640 cells
+[Level 2 step 87] ADVANCE with dt = 6.459601628e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459601628e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459601628e-08
+[Level 2 step 87] Advanced 1280 cells
+[Level 2 step 88] ADVANCE with dt = 6.459601628e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459601628e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459601628e-08
+[Level 2 step 88] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01028343796
+PeleC::reflux() at level 0 : time = 8.457695367e-05
+
+TIME= 4.226342945e-06 MASS        = 0.0008535691602
+TIME= 4.226342945e-06 XMOM        = -1.270549421e-21
+TIME= 4.226342945e-06 YMOM        = 0.03641148923
+TIME= 4.226342945e-06 ZMOM        = 0
+TIME= 4.226342945e-06 RHO*e       = -1590694.336
+TIME= 4.226342945e-06 RHO*K       = 1.267278618
+TIME= 4.226342945e-06 RHO*E       = -1590693.069
+TIME= 4.226342945e-06 ENSTROPHY   = 0.2619684969
+TIME= 4.226342945e-06 FUEL PROD   = 0
+TIME= 4.226342945e-06 TEMP        = 1516.806787
+
+[STEP 22] Coarse TimeStep time: 0.24178829
+[STEP 22] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 22 TIME = 4.226342945e-06 DT = 2.583840651e-07
+
+...estimated hydro-limited timestep at level 0: 2.583840449e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583840449e-07
+...estimated hydro-limited timestep at level 1: 1.292192675e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292192675e-07
+...estimated hydro-limited timestep at level 2: 6.467955626e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467955626e-08
+Now regridding at level lbase = 0
+grid_places() time: 0.001663862 new finest: 2
+STEP = 22 TIME = 4.226342945e-06 : REGRID  with lbase = 0
+  Level 1   5 grids  640 cells  15.625 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 8
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 23] ADVANCE with dt = 2.583840449e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.583840449e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.583840449e-07
+[Level 0 step 23] Advanced 1024 cells
+[Level 1 step 45] ADVANCE with dt = 1.291920225e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291920225e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291920225e-07
+[Level 1 step 45] Advanced 640 cells
+[Level 2 step 89] ADVANCE with dt = 6.459601124e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459601124e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459601124e-08
+[Level 2 step 89] Advanced 1280 cells
+[Level 2 step 90] ADVANCE with dt = 6.459601124e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459601124e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459601124e-08
+[Level 2 step 90] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01054415799
+[Level 1 step 46] ADVANCE with dt = 1.291920225e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291920225e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291920225e-07
+[Level 1 step 46] Advanced 640 cells
+[Level 2 step 91] ADVANCE with dt = 6.459601124e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459601124e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459601124e-08
+[Level 2 step 91] Advanced 1280 cells
+[Level 2 step 92] ADVANCE with dt = 6.459601124e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459601124e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459601124e-08
+[Level 2 step 92] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01025693299
+PeleC::reflux() at level 0 : time = 9.823899018e-05
+
+TIME= 4.48472699e-06 MASS        = 0.0008535691594
+TIME= 4.48472699e-06 XMOM        = -2.117582368e-21
+TIME= 4.48472699e-06 YMOM        = 0.03641127509
+TIME= 4.48472699e-06 ZMOM        = 0
+TIME= 4.48472699e-06 RHO*e       = -1590694.336
+TIME= 4.48472699e-06 RHO*K       = 1.267298177
+TIME= 4.48472699e-06 RHO*E       = -1590693.069
+TIME= 4.48472699e-06 ENSTROPHY   = 0.2766555374
+TIME= 4.48472699e-06 FUEL PROD   = 0
+TIME= 4.48472699e-06 TEMP        = 1516.806631
+
+[STEP 23] Coarse TimeStep time: 0.244048302
+[STEP 23] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 23 TIME = 4.48472699e-06 DT = 2.583840449e-07
+
+...estimated hydro-limited timestep at level 0: 2.583840247e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583840247e-07
+...estimated hydro-limited timestep at level 1: 1.292192285e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292192285e-07
+...estimated hydro-limited timestep at level 2: 6.46793432e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.46793432e-08
+Now regridding at level lbase = 1
+grid_places() time: 0.001111026 new finest: 2
+TIME = 4.48472699e-06 : REGRID  with lbase = 1
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 24] ADVANCE with dt = 2.583840247e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.583840247e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.583840247e-07
+[Level 0 step 24] Advanced 1024 cells
+[Level 1 step 47] ADVANCE with dt = 1.291920124e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291920124e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291920124e-07
+[Level 1 step 47] Advanced 640 cells
+[Level 2 step 93] ADVANCE with dt = 6.459600618e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459600618e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459600618e-08
+[Level 2 step 93] Advanced 1280 cells
+[Level 2 step 94] ADVANCE with dt = 6.459600618e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459600618e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459600618e-08
+[Level 2 step 94] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01055152901
+[Level 1 step 48] ADVANCE with dt = 1.291920124e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291920124e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291920124e-07
+[Level 1 step 48] Advanced 640 cells
+[Level 2 step 95] ADVANCE with dt = 6.459600618e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459600618e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459600618e-08
+[Level 2 step 95] Advanced 1280 cells
+[Level 2 step 96] ADVANCE with dt = 6.459600618e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459600618e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459600618e-08
+[Level 2 step 96] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01022476802
+PeleC::reflux() at level 0 : time = 8.486001752e-05
+
+TIME= 4.743111015e-06 MASS        = 0.0008535691584
+TIME= 4.743111015e-06 XMOM        = -8.470329473e-22
+TIME= 4.743111015e-06 YMOM        = 0.03641105691
+TIME= 4.743111015e-06 ZMOM        = 0
+TIME= 4.743111015e-06 RHO*e       = -1590694.336
+TIME= 4.743111015e-06 RHO*K       = 1.267362703
+TIME= 4.743111015e-06 RHO*E       = -1590693.068
+TIME= 4.743111015e-06 ENSTROPHY   = 0.2794549104
+TIME= 4.743111015e-06 FUEL PROD   = 0
+TIME= 4.743111015e-06 TEMP        = 1516.80648
+
+[STEP 24] Coarse TimeStep time: 0.241650297
+[STEP 24] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 24 TIME = 4.743111015e-06 DT = 2.583840247e-07
+
+...estimated hydro-limited timestep at level 0: 2.583840045e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583840045e-07
+...estimated hydro-limited timestep at level 1: 1.292193705e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292193705e-07
+...estimated hydro-limited timestep at level 2: 6.468001774e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.468001774e-08
+Now regridding at level lbase = 0
+grid_places() time: 0.001658391 new finest: 2
+STEP = 24 TIME = 4.743111015e-06 : REGRID  with lbase = 0
+  Level 1   5 grids  640 cells  15.625 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 8
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 25] ADVANCE with dt = 2.583840045e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.583840045e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.583840045e-07
+[Level 0 step 25] Advanced 1024 cells
+[Level 1 step 49] ADVANCE with dt = 1.291920023e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291920023e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291920023e-07
+[Level 1 step 49] Advanced 640 cells
+[Level 2 step 97] ADVANCE with dt = 6.459600113e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459600113e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459600113e-08
+[Level 2 step 97] Advanced 1280 cells
+[Level 2 step 98] ADVANCE with dt = 6.459600113e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459600113e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459600113e-08
+[Level 2 step 98] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01038212201
+[Level 1 step 50] ADVANCE with dt = 1.291920023e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291920023e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291920023e-07
+[Level 1 step 50] Advanced 640 cells
+[Level 2 step 99] ADVANCE with dt = 6.459600113e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459600113e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459600113e-08
+[Level 2 step 99] Advanced 1280 cells
+[Level 2 step 100] ADVANCE with dt = 6.459600113e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459600113e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459600113e-08
+[Level 2 step 100] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01021879399
+PeleC::reflux() at level 0 : time = 9.727297584e-05
+
+TIME= 5.001495019e-06 MASS        = 0.0008535691575
+TIME= 5.001495019e-06 XMOM        = -8.470329473e-22
+TIME= 5.001495019e-06 YMOM        = 0.03641083467
+TIME= 5.001495019e-06 ZMOM        = 0
+TIME= 5.001495019e-06 RHO*e       = -1590694.336
+TIME= 5.001495019e-06 RHO*K       = 1.267443535
+TIME= 5.001495019e-06 RHO*E       = -1590693.068
+TIME= 5.001495019e-06 ENSTROPHY   = 0.2717196835
+TIME= 5.001495019e-06 FUEL PROD   = 0
+TIME= 5.001495019e-06 TEMP        = 1516.80632
+
+[STEP 25] Coarse TimeStep time: 0.241176409
+[STEP 25] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 25 TIME = 5.001495019e-06 DT = 2.583840045e-07
+
+...estimated hydro-limited timestep at level 0: 2.583839843e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583839843e-07
+...estimated hydro-limited timestep at level 1: 1.292197278e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292197278e-07
+...estimated hydro-limited timestep at level 2: 6.468046579e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.468046579e-08
+Now regridding at level lbase = 1
+grid_places() time: 0.001110798 new finest: 2
+TIME = 5.001495019e-06 : REGRID  with lbase = 1
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 26] ADVANCE with dt = 2.583839843e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.583839843e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.583839843e-07
+[Level 0 step 26] Advanced 1024 cells
+[Level 1 step 51] ADVANCE with dt = 1.291919921e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291919921e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291919921e-07
+[Level 1 step 51] Advanced 640 cells
+[Level 2 step 101] ADVANCE with dt = 6.459599607e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459599607e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459599607e-08
+[Level 2 step 101] Advanced 1280 cells
+[Level 2 step 102] ADVANCE with dt = 6.459599607e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459599607e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459599607e-08
+[Level 2 step 102] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01031262899
+[Level 1 step 52] ADVANCE with dt = 1.291919921e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291919921e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291919921e-07
+[Level 1 step 52] Advanced 640 cells
+[Level 2 step 103] ADVANCE with dt = 6.459599607e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459599607e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459599607e-08
+[Level 2 step 103] Advanced 1280 cells
+[Level 2 step 104] ADVANCE with dt = 6.459599607e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459599607e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459599607e-08
+[Level 2 step 104] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.010356504
+PeleC::reflux() at level 0 : time = 9.350903565e-05
+
+TIME= 5.259879004e-06 MASS        = 0.0008535691564
+TIME= 5.259879004e-06 XMOM        = -2.117582368e-21
+TIME= 5.259879004e-06 YMOM        = 0.03641060836
+TIME= 5.259879004e-06 ZMOM        = 0
+TIME= 5.259879004e-06 RHO*e       = -1590694.335
+TIME= 5.259879004e-06 RHO*K       = 1.26749532
+TIME= 5.259879004e-06 RHO*E       = -1590693.068
+TIME= 5.259879004e-06 ENSTROPHY   = 0.2665167265
+TIME= 5.259879004e-06 FUEL PROD   = 0
+TIME= 5.259879004e-06 TEMP        = 1516.806155
+
+[STEP 26] Coarse TimeStep time: 0.239819205
+[STEP 26] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 26 TIME = 5.259879004e-06 DT = 2.583839843e-07
+
+...estimated hydro-limited timestep at level 0: 2.583839641e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583839641e-07
+...estimated hydro-limited timestep at level 1: 1.292197308e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292197308e-07
+...estimated hydro-limited timestep at level 2: 6.467997537e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467997537e-08
+Now regridding at level lbase = 0
+grid_places() time: 0.001672319 new finest: 2
+STEP = 26 TIME = 5.259879004e-06 : REGRID  with lbase = 0
+  Level 1   5 grids  640 cells  15.625 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 8
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 27] ADVANCE with dt = 2.583839641e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.583839641e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.583839641e-07
+[Level 0 step 27] Advanced 1024 cells
+[Level 1 step 53] ADVANCE with dt = 1.29191982e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.29191982e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.29191982e-07
+[Level 1 step 53] Advanced 640 cells
+[Level 2 step 105] ADVANCE with dt = 6.459599102e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459599102e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459599102e-08
+[Level 2 step 105] Advanced 1280 cells
+[Level 2 step 106] ADVANCE with dt = 6.459599102e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459599102e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459599102e-08
+[Level 2 step 106] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.010291435
+[Level 1 step 54] ADVANCE with dt = 1.29191982e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.29191982e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.29191982e-07
+[Level 1 step 54] Advanced 640 cells
+[Level 2 step 107] ADVANCE with dt = 6.459599102e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459599102e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459599102e-08
+[Level 2 step 107] Advanced 1280 cells
+[Level 2 step 108] ADVANCE with dt = 6.459599102e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459599102e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459599102e-08
+[Level 2 step 108] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01030020998
+PeleC::reflux() at level 0 : time = 0.0001072519808
+
+TIME= 5.518262968e-06 MASS        = 0.0008535691553
+TIME= 5.518262968e-06 XMOM        = 8.470329473e-22
+TIME= 5.518262968e-06 YMOM        = 0.036410378
+TIME= 5.518262968e-06 ZMOM        = 0
+TIME= 5.518262968e-06 RHO*e       = -1590694.335
+TIME= 5.518262968e-06 RHO*K       = 1.267527624
+TIME= 5.518262968e-06 RHO*E       = -1590693.068
+TIME= 5.518262968e-06 ENSTROPHY   = 0.2684910567
+TIME= 5.518262968e-06 FUEL PROD   = 0
+TIME= 5.518262968e-06 TEMP        = 1516.805995
+
+[STEP 27] Coarse TimeStep time: 0.241868828
+[STEP 27] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 27 TIME = 5.518262968e-06 DT = 2.583839641e-07
+
+...estimated hydro-limited timestep at level 0: 2.583839439e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583839439e-07
+...estimated hydro-limited timestep at level 1: 1.292194564e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292194564e-07
+...estimated hydro-limited timestep at level 2: 6.467937876e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467937876e-08
+Now regridding at level lbase = 1
+grid_places() time: 0.001108517 new finest: 2
+TIME = 5.518262968e-06 : REGRID  with lbase = 1
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 28] ADVANCE with dt = 2.583839439e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.583839439e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.583839439e-07
+[Level 0 step 28] Advanced 1024 cells
+[Level 1 step 55] ADVANCE with dt = 1.291919719e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291919719e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291919719e-07
+[Level 1 step 55] Advanced 640 cells
+[Level 2 step 109] ADVANCE with dt = 6.459598597e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459598597e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459598597e-08
+[Level 2 step 109] Advanced 1280 cells
+[Level 2 step 110] ADVANCE with dt = 6.459598597e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459598597e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459598597e-08
+[Level 2 step 110] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01020847302
+[Level 1 step 56] ADVANCE with dt = 1.291919719e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291919719e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291919719e-07
+[Level 1 step 56] Advanced 640 cells
+[Level 2 step 111] ADVANCE with dt = 6.459598597e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459598597e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459598597e-08
+[Level 2 step 111] Advanced 1280 cells
+[Level 2 step 112] ADVANCE with dt = 6.459598597e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459598597e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459598597e-08
+[Level 2 step 112] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01019028103
+PeleC::reflux() at level 0 : time = 8.448900189e-05
+
+TIME= 5.776646912e-06 MASS        = 0.0008535691542
+TIME= 5.776646912e-06 XMOM        = -2.964615315e-21
+TIME= 5.776646912e-06 YMOM        = 0.03641014357
+TIME= 5.776646912e-06 ZMOM        = 0
+TIME= 5.776646912e-06 RHO*e       = -1590694.335
+TIME= 5.776646912e-06 RHO*K       = 1.267568948
+TIME= 5.776646912e-06 RHO*E       = -1590693.068
+TIME= 5.776646912e-06 ENSTROPHY   = 0.2715048514
+TIME= 5.776646912e-06 FUEL PROD   = 0
+TIME= 5.776646912e-06 TEMP        = 1516.805842
+
+[STEP 28] Coarse TimeStep time: 0.240502042
+[STEP 28] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 28 TIME = 5.776646912e-06 DT = 2.583839439e-07
+
+...estimated hydro-limited timestep at level 0: 2.583839237e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583839237e-07
+...estimated hydro-limited timestep at level 1: 1.292191291e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292191291e-07
+...estimated hydro-limited timestep at level 2: 6.467970883e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.467970883e-08
+Now regridding at level lbase = 0
+grid_places() time: 0.001651462 new finest: 2
+STEP = 28 TIME = 5.776646912e-06 : REGRID  with lbase = 0
+  Level 1   5 grids  640 cells  15.625 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 8
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 29] ADVANCE with dt = 2.583839237e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.583839237e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.583839237e-07
+[Level 0 step 29] Advanced 1024 cells
+[Level 1 step 57] ADVANCE with dt = 1.291919619e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291919619e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291919619e-07
+[Level 1 step 57] Advanced 640 cells
+[Level 2 step 113] ADVANCE with dt = 6.459598093e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459598093e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459598093e-08
+[Level 2 step 113] Advanced 1280 cells
+[Level 2 step 114] ADVANCE with dt = 6.459598093e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459598093e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459598093e-08
+[Level 2 step 114] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01028124901
+[Level 1 step 58] ADVANCE with dt = 1.291919619e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291919619e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291919619e-07
+[Level 1 step 58] Advanced 640 cells
+[Level 2 step 115] ADVANCE with dt = 6.459598093e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459598093e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459598093e-08
+[Level 2 step 115] Advanced 1280 cells
+[Level 2 step 116] ADVANCE with dt = 6.459598093e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459598093e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459598093e-08
+[Level 2 step 116] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01026020199
+PeleC::reflux() at level 0 : time = 9.893195238e-05
+
+TIME= 6.035030835e-06 MASS        = 0.000853569153
+TIME= 6.035030835e-06 XMOM        = -2.541098842e-21
+TIME= 6.035030835e-06 YMOM        = 0.03640990508
+TIME= 6.035030835e-06 ZMOM        = 0
+TIME= 6.035030835e-06 RHO*e       = -1590694.335
+TIME= 6.035030835e-06 RHO*K       = 1.267620135
+TIME= 6.035030835e-06 RHO*E       = -1590693.067
+TIME= 6.035030835e-06 ENSTROPHY   = 0.2715267269
+TIME= 6.035030835e-06 FUEL PROD   = 0
+TIME= 6.035030835e-06 TEMP        = 1516.805692
+
+[STEP 29] Coarse TimeStep time: 0.240943061
+[STEP 29] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 29 TIME = 6.035030835e-06 DT = 2.583839237e-07
+
+...estimated hydro-limited timestep at level 0: 2.583839035e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 2.583839035e-07
+...estimated hydro-limited timestep at level 1: 1.292192098e-07
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 1.292192098e-07
+...estimated hydro-limited timestep at level 2: 6.46799869e-08
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 6.46799869e-08
+Now regridding at level lbase = 1
+grid_places() time: 0.00110271 new finest: 2
+TIME = 6.035030835e-06 : REGRID  with lbase = 1
+  Level 2   6 grids  1280 cells  7.8125 % of domain
+            smallest grid: 16 x 8  biggest grid: 16 x 16
+
+[Level 0 step 30] ADVANCE with dt = 2.583839035e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 2.583839035e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 2.583839035e-07
+[Level 0 step 30] Advanced 1024 cells
+[Level 1 step 59] ADVANCE with dt = 1.291919518e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291919518e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291919518e-07
+[Level 1 step 59] Advanced 640 cells
+[Level 2 step 117] ADVANCE with dt = 6.459597589e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459597589e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459597589e-08
+[Level 2 step 117] Advanced 1280 cells
+[Level 2 step 118] ADVANCE with dt = 6.459597589e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459597589e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459597589e-08
+[Level 2 step 118] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.01033399801
+[Level 1 step 60] ADVANCE with dt = 1.291919518e-07
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 1.291919518e-07
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 1.291919518e-07
+[Level 1 step 60] Advanced 640 cells
+[Level 2 step 119] ADVANCE with dt = 6.459597589e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459597589e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459597589e-08
+[Level 2 step 119] Advanced 1280 cells
+[Level 2 step 120] ADVANCE with dt = 6.459597589e-08
+SDC iteration 1 of 2.
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+... Computing reactions for dt = 6.459597589e-08
+SDC iteration 2 of 2.
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,2)
+... Computing reactions for dt = 6.459597589e-08
+[Level 2 step 120] Advanced 1280 cells
+PeleC::reflux() at level 1 : time = 0.010299218
+PeleC::reflux() at level 0 : time = 8.481601253e-05
+
+TIME= 6.293414739e-06 MASS        = 0.0008535691518
+TIME= 6.293414739e-06 XMOM        = -3.388131789e-21
+TIME= 6.293414739e-06 YMOM        = 0.03640966254
+TIME= 6.293414739e-06 ZMOM        = 0
+TIME= 6.293414739e-06 RHO*e       = -1590694.335
+TIME= 6.293414739e-06 RHO*K       = 1.26766928
+TIME= 6.293414739e-06 RHO*E       = -1590693.067
+TIME= 6.293414739e-06 ENSTROPHY   = 0.271118693
+TIME= 6.293414739e-06 FUEL PROD   = 0
+TIME= 6.293414739e-06 TEMP        = 1516.805543
+
+[STEP 30] Coarse TimeStep time: 0.240072916
+[STEP 30] FAB kilobyte spread across MPI nodes: [1937 ... 2912]
+
+STEP = 30 TIME = 6.293414739e-06 DT = 2.583839035e-07
+
+PLOTFILE: file = FIAB-2d_plt00030
+Write plotfile time = 0.012314135  seconds
+
+
+Ending run at 08:54:48 UTC on 2018-12-21.
+Run time = 7.16161003
+Run time w/o init = 7.107382764
+AMReX (18.12-348-g766aa20522d6) finalized

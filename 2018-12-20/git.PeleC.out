@@ -1,0 +1,124 @@
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 6049774..807962b
+Fast-forward
+ Source/Src_nd/meth_params.F90          | 67 ++++++++++++++++++----------------
+ Source/_cpp_parameters                 |  3 ++
+ Source/param_includes/pelec_defaults.H |  1 +
+ Source/param_includes/pelec_params.H   |  1 +
+ Source/param_includes/pelec_queries.H  |  1 +
+ 5 files changed, 41 insertions(+), 32 deletions(-)
+From https://github.com/AMReX-Combustion/PeleC
+   6049774..807962b  development -> origin/development
+ * [new branch]      Emmanuel/GC-NSCBC_cleaning -> origin/Emmanuel/GC-NSCBC_cleaning
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 807962b..861c03a
+Fast-forward
+ .travis.yml                   | 22 ++++++++++
+ Exec/RegTests/Sod/GNUmakefile |  2 +-
+ Source/PeleC.cpp              | 26 +-----------
+ Source/PeleC_F.H              |  3 --
+ Source/Src_nd/PeleC_util.F90  | 37 -----------------
+ build.sh                      | 97 +++++++++++++++++++++++++++++++++++++++++++
+ 6 files changed, 121 insertions(+), 66 deletions(-)
+ create mode 100644 .travis.yml
+ create mode 100755 build.sh
+From https://github.com/AMReX-Combustion/PeleC
+   807962b..861c03a  development      -> origin/development
+ * [new branch]      configure_travis -> origin/configure_travis
+   51ce804..b855824  gpu              -> origin/gpu
+   9618100..384590f  reorg            -> origin/reorg
+Already up to date.
+From https://github.com/AMReX-Combustion/PeleC
+ + d644d61...14062c3 explicit-filter -> origin/explicit-filter  (forced update)
+Already up to date.
+From https://github.com/AMReX-Combustion/PeleC
+   d8b2ff0..88cb21a  Emmanuel/GC-NSCBC_cleaning -> origin/Emmanuel/GC-NSCBC_cleaning
+   b855824..c3a2986  gpu        -> origin/gpu
+ * [new branch]      marc/merge_reorg_into_gpu -> origin/marc/merge_reorg_into_gpu
+   384590f..04f5088  reorg      -> origin/reorg
+Already up to date.
+From https://github.com/AMReX-Combustion/PeleC
+ * [new branch]      Emmanuel/bugfix_forcing -> origin/Emmanuel/bugfix_forcing
+ * [new branch]      cvode_FI                -> origin/cvode_FI
+   c3a2986..ad9f479  gpu                     -> origin/gpu
+   75a4217..5861514  marc/merge_reorg_into_gpu -> origin/marc/merge_reorg_into_gpu
+Updating 861c03a..5125bd1
+Fast-forward
+ Docs/sphinx_doc/conf.py                            |   2 +-
+ Docs/sphinx_doc/index.rst                          |   1 +
+ Docs/sphinx_doc/miscellaneous/kgen.rst             |  86 ++++++++
+ Docs/sphinx_doc/miscellaneous/miscellaneous.rst    |   8 +
+ Exec/Tutorials/EB_BluffBody/Prob_nd.F90            |   2 +-
+ Exec/Tutorials/EB_BluffBody/inputs.3d              |  18 +-
+ Exec/Tutorials/EB_OblqShock/inputs.3d              |  17 +-
+ .../{EB2_Sphere => EB_Sphere}/GNUmakefile          |   0
+ .../{EB2_Sphere => EB_Sphere}/GNUmakefile.profile  |   0
+ .../Tutorials/{EB2_Sphere => EB_Sphere}/Make.local |   0
+ .../{EB2_Sphere => EB_Sphere}/Make.package         |   0
+ .../{EB2_Sphere => EB_Sphere}/Prob_nd.F90          |   0
+ .../amrvis.defaults.sample                         |   0
+ .../{EB2_Sphere => EB_Sphere}/bc_debug_build_login |   0
+ .../{EB2_Sphere => EB_Sphere}/bc_debug_env         |   0
+ .../{EB2_Sphere => EB_Sphere}/bc_debug_modules     |   0
+ .../{EB2_Sphere => EB_Sphere}/bc_fill_nd.F90       |   0
+ .../{EB2_Sphere => EB_Sphere}/edison_job.slurm     |   0
+ .../{EB2_Sphere => EB_Sphere}/edison_modules       |   0
+ Exec/Tutorials/{EB2_Sphere => EB_Sphere}/inputs    |   0
+ .../{EB2_Sphere => EB_Sphere}/merlin_job.sh        |   0
+ .../{EB2_Sphere => EB_Sphere}/probdata.f90         |   0
+ Exec/Tutorials/{EB2_Sphere => EB_Sphere}/probin    |   0
+ Source/PeleC_advance.cpp                           |   6 +
+ Source/PeleC_init_eb.cpp                           | 232 ++++++++++++++++-----
+ Source/Src_3d/Hyp_pele_MOL_3d.F90                  |   4 +
+ 26 files changed, 307 insertions(+), 69 deletions(-)
+ create mode 100644 Docs/sphinx_doc/miscellaneous/kgen.rst
+ create mode 100644 Docs/sphinx_doc/miscellaneous/miscellaneous.rst
+ rename Exec/Tutorials/{EB2_Sphere => EB_Sphere}/GNUmakefile (100%)
+ rename Exec/Tutorials/{EB2_Sphere => EB_Sphere}/GNUmakefile.profile (100%)
+ rename Exec/Tutorials/{EB2_Sphere => EB_Sphere}/Make.local (100%)
+ rename Exec/Tutorials/{EB2_Sphere => EB_Sphere}/Make.package (100%)
+ rename Exec/Tutorials/{EB2_Sphere => EB_Sphere}/Prob_nd.F90 (100%)
+ rename Exec/Tutorials/{EB2_Sphere => EB_Sphere}/amrvis.defaults.sample (100%)
+ rename Exec/Tutorials/{EB2_Sphere => EB_Sphere}/bc_debug_build_login (100%)
+ rename Exec/Tutorials/{EB2_Sphere => EB_Sphere}/bc_debug_env (100%)
+ rename Exec/Tutorials/{EB2_Sphere => EB_Sphere}/bc_debug_modules (100%)
+ rename Exec/Tutorials/{EB2_Sphere => EB_Sphere}/bc_fill_nd.F90 (100%)
+ rename Exec/Tutorials/{EB2_Sphere => EB_Sphere}/edison_job.slurm (100%)
+ rename Exec/Tutorials/{EB2_Sphere => EB_Sphere}/edison_modules (100%)
+ rename Exec/Tutorials/{EB2_Sphere => EB_Sphere}/inputs (100%)
+ rename Exec/Tutorials/{EB2_Sphere => EB_Sphere}/merlin_job.sh (100%)
+ rename Exec/Tutorials/{EB2_Sphere => EB_Sphere}/probdata.f90 (100%)
+ rename Exec/Tutorials/{EB2_Sphere => EB_Sphere}/probin (100%)
+From https://github.com/AMReX-Combustion/PeleC
+   861c03a..5125bd1  development      -> origin/development
+   88cb21a..1d115a8  Emmanuel/GC-NSCBC_cleaning -> origin/Emmanuel/GC-NSCBC_cleaning
+   57ec769..65dfc97  cvode_FI         -> origin/cvode_FI
+   ad9f479..2bf6368  gpu              -> origin/gpu
+ * [new branch]      hari/ebfluxbug   -> origin/hari/ebfluxbug
+   94cfda4..01da4e5  hari/polyextrude -> origin/hari/polyextrude
+   4881e4a..ff8aac7  master           -> origin/master
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+From https://github.com/AMReX-Combustion/PeleC
+   2bf6368..22e67c5  gpu        -> origin/gpu
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+From https://github.com/AMReX-Combustion/PeleC
+   22e67c5..2c1a915  gpu        -> origin/gpu
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+From https://github.com/AMReX-Combustion/PeleC
+   2c1a915..bf78ec0  gpu        -> origin/gpu
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+From https://github.com/AMReX-Combustion/PeleC
+   bf78ec0..651e97e  gpu                  -> origin/gpu
+ * [new branch]      gpu_redo_comp_macros -> origin/gpu_redo_comp_macros
+ * [new branch]      rxn_issue            -> origin/rxn_issue

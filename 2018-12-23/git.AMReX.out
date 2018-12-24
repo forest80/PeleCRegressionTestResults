@@ -1,0 +1,613 @@
+Updating 301d736f0..d2e0dab5f
+Fast-forward
+ Docs/sphinx_documentation/Makefile                 |    2 +-
+ ...ter12.rst => AMReX_Profiling_Tools_Chapter.rst} |    0
+ .../source/{Chapter5.rst => AmrCore_Chapter.rst}   |    0
+ .../source/{Chapter6.rst => AmrLevel_Chapter.rst}  |    0
+ Docs/sphinx_documentation/source/AsyncIter.rst     |    2 +-
+ .../{Chapter6aa.rst => AsyncIter_Chapter.rst}      |    0
+ Docs/sphinx_documentation/source/Basics.rst        |   76 +-
+ .../source/{Chapter4.rst => Basics_Chapter.rst}    |    0
+ .../{Chapter3.rst => BuildingAMReX_Chapter.rst}    |    0
+ Docs/sphinx_documentation/source/EB.rst            |    2 +-
+ .../source/{Chapter10.rst => EB_Chapter.rst}       |    0
+ ...apter14.rst => External_Frameworks_Chapter.rst} |    0
+ ...13.rst => External_Profiling_Tools_Chapter.rst} |    0
+ .../source/{Chapter9.rst => Fortran_Chapter.rst}   |    0
+ Docs/sphinx_documentation/source/GPU.rst           |  535 ++
+ Docs/sphinx_documentation/source/GPU_Chapter.rst   |   18 +
+ .../{Chapter2.rst => GettingStarted_Chapter.rst}   |    0
+ .../source/{Chapter6a.rst => IO_Chapter.rst}       |    0
+ Docs/sphinx_documentation/source/LinearSolvers.rst |    4 +-
+ .../{Chapter7.rst => LinearSolvers_Chapter.rst}    |    0
+ .../source/{Chapter8.rst => Particle_Chapter.rst}  |    0
+ Docs/sphinx_documentation/source/SWFFT.rst         |   10 +-
+ .../{Chapter11.rst => Visualization_Chapter.rst}   |    0
+ Docs/sphinx_documentation/source/index.rst         |   35 +-
+ Docs/sphinx_tutorials/source/MUI_Tutorial.rst      |   32 +
+ Docs/sphinx_tutorials/source/SWFFT/iface_rect.png  |  Bin 0 -> 61274 bytes
+ Docs/sphinx_tutorials/source/SWFFT_Tutorial.rst    |   20 +-
+ Src/Amr/AMReX_Amr.cpp                              |   23 +-
+ Src/Amr/AMReX_StateData.cpp                        |   12 +-
+ Src/AmrCore/AMReX_AmrMesh.H                        |   12 +
+ Src/AmrCore/AMReX_AmrMesh.cpp                      |   59 +-
+ Src/AmrCore/AMReX_Cluster.H                        |   13 +-
+ Src/AmrCore/AMReX_Cluster.cpp                      |  130 +
+ .../rts_impls/mpi_pthreads/PackageQueue.cpp        |   20 +
+ Src/AmrTask/rts_impls/mpi_pthreads/Perilla.H       |    3 +
+ Src/AmrTask/rts_impls/mpi_pthreads/Perilla.cpp     |   32 +-
+ Src/AmrTask/rts_impls/mpi_pthreads/PerillaRts.cpp  |    9 +
+ Src/AmrTask/rts_impls/mpi_pthreads/RegionGraph.H   |   26 +-
+ Src/AmrTask/rts_impls/mpi_pthreads/RegionGraph.cpp |   20 +-
+ .../rts_impls/pthreads_common/LocalConnection.H    |   17 +-
+ Src/AmrTask/rts_impls/pthreads_common/Make.package |    4 +-
+ .../rts_impls/pthreads_common/PerillaMemCheck.H    |   30 +
+ .../rts_impls/pthreads_common/PerillaMemCheck.cpp  |   40 +
+ .../rts_impls/pthreads_common/RemoteConnection.H   |   20 +-
+ Src/AmrTask/rts_impls/pthreads_common/perilla.mak  |    2 +
+ .../rts_impls/upcxx_pthreads/PackageQueue.cpp      |   21 +
+ Src/AmrTask/rts_impls/upcxx_pthreads/Perilla.H     |   16 +-
+ Src/AmrTask/rts_impls/upcxx_pthreads/Perilla.cpp   | 1514 +++---
+ .../rts_impls/upcxx_pthreads/PerillaConfig.H       |    2 +-
+ .../rts_impls/upcxx_pthreads/Perilla_common.cpp    |  834 +--
+ Src/AmrTask/rts_impls/upcxx_pthreads/RegionGraph.H |   24 +-
+ .../rts_impls/upcxx_pthreads/RegionGraph.cpp       |   31 +
+ .../MiniApps/Adv_phaseAsync_rgi/Source/Adv.cpp     |    1 -
+ .../Adv_phaseAsync_rgi/Source/Adv_advance.cpp      |  182 +-
+ .../MiniApps/Adv_phaseAsync_rgi/Source/main.cpp    |    1 +
+ Src/Base/AMReX_Arena.cpp                           |   16 +
+ Src/Base/AMReX_Array.H                             |    2 +
+ Src/Base/AMReX_ArrayLim.H                          |    6 +-
+ Src/Base/AMReX_BLFort.H                            |    2 +-
+ Src/Base/AMReX_BaseFab.H                           | 1007 ++--
+ Src/Base/AMReX_Box.H                               |  672 ++-
+ Src/Base/AMReX_Box.cpp                             |  254 -
+ Src/Base/AMReX_COORDSYS_1D.cpp                     |  117 -
+ Src/Base/AMReX_COORDSYS_1D_C.H                     |  132 +
+ Src/Base/AMReX_COORDSYS_2D.cpp                     |  201 -
+ Src/Base/AMReX_COORDSYS_2D_C.H                     |  216 +
+ Src/Base/AMReX_COORDSYS_3D.cpp                     |   59 -
+ Src/Base/AMReX_COORDSYS_3D_C.H                     |   13 +
+ Src/Base/AMReX_COORDSYS_C.H                        |   34 +-
+ Src/Base/AMReX_CoordSys.cpp                        |   23 +
+ Src/Base/AMReX_CudaAsyncFab.H                      |    8 +-
+ Src/Base/AMReX_CudaAsyncFab.cpp                    |    7 -
+ Src/Base/AMReX_CudaDevice.cpp                      |    4 +
+ Src/Base/AMReX_CudaLaunch.H                        |   54 +-
+ Src/Base/AMReX_CudaLaunch.cpp                      |  145 -
+ Src/Base/AMReX_CudaReduce.H                        |   10 +-
+ Src/Base/AMReX_Extension.H                         |   27 +-
+ Src/Base/AMReX_FArrayBox.H                         |  142 +
+ Src/Base/AMReX_FArrayBox.cpp                       |  120 -
+ Src/Base/AMReX_FabArray.H                          |    2 -
+ Src/Base/AMReX_FabArrayUtility.H                   |   22 +-
+ .../{AMReX_FilCC_1D_C.cpp => AMReX_FilCC_1D_C.H}   |   11 +-
+ .../{AMReX_FilCC_2D_C.cpp => AMReX_FilCC_2D_C.H}   |   10 +-
+ .../{AMReX_FilCC_3D_C.cpp => AMReX_FilCC_3D_C.H}   |   10 +-
+ Src/Base/AMReX_FilCC_C.H                           |   21 +-
+ Src/Base/AMReX_Geometry.H                          |    5 +
+ Src/Base/AMReX_GpuError.H                          |    4 +-
+ Src/Base/AMReX_MultiFabUtil.cpp                    |   15 +
+ ...ltiFabUtil_1D.cpp => AMReX_MultiFabUtil_1D_C.H} |   19 +-
+ ...ltiFabUtil_2D.cpp => AMReX_MultiFabUtil_2D_C.H} |   23 +-
+ ...ltiFabUtil_3D.cpp => AMReX_MultiFabUtil_3D_C.H} |   23 +-
+ Src/Base/AMReX_MultiFabUtil_C.H                    |   74 +-
+ ...ltiFabUtil_nd.cpp => AMReX_MultiFabUtil_nd_C.H} |   10 +-
+ Src/Base/AMReX_fort_mod.F90                        |    2 +-
+ Src/Base/CMakeLists.txt                            |    6 +-
+ Src/Base/Make.package                              |   10 +-
+ Src/Boundary/AMReX_Mask.cpp                        |   38 +-
+ Src/EB/AMReX_EB2_GeometryShop.H                    |   27 +-
+ Src/EB/AMReX_EBMultiFabUtil.cpp                    |    2 +-
+ Src/EB/AMReX_EB_F.H                                |    9 +
+ Src/EB/AMReX_EB_LSCoreBase.H                       |    9 +-
+ Src/EB/AMReX_EB_LSCoreBase.cpp                     |   52 +-
+ Src/EB/AMReX_EB_LSCoreI.H                          |   87 +-
+ Src/EB/AMReX_EB_LSCore_F.H                         |   16 +-
+ Src/EB/AMReX_EB_Tagging.F90                        |   40 +
+ Src/EB/AMReX_EB_levelset.cpp                       |   31 +-
+ Src/EB/AMReX_EB_levelset_F.F90                     |   91 +
+ Src/F_Interfaces/Base/AMReX_multifab_mod.F90       |   21 +-
+ Src/LinearSolvers/MLMG/AMReX_MLMG.cpp              |    1 +
+ Src/LinearSolvers/MLMG/AMReX_MLNodeLap_2d.F90      |    6 +-
+ Src/LinearSolvers/MLMG/AMReX_MLNodeLap_3d.F90      |    7 +-
+ Src/LinearSolvers/MLMG/AMReX_MLNodeLap_F.H         |    4 +-
+ Src/LinearSolvers/MLMG/AMReX_MLNodeLaplacian.cpp   |   66 +-
+ Src/Particle/AMReX_NeighborParticles.H             |   93 +-
+ Src/Particle/AMReX_NeighborParticlesI.H            |  855 ++--
+ Src/Particle/AMReX_ParticleContainerI.H            |   30 +-
+ Src/Particle/AMReX_ParticleTile.H                  |    1 -
+ Src/Particle/AMReX_Particles.H                     |    1 +
+ Tests/BaseFabTesting/main.cpp                      |   38 +-
+ Tools/C_util/Convergence/DebugOut.cpp              |    2 +
+ .../Convergence/RichardsonConvergenceTest.cpp      |    2 +-
+ Tools/CompileTesting/compiletesting.py             |    2 +-
+ Tools/GNUMake/Make.defs                            |   17 +-
+ Tools/GNUMake/Make.machines                        |   18 +-
+ Tools/GNUMake/Make.rules                           |    6 +-
+ Tools/GNUMake/comps/nvcc.mak                       |    8 +-
+ Tools/GNUMake/comps/pgi.mak                        |   12 -
+ Tools/GNUMake/sites/Make.llnl                      |    8 +-
+ Tools/GNUMake/sites/Make.nrel                      |   35 +-
+ Tutorials/EB/Donut/Src/EB_F.H                      |   28 +-
+ Tutorials/EB/Donut/Src/eb_to_pvf.F90               |    8 +-
+ Tutorials/EB/Donut/Src/main.cpp                    |   18 +-
+ Tutorials/GPU/Advection_AmrCore/CMakeLists.txt     |   57 +
+ Tutorials/GPU/Advection_AmrCore/Exec/Make.Adv      |   31 +
+ .../Exec/SingleVortex/GNUmakefile                  |   22 +
+ .../Exec/SingleVortex/Make.package                 |    5 +
+ .../GPU/Advection_AmrCore/Exec/SingleVortex/Prob.H |   12 +
+ .../Advection_AmrCore/Exec/SingleVortex/Prob.cpp   |   41 +
+ .../Exec/SingleVortex/face_velocity.H              |   34 +
+ .../Exec/SingleVortex/face_velocity.cpp            |   91 +
+ .../GPU/Advection_AmrCore/Exec/SingleVortex/inputs |   51 +
+ .../Exec/SingleVortex/sensei/render_catalyst.py    |  179 +
+ .../SingleVortex/sensei/render_iso_catalyst_2d.py  |  228 +
+ .../SingleVortex/sensei/render_iso_catalyst_2d.xml |    5 +
+ .../SingleVortex/sensei/render_iso_catalyst_3d.py  |  233 +
+ .../SingleVortex/sensei/render_iso_catalyst_3d.xml |    5 +
+ .../sensei/render_iso_libsim_2d.session            | 5300 +++++++++++++++++++
+ .../SingleVortex/sensei/render_iso_libsim_2d.xml   |    8 +
+ .../sensei/render_iso_libsim_3d.session            | 5328 ++++++++++++++++++++
+ .../SingleVortex/sensei/render_iso_libsim_3d.xml   |    8 +
+ .../Exec/SingleVortex/sensei/write_vtk.xml         |    5 +
+ Tutorials/GPU/Advection_AmrCore/README             |   13 +
+ Tutorials/GPU/Advection_AmrCore/README_SENSEI.md   |   73 +
+ .../GPU/Advection_AmrCore/Source/AmrCoreAdv.H      |  189 +
+ .../GPU/Advection_AmrCore/Source/AmrCoreAdv.cpp    | 1332 +++++
+ .../GPU/Advection_AmrCore/Source/AmrCoreAdv_F.H    |  264 +
+ .../GPU/Advection_AmrCore/Source/Kernels_3d.H      |   10 +
+ .../GPU/Advection_AmrCore/Source/Make.package      |    6 +
+ .../GPU/Advection_AmrCore/Source/Src_2d/Adv_2d.f90 |  119 +
+ .../Advection_AmrCore/Source/Src_2d/Make.package   |    3 +
+ .../Source/Src_2d/compute_flux_2d.f90              |  114 +
+ .../Advection_AmrCore/Source/Src_2d/slope_2d.f90   |  128 +
+ .../GPU/Advection_AmrCore/Source/Src_3d/Adv_3d.H   |   38 +
+ .../GPU/Advection_AmrCore/Source/Src_3d/Adv_3d.cpp |   97 +
+ .../Advection_AmrCore/Source/Src_3d/Make.package   |   11 +
+ .../Source/Src_3d/compute_flux_3d.H                |  134 +
+ .../Source/Src_3d/compute_flux_3d.cpp              |  388 ++
+ .../GPU/Advection_AmrCore/Source/Src_3d/slope_3d.H |   44 +
+ .../Advection_AmrCore/Source/Src_3d/slope_3d.cpp   |  177 +
+ .../Advection_AmrCore/Source/Src_nd/Make.package   |    2 +
+ .../Advection_AmrCore/Source/Src_nd/Tagging_nd.f90 |   53 +
+ .../GPU/Advection_AmrCore/Source/bc_fill_nd.F90    |   30 +
+ Tutorials/GPU/Advection_AmrCore/Source/main.cpp    |   47 +
+ Tutorials/GPU/CNS/Exec/Sod/cns_prob.H              |   45 +-
+ Tutorials/GPU/CNS/Exec/Sod/cns_prob.cpp            |   48 +-
+ Tutorials/GPU/CNS/Source/CNS_K.H                   |   95 +-
+ Tutorials/GPU/CNS/Source/CNS_K.cpp                 |   70 -
+ Tutorials/GPU/CNS/Source/CNS_advance.cpp           |    3 +-
+ Tutorials/GPU/CNS/Source/CNS_bcfill.cpp            |    4 +-
+ Tutorials/GPU/CNS/Source/CNS_setup.cpp             |   12 -
+ Tutorials/GPU/CNS/Source/Make.package              |    2 +-
+ Tutorials/GPU/CNS/Source/hydro/CNS_hydro_K.H       |  506 ++
+ Tutorials/GPU/CNS/Source/hydro/Make.package        |    3 +-
+ Tutorials/GPU/CNS/Source/hydro/cns_hydro.cpp       |  486 --
+ Tutorials/GPU/Launch/GNUmakefile                   |   20 +
+ Tutorials/GPU/Launch/Make.package                  |    8 +
+ Tutorials/GPU/Launch/MyKernel.H                    |   26 +
+ Tutorials/GPU/Launch/MyKernel_F.F90                |   44 +
+ Tutorials/GPU/Launch/MyKernel_F.H                  |   27 +
+ Tutorials/GPU/Launch/Readme.md                     |   13 +
+ Tutorials/GPU/Launch/main.cpp                      |   73 +
+ .../Exec/Cuda/ElectromagneticParticleContainer.H   |   66 +
+ .../Exec/Cuda/ElectromagneticParticleContainer.cpp |  308 ++
+ .../ElectromagneticPIC/Exec/Cuda/Evolve.H          |   38 +
+ .../ElectromagneticPIC/Exec/Cuda/Evolve.cpp        |  115 +
+ .../ElectromagneticPIC/Exec/Cuda/GNUmakefile       |   23 +
+ .../ElectromagneticPIC/Exec/Cuda/Make.package      |    5 +
+ .../ElectromagneticPIC/Exec/Cuda/em_pic_3d.F90     |  777 +++
+ .../ElectromagneticPIC/Exec/Cuda/em_pic_F.H        |  163 +
+ .../Particles/ElectromagneticPIC/Exec/Cuda/inputs  |   12 +
+ .../ElectromagneticPIC/Exec/Cuda/script.sh         |   43 +
+ .../OpenACC/ElectromagneticParticleContainer.H     |   66 +
+ .../OpenACC/ElectromagneticParticleContainer.cpp   |  267 +
+ .../ElectromagneticPIC/Exec/OpenACC/Evolve.H       |   38 +
+ .../ElectromagneticPIC/Exec/OpenACC/Evolve.cpp     |  109 +
+ .../ElectromagneticPIC/Exec/OpenACC/GNUmakefile    |   23 +
+ .../ElectromagneticPIC/Exec/OpenACC/Make.package   |    5 +
+ .../ElectromagneticPIC/Exec/OpenACC/em_pic_3d.F90  |  839 +++
+ .../ElectromagneticPIC/Exec/OpenACC/em_pic_F.H     |  160 +
+ .../ElectromagneticPIC/Exec/OpenACC/inputs         |   12 +
+ .../ElectromagneticPIC/Exec/OpenACC/script.sh      |   43 +
+ Tutorials/Particles/ElectromagneticPIC/Make.EMPIC  |   27 +
+ .../ElectromagneticPIC/Source/Constants.H          |   21 +
+ Tutorials/Particles/ElectromagneticPIC/Source/IO.H |   14 +
+ .../Particles/ElectromagneticPIC/Source/IO.cpp     |   63 +
+ .../ElectromagneticPIC/Source/Make.package         |    2 +
+ .../ElectromagneticPIC/Source/NodalFlags.H         |   21 +
+ .../ElectromagneticPIC/Source/NodalFlags.cpp       |   15 +
+ .../Particles/ElectromagneticPIC/Source/main.cpp   |  262 +
+ .../NeighborList/NeighborListParticleContainer.cpp |    2 +-
+ Tutorials/Particles/NeighborList/main.cpp          |    6 +-
+ .../NeighborListMR/NeighborListParticleContainer.H |   37 +-
+ .../NeighborListParticleContainer.cpp              |   82 -
+ Tutorials/Particles/NeighborListMR/inputs          |    2 +-
+ Tutorials/Particles/NeighborListMR/main.cpp        |   19 +-
+ Tutorials/SWFFT/{ => SWFFT_poisson}/GNUmakefile    |    2 +-
+ Tutorials/SWFFT/{ => SWFFT_poisson}/Make.package   |    0
+ Tutorials/SWFFT/{ => SWFFT_poisson}/README         |    0
+ Tutorials/SWFFT/{ => SWFFT_poisson}/SWFFT_Test.H   |    0
+ Tutorials/SWFFT/{ => SWFFT_poisson}/SWFFT_Test.cpp |    0
+ .../SWFFT/{ => SWFFT_poisson}/SWFFT_Test_F.F90     |    0
+ Tutorials/SWFFT/{ => SWFFT_poisson}/SWFFT_Test_F.H |    0
+ Tutorials/SWFFT/{ => SWFFT_poisson}/inputs.128     |    0
+ Tutorials/SWFFT/{ => SWFFT_poisson}/inputs.32      |    0
+ Tutorials/SWFFT/{ => SWFFT_poisson}/inputs.64      |    0
+ Tutorials/SWFFT/{ => SWFFT_poisson}/main.cpp       |    0
+ Tutorials/SWFFT/{ => SWFFT_poisson}/run_me         |    0
+ .../SWFFT/{ => SWFFT_poisson}/swfft_solver.cpp     |    0
+ Tutorials/{ => SWFFT}/SWFFT_simple/GNUmakefile     |    2 +-
+ Tutorials/{ => SWFFT}/SWFFT_simple/Make.package    |    0
+ Tutorials/{ => SWFFT}/SWFFT_simple/README          |    0
+ Tutorials/{ => SWFFT}/SWFFT_simple/SWFFT_Test.H    |    0
+ Tutorials/{ => SWFFT}/SWFFT_simple/SWFFT_Test.cpp  |    0
+ .../{ => SWFFT}/SWFFT_simple/SWFFT_Test_F.F90      |    0
+ Tutorials/{ => SWFFT}/SWFFT_simple/SWFFT_Test_F.H  |    0
+ .../{ => SWFFT}/SWFFT_simple/inputs.multipleGrids  |    0
+ Tutorials/{ => SWFFT}/SWFFT_simple/inputs.oneGrid  |    0
+ Tutorials/{ => SWFFT}/SWFFT_simple/main.cpp        |    0
+ Tutorials/{ => SWFFT}/SWFFT_simple/run_me_2d       |    0
+ Tutorials/{ => SWFFT}/SWFFT_simple/run_me_3d       |    0
+ .../{ => SWFFT}/SWFFT_simple/swfft_compute.cpp     |    0
+ 251 files changed, 24249 insertions(+), 4901 deletions(-)
+ rename Docs/sphinx_documentation/source/{Chapter12.rst => AMReX_Profiling_Tools_Chapter.rst} (100%)
+ rename Docs/sphinx_documentation/source/{Chapter5.rst => AmrCore_Chapter.rst} (100%)
+ rename Docs/sphinx_documentation/source/{Chapter6.rst => AmrLevel_Chapter.rst} (100%)
+ rename Docs/sphinx_documentation/source/{Chapter6aa.rst => AsyncIter_Chapter.rst} (100%)
+ rename Docs/sphinx_documentation/source/{Chapter4.rst => Basics_Chapter.rst} (100%)
+ rename Docs/sphinx_documentation/source/{Chapter3.rst => BuildingAMReX_Chapter.rst} (100%)
+ rename Docs/sphinx_documentation/source/{Chapter10.rst => EB_Chapter.rst} (100%)
+ rename Docs/sphinx_documentation/source/{Chapter14.rst => External_Frameworks_Chapter.rst} (100%)
+ rename Docs/sphinx_documentation/source/{Chapter13.rst => External_Profiling_Tools_Chapter.rst} (100%)
+ rename Docs/sphinx_documentation/source/{Chapter9.rst => Fortran_Chapter.rst} (100%)
+ create mode 100644 Docs/sphinx_documentation/source/GPU.rst
+ create mode 100644 Docs/sphinx_documentation/source/GPU_Chapter.rst
+ rename Docs/sphinx_documentation/source/{Chapter2.rst => GettingStarted_Chapter.rst} (100%)
+ rename Docs/sphinx_documentation/source/{Chapter6a.rst => IO_Chapter.rst} (100%)
+ rename Docs/sphinx_documentation/source/{Chapter7.rst => LinearSolvers_Chapter.rst} (100%)
+ rename Docs/sphinx_documentation/source/{Chapter8.rst => Particle_Chapter.rst} (100%)
+ rename Docs/sphinx_documentation/source/{Chapter11.rst => Visualization_Chapter.rst} (100%)
+ create mode 100644 Docs/sphinx_tutorials/source/SWFFT/iface_rect.png
+ create mode 100644 Src/AmrTask/rts_impls/pthreads_common/PerillaMemCheck.H
+ create mode 100644 Src/AmrTask/rts_impls/pthreads_common/PerillaMemCheck.cpp
+ delete mode 100644 Src/Base/AMReX_COORDSYS_1D.cpp
+ create mode 100644 Src/Base/AMReX_COORDSYS_1D_C.H
+ delete mode 100644 Src/Base/AMReX_COORDSYS_2D.cpp
+ create mode 100644 Src/Base/AMReX_COORDSYS_2D_C.H
+ delete mode 100644 Src/Base/AMReX_COORDSYS_3D.cpp
+ create mode 100644 Src/Base/AMReX_COORDSYS_3D_C.H
+ rename Src/Base/{AMReX_FilCC_1D_C.cpp => AMReX_FilCC_1D_C.H} (94%)
+ rename Src/Base/{AMReX_FilCC_2D_C.cpp => AMReX_FilCC_2D_C.H} (97%)
+ rename Src/Base/{AMReX_FilCC_3D_C.cpp => AMReX_FilCC_3D_C.H} (97%)
+ rename Src/Base/{AMReX_MultiFabUtil_1D.cpp => AMReX_MultiFabUtil_1D_C.H} (96%)
+ rename Src/Base/{AMReX_MultiFabUtil_2D.cpp => AMReX_MultiFabUtil_2D_C.H} (96%)
+ rename Src/Base/{AMReX_MultiFabUtil_3D.cpp => AMReX_MultiFabUtil_3D_C.H} (97%)
+ rename Src/Base/{AMReX_MultiFabUtil_nd.cpp => AMReX_MultiFabUtil_nd_C.H} (88%)
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/CMakeLists.txt
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Exec/Make.Adv
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Exec/SingleVortex/GNUmakefile
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Exec/SingleVortex/Make.package
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Exec/SingleVortex/Prob.H
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Exec/SingleVortex/Prob.cpp
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Exec/SingleVortex/face_velocity.H
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Exec/SingleVortex/face_velocity.cpp
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Exec/SingleVortex/inputs
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Exec/SingleVortex/sensei/render_catalyst.py
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Exec/SingleVortex/sensei/render_iso_catalyst_2d.py
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Exec/SingleVortex/sensei/render_iso_catalyst_2d.xml
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Exec/SingleVortex/sensei/render_iso_catalyst_3d.py
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Exec/SingleVortex/sensei/render_iso_catalyst_3d.xml
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Exec/SingleVortex/sensei/render_iso_libsim_2d.session
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Exec/SingleVortex/sensei/render_iso_libsim_2d.xml
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Exec/SingleVortex/sensei/render_iso_libsim_3d.session
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Exec/SingleVortex/sensei/render_iso_libsim_3d.xml
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Exec/SingleVortex/sensei/write_vtk.xml
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/README
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/README_SENSEI.md
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/AmrCoreAdv.H
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/AmrCoreAdv.cpp
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/AmrCoreAdv_F.H
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/Kernels_3d.H
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/Make.package
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/Src_2d/Adv_2d.f90
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/Src_2d/Make.package
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/Src_2d/compute_flux_2d.f90
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/Src_2d/slope_2d.f90
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/Src_3d/Adv_3d.H
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/Src_3d/Adv_3d.cpp
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/Src_3d/Make.package
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/Src_3d/compute_flux_3d.H
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/Src_3d/compute_flux_3d.cpp
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/Src_3d/slope_3d.H
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/Src_3d/slope_3d.cpp
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/Src_nd/Make.package
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/Src_nd/Tagging_nd.f90
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/bc_fill_nd.F90
+ create mode 100644 Tutorials/GPU/Advection_AmrCore/Source/main.cpp
+ delete mode 100644 Tutorials/GPU/CNS/Source/CNS_K.cpp
+ create mode 100644 Tutorials/GPU/CNS/Source/hydro/CNS_hydro_K.H
+ delete mode 100644 Tutorials/GPU/CNS/Source/hydro/cns_hydro.cpp
+ create mode 100644 Tutorials/GPU/Launch/GNUmakefile
+ create mode 100644 Tutorials/GPU/Launch/Make.package
+ create mode 100644 Tutorials/GPU/Launch/MyKernel.H
+ create mode 100644 Tutorials/GPU/Launch/MyKernel_F.F90
+ create mode 100644 Tutorials/GPU/Launch/MyKernel_F.H
+ create mode 100644 Tutorials/GPU/Launch/Readme.md
+ create mode 100644 Tutorials/GPU/Launch/main.cpp
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/Cuda/ElectromagneticParticleContainer.H
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/Cuda/ElectromagneticParticleContainer.cpp
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/Cuda/Evolve.H
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/Cuda/Evolve.cpp
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/Cuda/GNUmakefile
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/Cuda/Make.package
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/Cuda/em_pic_3d.F90
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/Cuda/em_pic_F.H
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/Cuda/inputs
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/Cuda/script.sh
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/OpenACC/ElectromagneticParticleContainer.H
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/OpenACC/ElectromagneticParticleContainer.cpp
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/OpenACC/Evolve.H
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/OpenACC/Evolve.cpp
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/OpenACC/GNUmakefile
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/OpenACC/Make.package
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/OpenACC/em_pic_3d.F90
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/OpenACC/em_pic_F.H
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/OpenACC/inputs
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/OpenACC/script.sh
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Make.EMPIC
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Source/Constants.H
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Source/IO.H
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Source/IO.cpp
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Source/Make.package
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Source/NodalFlags.H
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Source/NodalFlags.cpp
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Source/main.cpp
+ rename Tutorials/SWFFT/{ => SWFFT_poisson}/GNUmakefile (95%)
+ rename Tutorials/SWFFT/{ => SWFFT_poisson}/Make.package (100%)
+ rename Tutorials/SWFFT/{ => SWFFT_poisson}/README (100%)
+ rename Tutorials/SWFFT/{ => SWFFT_poisson}/SWFFT_Test.H (100%)
+ rename Tutorials/SWFFT/{ => SWFFT_poisson}/SWFFT_Test.cpp (100%)
+ rename Tutorials/SWFFT/{ => SWFFT_poisson}/SWFFT_Test_F.F90 (100%)
+ rename Tutorials/SWFFT/{ => SWFFT_poisson}/SWFFT_Test_F.H (100%)
+ rename Tutorials/SWFFT/{ => SWFFT_poisson}/inputs.128 (100%)
+ rename Tutorials/SWFFT/{ => SWFFT_poisson}/inputs.32 (100%)
+ rename Tutorials/SWFFT/{ => SWFFT_poisson}/inputs.64 (100%)
+ rename Tutorials/SWFFT/{ => SWFFT_poisson}/main.cpp (100%)
+ rename Tutorials/SWFFT/{ => SWFFT_poisson}/run_me (100%)
+ rename Tutorials/SWFFT/{ => SWFFT_poisson}/swfft_solver.cpp (100%)
+ rename Tutorials/{ => SWFFT}/SWFFT_simple/GNUmakefile (95%)
+ rename Tutorials/{ => SWFFT}/SWFFT_simple/Make.package (100%)
+ rename Tutorials/{ => SWFFT}/SWFFT_simple/README (100%)
+ rename Tutorials/{ => SWFFT}/SWFFT_simple/SWFFT_Test.H (100%)
+ rename Tutorials/{ => SWFFT}/SWFFT_simple/SWFFT_Test.cpp (100%)
+ rename Tutorials/{ => SWFFT}/SWFFT_simple/SWFFT_Test_F.F90 (100%)
+ rename Tutorials/{ => SWFFT}/SWFFT_simple/SWFFT_Test_F.H (100%)
+ rename Tutorials/{ => SWFFT}/SWFFT_simple/inputs.multipleGrids (100%)
+ rename Tutorials/{ => SWFFT}/SWFFT_simple/inputs.oneGrid (100%)
+ rename Tutorials/{ => SWFFT}/SWFFT_simple/main.cpp (100%)
+ rename Tutorials/{ => SWFFT}/SWFFT_simple/run_me_2d (100%)
+ rename Tutorials/{ => SWFFT}/SWFFT_simple/run_me_3d (100%)
+ rename Tutorials/{ => SWFFT}/SWFFT_simple/swfft_compute.cpp (100%)
+From https://github.com/AMReX-Codes/amrex
+   301d736f0..d2e0dab5f  development -> origin/development
+   67f9fde2c..ba51413e7  cvode_FI    -> origin/cvode_FI
+   12b77674c..739a98d37  gh-pages    -> origin/gh-pages
+   b115db7b1..35c168382  gpu         -> origin/gpu
+   c39ec1136..4b6871a33  gpu-docs    -> origin/gpu-docs
+   df4e8ddb6..7a3a6b7a6  weiqun/gpu  -> origin/weiqun/gpu
+Checking out files:  96% (290/299)   Checking out files:  97% (291/299)   Checking out files:  98% (294/299)   Checking out files:  99% (297/299)   Checking out files: 100% (299/299)   Checking out files: 100% (299/299), done.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating d2e0dab5f..e1f547915
+Fast-forward
+ .../source/AsyncIter_Chapter.rst                   |  4 +-
+ Src/Amr/AMReX_AmrLevel.H                           | 30 ++++++------
+ Src/AmrCore/AMReX_FillPatchUtil.cpp                | 24 +++++-----
+ Src/AmrCore/AMReX_Interp_1D_C.H                    |  8 ++++
+ Src/AmrCore/AMReX_Interp_2D_C.H                    |  8 ++++
+ Src/AmrCore/AMReX_Interp_3D_C.H                    |  8 ++++
+ Src/AmrCore/AMReX_Interp_C.H                       | 12 +++++
+ Src/AmrCore/AMReX_Interpolater.cpp                 |  1 +
+ Src/AmrCore/CMakeLists.txt                         |  2 +
+ Src/AmrCore/Make.package                           |  2 +
+ Src/Base/AMReX_CoordSys.cpp                        | 24 +++++-----
+ Src/Base/AMReX_FabArray.H                          | 43 -----------------
+ Src/Base/AMReX_MultiFab.H                          |  9 ----
+ Src/Base/AMReX_MultiFab.cpp                        | 16 -------
+ Src/Base/AMReX_Utility.H                           | 38 ++++++++++-----
+ Src/EB/AMReX_EB2_MultiGFab.cpp                     | 13 ++++--
+ Src/LinearSolvers/MLMG/AMReX_MLMG.cpp              | 26 +++++++++--
+ Tools/GNUMake/sites/Make.olcf                      |  2 +-
+ Tutorials/EB/CNS/Source/CNS_setup.cpp              |  1 +
+ Tutorials/GPU/CNS/Exec/Sod/inputs                  |  4 --
+ Tutorials/GPU/CNS/Exec/Sod/inputs.amr              | 54 ++++++++++++++++++++++
+ Tutorials/GPU/CNS/Source/CNS.H                     |  1 -
+ Tutorials/GPU/CNS/Source/CNS.cpp                   | 51 +++++++++++++++++---
+ Tutorials/GPU/CNS/Source/CNS_advance.cpp           | 42 ++++++++++++-----
+ Tutorials/GPU/CNS/Source/CNS_bcfill.cpp            |  1 +
+ Tutorials/GPU/CNS/Source/CNS_io.cpp                |  5 +-
+ Tutorials/GPU/CNS/Source/CNS_setup.cpp             | 11 +----
+ Tutorials/GPU/CNS/Source/CNS_tagging.H             | 36 +++++++++++++++
+ Tutorials/GPU/CNS/Source/Make.package              |  2 +-
+ 29 files changed, 308 insertions(+), 170 deletions(-)
+ create mode 100644 Src/AmrCore/AMReX_Interp_1D_C.H
+ create mode 100644 Src/AmrCore/AMReX_Interp_2D_C.H
+ create mode 100644 Src/AmrCore/AMReX_Interp_3D_C.H
+ create mode 100644 Src/AmrCore/AMReX_Interp_C.H
+ create mode 100644 Tutorials/GPU/CNS/Exec/Sod/inputs.amr
+ create mode 100644 Tutorials/GPU/CNS/Source/CNS_tagging.H
+From https://github.com/AMReX-Codes/amrex
+   d2e0dab5f..e1f547915  development -> origin/development
+   739a98d37..eba32366e  gh-pages    -> origin/gh-pages
+   35c168382..f8b2836d5  gpu         -> origin/gpu
+   7a3a6b7a6..fb041279a  weiqun/gpu  -> origin/weiqun/gpu
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating e1f547915..900ce1f3b
+Fast-forward
+ Docs/sphinx_documentation/source/GPU.rst           |  91 ++-
+ Src/Particle/AMReX_Particles.H                     |   8 +
+ .../Exec/Cuda/ElectromagneticParticleContainer.cpp | 308 --------
+ .../ElectromagneticPIC/Exec/Cuda/Evolve.H          |  38 -
+ .../ElectromagneticPIC/Exec/Cuda/Evolve.cpp        | 115 ---
+ .../ElectromagneticPIC/Exec/Cuda/GNUmakefile       |  23 -
+ .../ElectromagneticPIC/Exec/Cuda/Make.package      |   5 -
+ .../ElectromagneticPIC/Exec/Cuda/em_pic_3d.F90     | 777 ---------------------
+ .../ElectromagneticPIC/Exec/Cuda/em_pic_F.H        | 163 -----
+ .../Particles/ElectromagneticPIC/Exec/Cuda/inputs  |  12 -
+ .../ElectromagneticPIC/Exec/Cuda/script.sh         |  43 --
+ .../EMParticleContainer.H}                         |  51 +-
+ .../Exec/OpenACC/EMParticleContainer.cpp           | 282 ++++++++
+ .../OpenACC/ElectromagneticParticleContainer.H     |  66 --
+ .../OpenACC/ElectromagneticParticleContainer.cpp   | 267 -------
+ .../ElectromagneticPIC/Exec/OpenACC/Evolve.H       |   2 -
+ .../ElectromagneticPIC/Exec/OpenACC/Make.package   |   4 +-
+ .../ElectromagneticPIC/Exec/OpenACC/em_pic_3d.F90  | 176 ++---
+ .../ElectromagneticPIC/Exec/OpenACC/em_pic_F.H     |  27 +-
+ Tutorials/Particles/ElectromagneticPIC/Make.EMPIC  |   4 +-
+ .../Particles/ElectromagneticPIC/Source/main.cpp   |  20 +-
+ 21 files changed, 504 insertions(+), 1978 deletions(-)
+ delete mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/Cuda/ElectromagneticParticleContainer.cpp
+ delete mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/Cuda/Evolve.H
+ delete mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/Cuda/Evolve.cpp
+ delete mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/Cuda/GNUmakefile
+ delete mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/Cuda/Make.package
+ delete mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/Cuda/em_pic_3d.F90
+ delete mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/Cuda/em_pic_F.H
+ delete mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/Cuda/inputs
+ delete mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/Cuda/script.sh
+ rename Tutorials/Particles/ElectromagneticPIC/Exec/{Cuda/ElectromagneticParticleContainer.H => OpenACC/EMParticleContainer.H} (54%)
+ create mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/OpenACC/EMParticleContainer.cpp
+ delete mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/OpenACC/ElectromagneticParticleContainer.H
+ delete mode 100644 Tutorials/Particles/ElectromagneticPIC/Exec/OpenACC/ElectromagneticParticleContainer.cpp
+From https://github.com/AMReX-Codes/amrex
+   e1f547915..900ce1f3b  development -> origin/development
+   eba32366e..a2384eba6  gh-pages    -> origin/gh-pages
+   f8b2836d5..4eabf6faf  gpu         -> origin/gpu
+   fb041279a..df45733f3  weiqun/gpu  -> origin/weiqun/gpu
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 900ce1f3b..f287e1a33
+Fast-forward
+ Src/Base/AMReX_BaseFab.H                    | 11 ++--
+ Tools/Postprocessing/C_Src/GNUmakefile      |  1 +
+ Tools/Postprocessing/C_Src/cube_extract.cpp | 83 +++++++++++++++++++++++++++++
+ 3 files changed, 92 insertions(+), 3 deletions(-)
+ create mode 100644 Tools/Postprocessing/C_Src/cube_extract.cpp
+From https://github.com/AMReX-Codes/amrex
+   900ce1f3b..f287e1a33  development -> origin/development
+   a2384eba6..32fae9e6f  gh-pages    -> origin/gh-pages
+   4eabf6faf..f234852f4  gpu         -> origin/gpu
+   df45733f3..b4341be44  weiqun/gpu  -> origin/weiqun/gpu
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating f287e1a33..71c54b24e
+Fast-forward
+ Src/Amr/AMReX_Amr.cpp                              |  17 ++
+ .../rts_impls/mpi_pthreads/PackageQueue.cpp        |   3 +
+ Src/AmrTask/rts_impls/mpi_pthreads/Perilla.cpp     |   3 -
+ Src/AmrTask/rts_impls/mpi_pthreads/RegionGraph.H   |   1 -
+ .../pthreads_common/AsyncMultiFabUtil.cpp          |  42 ++++
+ .../rts_impls/pthreads_common/LocalConnection.H    |   9 +-
+ .../rts_impls/pthreads_common/PerillaMemCheck.cpp  |   2 +-
+ .../rts_impls/pthreads_common/RemoteConnection.H   |   2 +
+ .../rts_impls/upcxx_pthreads/PackageQueue.H        |  12 +-
+ .../rts_impls/upcxx_pthreads/PackageQueue.cpp      |  27 ++-
+ Src/AmrTask/rts_impls/upcxx_pthreads/Perilla.cpp   | 122 ++++++-----
+ .../rts_impls/upcxx_pthreads/PerillaRts.cpp        |   9 +
+ Src/AmrTask/rts_impls/upcxx_pthreads/RegionGraph.H |  25 ++-
+ .../rts_impls/upcxx_pthreads/RegionGraph.cpp       |  10 +-
+ Src/Base/AMReX_MultiFabUtil.H                      | 230 ++++++++++++++++-----
+ Src/Base/AMReX_MultiFabUtil.cpp                    |   2 +-
+ Src/EB/AMReX_EB_LSCoreBase.H                       |  75 -------
+ Src/Particle/AMReX_ParticleContainerI.H            |  65 ++++++
+ Src/Particle/AMReX_Particles.H                     |  14 +-
+ 19 files changed, 457 insertions(+), 213 deletions(-)
+From https://github.com/AMReX-Codes/amrex
+   f287e1a33..71c54b24e  development     -> origin/development
+ * [new branch]          cy-perf         -> origin/cy-perf
+   32fae9e6f..8c7db3cf1  gh-pages        -> origin/gh-pages
+   f234852f4..92d6463f7  gpu             -> origin/gpu
+ * [new branch]          nodeghostcells  -> origin/nodeghostcells
+   b4341be44..e49bfb3ac  weiqun/gpu      -> origin/weiqun/gpu
+ * [new branch]          weiqun/interp-1 -> origin/weiqun/interp-1
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 71c54b24e..766aa2052
+Fast-forward
+ .gitignore | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+From https://github.com/AMReX-Codes/amrex
+   71c54b24e..766aa2052  development     -> origin/development
+   ba51413e7..16c70aa29  cvode_FI        -> origin/cvode_FI
+   8c7db3cf1..50b45fd6f  gh-pages        -> origin/gh-pages
+   32dbac07c..3dd9faa83  nodeghostcells  -> origin/nodeghostcells
+   e49bfb3ac..d110eaf5d  weiqun/gpu      -> origin/weiqun/gpu
+   ade23a181..543a67898  weiqun/interp-1 -> origin/weiqun/interp-1
+ * [new branch]          weiqun/interp-2 -> origin/weiqun/interp-2
+ * [new branch]          weiqun/interp-3 -> origin/weiqun/interp-3
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 766aa2052..dbf9905e4
+Fast-forward
+ Src/AmrCore/AMReX_TagBox.cpp                       |  5 +-
+ Src/Base/AMReX_GpuQualifiers.H                     |  4 +-
+ Tutorials/GPU/CNS/Exec/RT/GNUmakefile              | 12 +++++
+ Tutorials/GPU/CNS/Exec/RT/Make.package             |  3 ++
+ Tutorials/GPU/CNS/Exec/RT/cns_prob.H               | 61 ++++++++++++++++++++++
+ Tutorials/GPU/CNS/Exec/RT/cns_prob.cpp             | 22 ++++++++
+ Tutorials/GPU/CNS/Exec/RT/cns_prob_parm.H          | 14 +++++
+ .../GPU/CNS/Exec/{Sod/inputs.amr => RT/inputs}     | 27 +++++-----
+ Tutorials/GPU/CNS/Exec/Sod/Make.package            |  2 +-
+ Tutorials/GPU/CNS/Exec/Sod/cns_prob.H              | 18 +++----
+ Tutorials/GPU/CNS/Exec/Sod/cns_prob.cpp            | 24 ++++++++-
+ Tutorials/GPU/CNS/Exec/Sod/cns_prob_parm.H         | 17 ++++++
+ Tutorials/GPU/CNS/Source/CNS.H                     |  2 +
+ Tutorials/GPU/CNS/Source/CNS.cpp                   |  9 ++++
+ Tutorials/GPU/CNS/Source/CNS_K.H                   | 12 ++---
+ Tutorials/GPU/CNS/Source/CNS_advance.cpp           | 12 +++++
+ Tutorials/GPU/CNS/Source/CNS_parm.H                | 25 +++++++++
+ Tutorials/GPU/CNS/Source/CNS_parm.cpp              | 25 +++++++++
+ Tutorials/GPU/CNS/Source/Make.package              |  3 ++
+ Tutorials/GPU/CNS/Source/hydro/CNS_hydro_K.H       | 56 ++++++++------------
+ 20 files changed, 284 insertions(+), 69 deletions(-)
+ create mode 100644 Tutorials/GPU/CNS/Exec/RT/GNUmakefile
+ create mode 100644 Tutorials/GPU/CNS/Exec/RT/Make.package
+ create mode 100644 Tutorials/GPU/CNS/Exec/RT/cns_prob.H
+ create mode 100644 Tutorials/GPU/CNS/Exec/RT/cns_prob.cpp
+ create mode 100644 Tutorials/GPU/CNS/Exec/RT/cns_prob_parm.H
+ rename Tutorials/GPU/CNS/Exec/{Sod/inputs.amr => RT/inputs} (71%)
+ create mode 100644 Tutorials/GPU/CNS/Exec/Sod/cns_prob_parm.H
+ create mode 100644 Tutorials/GPU/CNS/Source/CNS_parm.H
+ create mode 100644 Tutorials/GPU/CNS/Source/CNS_parm.cpp
+From https://github.com/AMReX-Codes/amrex
+   766aa2052..dbf9905e4  development     -> origin/development
+   50b45fd6f..95cd7f97a  gh-pages        -> origin/gh-pages
+   92d6463f7..7f1384179  gpu             -> origin/gpu
+   3dd9faa83..501014c30  nodeghostcells  -> origin/nodeghostcells
+   543a67898..c3bfc420b  weiqun/interp-1 -> origin/weiqun/interp-1
+   012b7cf9c..78f5d8011  weiqun/interp-2 -> origin/weiqun/interp-2
+   afdd73c13..35ab62b94  weiqun/interp-3 -> origin/weiqun/interp-3
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating dbf9905e4..a25c1ce15
+Fast-forward
+ Src/AmrCore/AMReX_FillPatchUtil.cpp |   6 +-
+ Src/AmrCore/AMReX_TagBox.cpp        |   4 +-
+ Src/Base/AMReX_FabArray.H           | 130 ++++++++++++++++++--------
+ Src/Base/AMReX_FabArrayCommI.H      |  50 +++++-----
+ Src/Base/AMReX_Geometry.cpp         |  18 ++--
+ Src/Base/AMReX_MultiFab.cpp         |  70 +++++++-------
+ Src/Base/AMReX_MultiFabUtil.cpp     |  86 ++++++++---------
+ Src/Base/AMReX_PhysBCFunct.H        |   2 +-
+ Src/Base/AMReX_iMultiFab.cpp        |  36 +++----
+ Src/EB/AMReX_EB_LSCoreI.H           |   2 +-
+ Src/EB/AMReX_EB_levelset.H          |  34 ++++++-
+ Src/EB/AMReX_EB_levelset.cpp        | 182 ++++++++++++++++++++++++++++--------
+ 12 files changed, 402 insertions(+), 218 deletions(-)
+From https://github.com/AMReX-Codes/amrex
+   dbf9905e4..a25c1ce15  development         -> origin/development
+   95cd7f97a..1fc2e898d  gh-pages            -> origin/gh-pages
+ * [new branch]          weiqun/fluxregister -> origin/weiqun/fluxregister

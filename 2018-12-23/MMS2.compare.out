@@ -1,0 +1,34 @@
+/projects/ExaCT/Pele/PeleTests/AMReX/Tools/Postprocessing/F_Src//fcompare.Linux.gfortran.test.exe -n 0 /projects/ExaCT/Pele/PeleTests/PeleC-benchmarks/MMS2_plt00100 MMS2_plt00100
+  
+            variable name            absolute error            relative error
+                                        (||A - B||)         (||A - B||/||A||)
+ ----------------------------------------------------------------------
+ level =  1
+ density                            0.000000000               0.000000000    
+ Temp                               0.000000000               0.000000000    
+ pressure                           0.000000000               0.000000000    
+ magvort                            0.000000000               0.000000000    
+ x_velocity                         0.000000000               0.000000000    
+ y_velocity                         0.000000000               0.000000000    
+ z_velocity                         0.000000000               0.000000000    
+ magvel                             0.000000000               0.000000000    
+ rhommserror                        0.000000000               0.000000000    
+ ummserror                          0.000000000               0.000000000    
+ vmmserror                          0.000000000               0.000000000    
+ wmmserror                          0.000000000               0.000000000    
+ pmmserror                          0.000000000               0.000000000    
+ level =  2
+ density                            0.000000000               0.000000000    
+ Temp                               0.000000000               0.000000000    
+ pressure                           0.000000000               0.000000000    
+ magvort                            0.000000000               0.000000000    
+ x_velocity                         0.000000000               0.000000000    
+ y_velocity                         0.000000000               0.000000000    
+ z_velocity                         0.000000000               0.000000000    
+ magvel                             0.000000000               0.000000000    
+ rhommserror                        0.000000000               0.000000000    
+ ummserror                          0.000000000               0.000000000    
+ vmmserror                          0.000000000               0.000000000    
+ wmmserror                          0.000000000               0.000000000    
+ pmmserror                          0.000000000               0.000000000    
+ PLOTFILES AGREE

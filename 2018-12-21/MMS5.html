@@ -1,0 +1,74 @@
+
+<HTML>
+<HEAD>
+<TITLE>2018-12-21 / MMS5</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="tests.css">
+</HEAD>
+<BODY>
+<div id="box">
+<table style="width: 100%" class="head"><br><tr><td><< <a href="MMS4.html">previous test</td><td class="alignright"><a href="MMS6.html">next test >></td></tr></table>
+<center><h1><a href="index.html">2018-12-21</a> / MMS5</h1></center><ul>
+<li>Build/Test information:
+<ul>
+<li>Build directory: Exec/RegTests/MMS/
+</li>
+<li>Parallel run
+<ul>
+<li>MPI numprocs = 4
+</li></ul></li>
+<li>Files:
+<ul>
+<li>input file: <a href="MMS5.inputs_1d-rt5">inputs_1d-rt5</a>
+</li>
+<li>probin file: <a href="MMS5.probin-rt5">probin-rt5</a>
+</li></ul></li>
+<li>Dimensionality: 1
+</li></ul></li>
+<li>Compilation:
+<ul>
+<li><h3 class="passed">Successful</h3>
+</li>
+<li>Compilation time: 45.254 s
+</li>
+<li>Compilation command:<br><tt>make -j16 AMREX_HOME=/projects/ExaCT/Pele/PeleTests/AMReX/  DEBUG=FALSE USE_ACC=FALSE USE_MPI=TRUE USE_OMP=FALSE DIM=1   COMP=g++ TEST=TRUE USE_ASSERTION=TRUE</tt>
+</li>
+<li><a href="MMS5.make.out">make output</a>
+</li></ul></li>
+<li>Execution:
+<ul>
+<li>Execution time: 0.373 s
+</li>
+<li>Execution command:<br><tt>mpiexec -n 4 ./PeleC1d.gnu.TEST.MPI.ex inputs_1d-rt5 amr.plot_file=MMS5_plt amr.check_file=MMS5_chk amr.checkpoint_files_output=0  </tt>
+</li>
+<li><a href="MMS5.run.out">execution output</a>
+</li>
+<li><a href="MMS5.job_info">job_info</a>
+</li></ul></li>
+<li>Comparison: 
+<ul>
+<li><h3 class="passed">Successful</h3>
+</li></ul></li>
+</ul>
+<tt>/projects/ExaCT/Pele/PeleTests/AMReX/Tools/Postprocessing/F_Src//fcompare.Linux.gfortran.test.exe -n 0 /projects/ExaCT/Pele/PeleTests/PeleC-benchmarks/MMS5_plt00100 MMS5_plt00100
+</tt>
+<div id='summary'>
+<div id='compare'>
+<p><table>
+<tr><th>variable name</th><th>absolute error</th><th>relative error</th></tr>
+<tr><th> </th><th>(||A - B||)</th><th>(||A - B||/||A||)</th></tr>
+<tr class='special'><td colspan=3>level =  1</td></tr>
+<tr><td>density</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Temp</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>pressure</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>magvort</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>x_velocity</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>magvel</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rhommserror</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>ummserror</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>pmmserror</td><td>0.0</td><td>0.0</td></tr>
+</table>
+</div>
+</div>
+</div></body>
+</html>

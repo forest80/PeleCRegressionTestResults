@@ -1,0 +1,156 @@
+
+<HTML>
+<HEAD>
+<TITLE>2018-12-18 / FIAB-2d</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="tests.css">
+</HEAD>
+<BODY>
+<div id="box">
+<table style="width: 100%" class="head"><br><tr><td>&nbsp;</td><td class="alignright"><a href="FIAB-3d.html">next test >></td></tr></table>
+<center><h1><a href="index.html">2018-12-18</a> / FIAB-2d</h1></center><ul>
+<li>Build/Test information:
+<ul>
+<li>Build directory: Exec/RegTests/PMF/
+</li>
+<li>Parallel run
+<ul>
+<li>MPI numprocs = 4
+</li></ul></li>
+<li>Files:
+<ul>
+<li>input file: <a href="FIAB-2d.inputs-2d-regt">inputs-2d-regt</a>
+</li>
+<li>probin file: <a href="FIAB-2d.probin-regt">probin-regt</a>
+</li>
+<li>auxillary file 1: <a href="FIAB-2d.LiDryer_H2_p1_phi0_4000tu0300.dat">LiDryer_H2_p1_phi0_4000tu0300.dat</a>
+</li></ul></li>
+<li>Dimensionality: 2
+</li></ul></li>
+<li>Compilation:
+<ul>
+<li><h3 class="passed">Successful</h3>
+</li>
+<li>Compilation time: 46.267 s
+</li>
+<li>Compilation command:<br><tt>make -j16 AMREX_HOME=/projects/ExaCT/Pele/PeleTests/AMReX/  DEBUG=FALSE USE_ACC=FALSE USE_MPI=TRUE USE_OMP=FALSE DIM=2   COMP=g++ TEST=TRUE USE_ASSERTION=TRUE</tt>
+</li>
+<li><a href="FIAB-2d.make.out">make output</a>
+</li></ul></li>
+<li>Execution:
+<ul>
+<li>Execution time: 7.696 s
+</li>
+<li>Execution command:<br><tt>mpiexec -n 4 ./PeleC2d.gnu.TEST.MPI.ex inputs-2d-regt amr.plot_file=FIAB-2d_plt amr.check_file=FIAB-2d_chk amr.checkpoint_files_output=0  </tt>
+</li>
+<li><a href="FIAB-2d.run.out">execution output</a>
+</li>
+<li><a href="FIAB-2d.job_info">job_info</a>
+</li></ul></li>
+<li>Comparison: 
+<ul>
+<li><h3 class="passed">Successful</h3>
+</li></ul></li>
+</ul>
+<tt>/projects/ExaCT/Pele/PeleTests/AMReX/Tools/Postprocessing/F_Src//fcompare.Linux.gfortran.test.exe -n 0 /projects/ExaCT/Pele/PeleTests/PeleC-benchmarks/FIAB-2d_plt00030 FIAB-2d_plt00030
+</tt>
+<div id='summary'>
+<div id='compare'>
+<p><table>
+<tr><th>variable name</th><th>absolute error</th><th>relative error</th></tr>
+<tr><th> </th><th>(||A - B||)</th><th>(||A - B||/||A||)</th></tr>
+<tr class='special'><td colspan=3>level =  1</td></tr>
+<tr><td>density</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>xmom</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>ymom</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>zmom</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_E</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_e</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Temp</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_H2</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_O2</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_H2O</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_H</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_O</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_OH</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_HO2</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_H2O2</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_N2</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rhoe_dot</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>pressure</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(H2)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(O2)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(H2O)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(H)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(O)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(OH)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(HO2)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(H2O2)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(N2)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>x_velocity</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>y_velocity</td><td>0.0</td><td>0.0</td></tr>
+<tr class='special'><td colspan=3>level =  2</td></tr>
+<tr><td>density</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>xmom</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>ymom</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>zmom</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_E</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_e</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Temp</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_H2</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_O2</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_H2O</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_H</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_O</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_OH</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_HO2</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_H2O2</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_N2</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rhoe_dot</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>pressure</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(H2)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(O2)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(H2O)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(H)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(O)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(OH)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(HO2)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(H2O2)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(N2)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>x_velocity</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>y_velocity</td><td>0.0</td><td>0.0</td></tr>
+<tr class='special'><td colspan=3>level =  3</td></tr>
+<tr><td>density</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>xmom</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>ymom</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>zmom</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_E</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_e</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Temp</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_H2</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_O2</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_H2O</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_H</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_O</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_OH</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_HO2</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_H2O2</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rho_omega_N2</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>rhoe_dot</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>pressure</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(H2)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(O2)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(H2O)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(H)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(O)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(OH)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(HO2)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(H2O2)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Y(N2)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>x_velocity</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>y_velocity</td><td>0.0</td><td>0.0</td></tr>
+</table>
+</div>
+</div>
+</div></body>
+</html>

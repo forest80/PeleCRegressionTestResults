@@ -1,0 +1,2491 @@
+MPI initialized with 4 MPI processes
+AMReX (18.12-336-g900ce1f3ba6c) initialized
+
+Starting run at 08:19:14 UTC on 2018-12-18.
+Successfully read inputs file ... 
+
+PeleC git hash: 5125bd1
+AMReX git hash: 18.12-336-g900ce1f3b
+PelePhysics git hash: 6767379
+
+reading extern runtime parameters ...
+
+Time in set_method_params: 0.0005552760049
+1 Species: 
+X  
+0 Auxiliary Variables: 
+
+Successfully read inputs file ... 
+Starting to call amrex_probinit ... 
+Successfully run amrex_probinit
+Initializing the data at level 0
+Done initializing level 0 data 
+...estimated hydro-limited timestep at level 0: 7.366732253e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.366732253e-07
+
+TIME= 0 MASS        = 0.009412229371
+TIME= 0 XMOM        = -1.166888801e-18
+TIME= 0 YMOM        = -4.356925722e-20
+TIME= 0 ZMOM        = 0
+TIME= 0 RHO*e       = 20260000
+TIME= 0 RHO*K       = 14182
+TIME= 0 RHO*E       = 20274182
+TIME= 0 ENSTROPHY   = 417954.4364
+TIME= 0 FUEL PROD   = 0
+TIME= 0 TEMP        = 2400
+INITIAL GRIDS 
+  Level 0   4 grids  262144 cells  100 % of domain
+            smallest grid: 64 x 32 x 32  biggest grid: 64 x 32 x 32
+
+PLOTFILE: file = tg-vortex-3d_plt00000
+Write plotfile time = 0.028260917  seconds
+
+...estimated hydro-limited timestep at level 0: 7.366732253e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.366732253e-07
+[Level 0 step 1] ADVANCE with dt = 2.210019676e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 1] Advanced 262144 cells
+
+TIME= 2.210019676e-07 MASS        = 0.009412229371
+TIME= 2.210019676e-07 XMOM        = -2.693444004e-17
+TIME= 2.210019676e-07 YMOM        = 2.724057958e-18
+TIME= 2.210019676e-07 ZMOM        = -5.149960319e-19
+TIME= 2.210019676e-07 RHO*e       = 20260000.15
+TIME= 2.210019676e-07 RHO*K       = 14181.84623
+TIME= 2.210019676e-07 RHO*E       = 20274182
+TIME= 2.210019676e-07 ENSTROPHY   = 417950.1625
+TIME= 2.210019676e-07 FUEL PROD   = 0
+TIME= 2.210019676e-07 TEMP        = 2400.000018
+
+[STEP 1] Coarse TimeStep time: 0.486480962
+[STEP 1] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 1 TIME = 2.210019676e-07 DT = 2.210019676e-07
+
+...estimated hydro-limited timestep at level 0: 7.366802657e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.366802657e-07
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 7.366802657e-07
+ ... but limiting to: 2.431021644e-07 = 1.1 * 2.210019676e-07
+[Level 0 step 2] ADVANCE with dt = 2.431021644e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 2] Advanced 262144 cells
+
+TIME= 4.64104132e-07 MASS        = 0.009412229371
+TIME= 4.64104132e-07 XMOM        = -3.384078604e-18
+TIME= 4.64104132e-07 YMOM        = 6.423897872e-18
+TIME= 4.64104132e-07 ZMOM        = -3.469446952e-18
+TIME= 4.64104132e-07 RHO*e       = 20260000.33
+TIME= 4.64104132e-07 RHO*K       = 14181.67455
+TIME= 4.64104132e-07 RHO*E       = 20274182
+TIME= 4.64104132e-07 ENSTROPHY   = 417945.9729
+TIME= 4.64104132e-07 FUEL PROD   = 0
+TIME= 4.64104132e-07 TEMP        = 2400.000038
+
+[STEP 2] Coarse TimeStep time: 0.486183203
+[STEP 2] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 2 TIME = 4.64104132e-07 DT = 2.431021644e-07
+
+...estimated hydro-limited timestep at level 0: 7.36682287e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.36682287e-07
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 7.36682287e-07
+ ... but limiting to: 2.674123808e-07 = 1.1 * 2.431021644e-07
+[Level 0 step 3] ADVANCE with dt = 2.674123808e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 3] Advanced 262144 cells
+
+TIME= 7.315165128e-07 MASS        = 0.009412229371
+TIME= 7.315165128e-07 XMOM        = -8.044132934e-19
+TIME= 7.315165128e-07 YMOM        = 2.656295323e-18
+TIME= 7.315165128e-07 ZMOM        = 6.234162492e-18
+TIME= 7.315165128e-07 RHO*e       = 20260000.52
+TIME= 7.315165128e-07 RHO*K       = 14181.48327
+TIME= 7.315165128e-07 RHO*E       = 20274182
+TIME= 7.315165128e-07 ENSTROPHY   = 417941.9995
+TIME= 7.315165128e-07 FUEL PROD   = 0
+TIME= 7.315165128e-07 TEMP        = 2400.000061
+
+[STEP 3] Coarse TimeStep time: 0.472571479
+[STEP 3] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 3 TIME = 7.315165128e-07 DT = 2.674123808e-07
+
+...estimated hydro-limited timestep at level 0: 7.366856205e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.366856205e-07
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 7.366856205e-07
+ ... but limiting to: 2.941536189e-07 = 1.1 * 2.674123808e-07
+[Level 0 step 4] ADVANCE with dt = 2.941536189e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 4] Advanced 262144 cells
+
+TIME= 1.025670132e-06 MASS        = 0.009412229371
+TIME= 1.025670132e-06 XMOM        = 1.285666808e-17
+TIME= 1.025670132e-06 YMOM        = 4.71627945e-18
+TIME= 1.025670132e-06 ZMOM        = 5.583641188e-18
+TIME= 1.025670132e-06 RHO*e       = 20260000.73
+TIME= 1.025670132e-06 RHO*K       = 14181.26991
+TIME= 1.025670132e-06 RHO*E       = 20274182
+TIME= 1.025670132e-06 ENSTROPHY   = 417938.3946
+TIME= 1.025670132e-06 FUEL PROD   = 0
+TIME= 1.025670132e-06 TEMP        = 2400.000086
+
+[STEP 4] Coarse TimeStep time: 0.472878202
+[STEP 4] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 4 TIME = 1.025670132e-06 DT = 2.941536189e-07
+
+...estimated hydro-limited timestep at level 0: 7.366897077e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.366897077e-07
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 7.366897077e-07
+ ... but limiting to: 3.235689808e-07 = 1.1 * 2.941536189e-07
+[Level 0 step 5] ADVANCE with dt = 3.235689808e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 5] Advanced 262144 cells
+
+TIME= 1.349239112e-06 MASS        = 0.009412229371
+TIME= 1.349239112e-06 XMOM        = -4.01486586e-18
+TIME= 1.349239112e-06 YMOM        = 1.642566291e-17
+TIME= 1.349239112e-06 ZMOM        = 7.318364664e-18
+TIME= 1.349239112e-06 RHO*e       = 20260000.97
+TIME= 1.349239112e-06 RHO*K       = 14181.03123
+TIME= 1.349239112e-06 RHO*E       = 20274182
+TIME= 1.349239112e-06 ENSTROPHY   = 417935.3468
+TIME= 1.349239112e-06 FUEL PROD   = 0
+TIME= 1.349239112e-06 TEMP        = 2400.000114
+
+[STEP 5] Coarse TimeStep time: 0.474291294
+[STEP 5] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 5 TIME = 1.349239112e-06 DT = 3.235689808e-07
+
+...estimated hydro-limited timestep at level 0: 7.366797913e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.366797913e-07
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 7.366797913e-07
+ ... but limiting to: 3.559258788e-07 = 1.1 * 3.235689808e-07
+[Level 0 step 6] ADVANCE with dt = 3.559258788e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 6] Advanced 262144 cells
+
+TIME= 1.705164991e-06 MASS        = 0.009412229371
+TIME= 1.705164991e-06 XMOM        = 1.60677187e-18
+TIME= 1.705164991e-06 YMOM        = -2.070826149e-17
+TIME= 1.705164991e-06 ZMOM        = 4.662069342e-18
+TIME= 1.705164991e-06 RHO*e       = 20260001.24
+TIME= 1.705164991e-06 RHO*K       = 14180.76337
+TIME= 1.705164991e-06 RHO*E       = 20274182
+TIME= 1.705164991e-06 ENSTROPHY   = 417933.0934
+TIME= 1.705164991e-06 FUEL PROD   = 0
+TIME= 1.705164991e-06 TEMP        = 2400.000146
+
+[STEP 6] Coarse TimeStep time: 0.474295954
+[STEP 6] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 6 TIME = 1.705164991e-06 DT = 3.559258788e-07
+
+...estimated hydro-limited timestep at level 0: 7.366677513e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.366677513e-07
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 7.366677513e-07
+ ... but limiting to: 3.915184667e-07 = 1.1 * 3.559258788e-07
+[Level 0 step 7] ADVANCE with dt = 3.915184667e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 7] Advanced 262144 cells
+
+TIME= 2.096683458e-06 MASS        = 0.009412229371
+TIME= 2.096683458e-06 XMOM        = -1.521052798e-19
+TIME= 2.096683458e-06 YMOM        = 1.246832498e-17
+TIME= 2.096683458e-06 ZMOM        = -3.024924061e-17
+TIME= 2.096683458e-06 RHO*e       = 20260001.54
+TIME= 2.096683458e-06 RHO*K       = 14180.46186
+TIME= 2.096683458e-06 RHO*E       = 20274182
+TIME= 2.096683458e-06 ENSTROPHY   = 417931.9321
+TIME= 2.096683458e-06 FUEL PROD   = 0
+TIME= 2.096683458e-06 TEMP        = 2400.000182
+
+[STEP 7] Coarse TimeStep time: 0.480216683
+[STEP 7] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 7 TIME = 2.096683458e-06 DT = 3.915184667e-07
+
+...estimated hydro-limited timestep at level 0: 7.366579249e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.366579249e-07
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 7.366579249e-07
+ ... but limiting to: 4.306703134e-07 = 1.1 * 3.915184667e-07
+[Level 0 step 8] ADVANCE with dt = 4.306703134e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 8] Advanced 262144 cells
+
+TIME= 2.527353771e-06 MASS        = 0.009412229371
+TIME= 2.527353771e-06 XMOM        = 5.982554002e-18
+TIME= 2.527353771e-06 YMOM        = 6.830473687e-18
+TIME= 2.527353771e-06 ZMOM        = 4.228388473e-18
+TIME= 2.527353771e-06 RHO*e       = 20260001.88
+TIME= 2.527353771e-06 RHO*K       = 14180.12157
+TIME= 2.527353771e-06 RHO*E       = 20274182
+TIME= 2.527353771e-06 ENSTROPHY   = 417932.2307
+TIME= 2.527353771e-06 FUEL PROD   = 0
+TIME= 2.527353771e-06 TEMP        = 2400.000223
+
+[STEP 8] Coarse TimeStep time: 0.475581526
+[STEP 8] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 8 TIME = 2.527353771e-06 DT = 4.306703134e-07
+
+...estimated hydro-limited timestep at level 0: 7.366495636e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.366495636e-07
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 7.366495636e-07
+ ... but limiting to: 4.737373447e-07 = 1.1 * 4.306703134e-07
+[Level 0 step 9] ADVANCE with dt = 4.737373447e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 9] Advanced 262144 cells
+
+TIME= 3.001091116e-06 MASS        = 0.009412229371
+TIME= 3.001091116e-06 XMOM        = -5.32195433e-18
+TIME= 3.001091116e-06 YMOM        = -1.713039433e-17
+TIME= 3.001091116e-06 ZMOM        = 3.545341104e-17
+TIME= 3.001091116e-06 RHO*e       = 20260002.26
+TIME= 3.001091116e-06 RHO*K       = 14179.73625
+TIME= 3.001091116e-06 RHO*E       = 20274182
+TIME= 3.001091116e-06 ENSTROPHY   = 417934.4381
+TIME= 3.001091116e-06 FUEL PROD   = 0
+TIME= 3.001091116e-06 TEMP        = 2400.000268
+
+[STEP 9] Coarse TimeStep time: 0.475739501
+[STEP 9] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 9 TIME = 3.001091116e-06 DT = 4.737373447e-07
+
+...estimated hydro-limited timestep at level 0: 7.366416971e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.366416971e-07
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 7.366416971e-07
+ ... but limiting to: 5.211110792e-07 = 1.1 * 4.737373447e-07
+[Level 0 step 10] ADVANCE with dt = 5.211110792e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 10] Advanced 262144 cells
+
+TIME= 3.522202195e-06 MASS        = 0.009412229371
+TIME= 3.522202195e-06 XMOM        = -3.941773699e-18
+TIME= 3.522202195e-06 YMOM        = 4.770489559e-18
+TIME= 3.522202195e-06 ZMOM        = -1.517883041e-18
+TIME= 3.522202195e-06 RHO*e       = 20260002.7
+TIME= 3.522202195e-06 RHO*K       = 14179.29792
+TIME= 3.522202195e-06 RHO*E       = 20274182
+TIME= 3.522202195e-06 ENSTROPHY   = 417939.0933
+TIME= 3.522202195e-06 FUEL PROD   = 0
+TIME= 3.522202195e-06 TEMP        = 2400.000321
+
+[STEP 10] Coarse TimeStep time: 0.477415285
+[STEP 10] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 10 TIME = 3.522202195e-06 DT = 5.211110792e-07
+
+...estimated hydro-limited timestep at level 0: 7.366312865e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.366312865e-07
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 7.366312865e-07
+ ... but limiting to: 5.732221871e-07 = 1.1 * 5.211110792e-07
+[Level 0 step 11] ADVANCE with dt = 5.732221871e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 11] Advanced 262144 cells
+
+TIME= 4.095424383e-06 MASS        = 0.009412229371
+TIME= 4.095424383e-06 XMOM        = 3.003598683e-18
+TIME= 4.095424383e-06 YMOM        = 1.062518129e-17
+TIME= 4.095424383e-06 ZMOM        = 3.057450126e-17
+TIME= 4.095424383e-06 RHO*e       = 20260003.2
+TIME= 4.095424383e-06 RHO*K       = 14178.79656
+TIME= 4.095424383e-06 RHO*E       = 20274182
+TIME= 4.095424383e-06 ENSTROPHY   = 417946.852
+TIME= 4.095424383e-06 FUEL PROD   = 0
+TIME= 4.095424383e-06 TEMP        = 2400.00038
+
+[STEP 11] Coarse TimeStep time: 0.478911804
+[STEP 11] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 11 TIME = 4.095424383e-06 DT = 5.732221871e-07
+
+...estimated hydro-limited timestep at level 0: 7.366171351e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.366171351e-07
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 7.366171351e-07
+ ... but limiting to: 6.305444059e-07 = 1.1 * 5.732221871e-07
+[Level 0 step 12] ADVANCE with dt = 6.305444059e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 12] Advanced 262144 cells
+
+TIME= 4.725968788e-06 MASS        = 0.009412229371
+TIME= 4.725968788e-06 XMOM        = 1.174375447e-17
+TIME= 4.725968788e-06 YMOM        = -4.987329993e-18
+TIME= 4.725968788e-06 ZMOM        = -4.250072516e-17
+TIME= 4.725968788e-06 RHO*e       = 20260003.78
+TIME= 4.725968788e-06 RHO*K       = 14178.21945
+TIME= 4.725968788e-06 RHO*E       = 20274182
+TIME= 4.725968788e-06 ENSTROPHY   = 417958.5012
+TIME= 4.725968788e-06 FUEL PROD   = 0
+TIME= 4.725968788e-06 TEMP        = 2400.000449
+
+[STEP 12] Coarse TimeStep time: 0.489462689
+[STEP 12] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 12 TIME = 4.725968788e-06 DT = 6.305444059e-07
+
+...estimated hydro-limited timestep at level 0: 7.366024123e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.366024123e-07
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 7.366024123e-07
+ ... but limiting to: 6.935988464e-07 = 1.1 * 6.305444059e-07
+[Level 0 step 13] ADVANCE with dt = 6.935988464e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 13] Advanced 262144 cells
+
+TIME= 5.419567635e-06 MASS        = 0.009412229371
+TIME= 5.419567635e-06 XMOM        = -1.247114402e-17
+TIME= 5.419567635e-06 YMOM        = 0
+TIME= 5.419567635e-06 ZMOM        = -2.016616041e-17
+TIME= 5.419567635e-06 RHO*e       = 20260004.45
+TIME= 5.419567635e-06 RHO*K       = 14177.55008
+TIME= 5.419567635e-06 RHO*E       = 20274182
+TIME= 5.419567635e-06 ENSTROPHY   = 417974.9645
+TIME= 5.419567635e-06 FUEL PROD   = 0
+TIME= 5.419567635e-06 TEMP        = 2400.000529
+
+[STEP 13] Coarse TimeStep time: 0.485561531
+[STEP 13] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 13 TIME = 5.419567635e-06 DT = 6.935988464e-07
+
+...estimated hydro-limited timestep at level 0: 7.365906667e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.365906667e-07
+[Level 0 step 14] ADVANCE with dt = 7.365906667e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 14] Advanced 262144 cells
+
+TIME= 6.156158302e-06 MASS        = 0.009412229371
+TIME= 6.156158302e-06 XMOM        = 2.482092409e-17
+TIME= 6.156158302e-06 YMOM        = 6.2883726e-17
+TIME= 6.156158302e-06 ZMOM        = 1.366094737e-17
+TIME= 6.156158302e-06 RHO*e       = 20260005.19
+TIME= 6.156158302e-06 RHO*K       = 14176.81206
+TIME= 6.156158302e-06 RHO*E       = 20274182
+TIME= 6.156158302e-06 ENSTROPHY   = 417996.9944
+TIME= 6.156158302e-06 FUEL PROD   = 0
+TIME= 6.156158302e-06 TEMP        = 2400.000616
+
+[STEP 14] Coarse TimeStep time: 0.488393426
+[STEP 14] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 14 TIME = 6.156158302e-06 DT = 7.365906667e-07
+
+...estimated hydro-limited timestep at level 0: 7.365846693e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.365846693e-07
+[Level 0 step 15] ADVANCE with dt = 7.365846693e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 15] Advanced 262144 cells
+
+TIME= 6.892742971e-06 MASS        = 0.009412229371
+TIME= 6.892742971e-06 XMOM        = -6.093555023e-18
+TIME= 6.892742971e-06 YMOM        = -8.67361738e-18
+TIME= 6.892742971e-06 ZMOM        = -9.324138683e-18
+TIME= 6.892742971e-06 RHO*e       = 20260005.93
+TIME= 6.892742971e-06 RHO*K       = 14176.07435
+TIME= 6.892742971e-06 RHO*E       = 20274182
+TIME= 6.892742971e-06 ENSTROPHY   = 418024.5472
+TIME= 6.892742971e-06 FUEL PROD   = 0
+TIME= 6.892742971e-06 TEMP        = 2400.000704
+
+[STEP 15] Coarse TimeStep time: 0.482493596
+[STEP 15] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 15 TIME = 6.892742971e-06 DT = 7.365846693e-07
+
+...estimated hydro-limited timestep at level 0: 7.365811141e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.365811141e-07
+[Level 0 step 16] ADVANCE with dt = 7.365811141e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 16] Advanced 262144 cells
+
+TIME= 7.629324085e-06 MASS        = 0.009412229371
+TIME= 7.629324085e-06 XMOM        = -2.361400802e-17
+TIME= 7.629324085e-06 YMOM        = 9.497611031e-17
+TIME= 7.629324085e-06 ZMOM        = 7.112366252e-17
+TIME= 7.629324085e-06 RHO*e       = 20260006.66
+TIME= 7.629324085e-06 RHO*K       = 14175.33666
+TIME= 7.629324085e-06 RHO*E       = 20274182
+TIME= 7.629324085e-06 ENSTROPHY   = 418057.617
+TIME= 7.629324085e-06 FUEL PROD   = 0
+TIME= 7.629324085e-06 TEMP        = 2400.000791
+
+[STEP 16] Coarse TimeStep time: 0.480233335
+[STEP 16] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 16 TIME = 7.629324085e-06 DT = 7.365811141e-07
+
+...estimated hydro-limited timestep at level 0: 7.365789571e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.365789571e-07
+[Level 0 step 17] ADVANCE with dt = 7.365789571e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 17] Advanced 262144 cells
+
+TIME= 8.365903042e-06 MASS        = 0.009412229371
+TIME= 8.365903042e-06 XMOM        = -2.214510731e-17
+TIME= 8.365903042e-06 YMOM        = 3.382710778e-17
+TIME= 8.365903042e-06 ZMOM        = 1.040834086e-17
+TIME= 8.365903042e-06 RHO*e       = 20260007.4
+TIME= 8.365903042e-06 RHO*K       = 14174.59863
+TIME= 8.365903042e-06 RHO*E       = 20274182
+TIME= 8.365903042e-06 ENSTROPHY   = 418096.2161
+TIME= 8.365903042e-06 FUEL PROD   = 0
+TIME= 8.365903042e-06 TEMP        = 2400.000879
+
+[STEP 17] Coarse TimeStep time: 0.480036023
+[STEP 17] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 17 TIME = 8.365903042e-06 DT = 7.365789571e-07
+
+...estimated hydro-limited timestep at level 0: 7.365807708e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.365807708e-07
+[Level 0 step 18] ADVANCE with dt = 7.365807708e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 18] Advanced 262144 cells
+
+TIME= 9.102483813e-06 MASS        = 0.009412229371
+TIME= 9.102483813e-06 XMOM        = 5.996073442e-18
+TIME= 9.102483813e-06 YMOM        = 1.344410694e-17
+TIME= 9.102483813e-06 ZMOM        = 2.775557562e-17
+TIME= 9.102483813e-06 RHO*e       = 20260008.14
+TIME= 9.102483813e-06 RHO*K       = 14173.86018
+TIME= 9.102483813e-06 RHO*E       = 20274182
+TIME= 9.102483813e-06 ENSTROPHY   = 418140.3426
+TIME= 9.102483813e-06 FUEL PROD   = 0
+TIME= 9.102483813e-06 TEMP        = 2400.000966
+
+[STEP 18] Coarse TimeStep time: 0.47995016
+[STEP 18] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 18 TIME = 9.102483813e-06 DT = 7.365807708e-07
+
+...estimated hydro-limited timestep at level 0: 7.365863893e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.365863893e-07
+[Level 0 step 19] ADVANCE with dt = 7.365863893e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 19] Advanced 262144 cells
+
+TIME= 9.839070202e-06 MASS        = 0.009412229371
+TIME= 9.839070202e-06 XMOM        = 1.240744449e-18
+TIME= 9.839070202e-06 YMOM        = 3.816391647e-17
+TIME= 9.839070202e-06 ZMOM        = -2.558717127e-17
+TIME= 9.839070202e-06 RHO*e       = 20260008.88
+TIME= 9.839070202e-06 RHO*K       = 14173.12149
+TIME= 9.839070202e-06 RHO*E       = 20274182
+TIME= 9.839070202e-06 ENSTROPHY   = 418190.0057
+TIME= 9.839070202e-06 FUEL PROD   = 0
+TIME= 9.839070202e-06 TEMP        = 2400.001054
+
+[STEP 19] Coarse TimeStep time: 0.481116866
+[STEP 19] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 19 TIME = 9.839070202e-06 DT = 7.365863893e-07
+
+...estimated hydro-limited timestep at level 0: 7.365947447e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.365947447e-07
+[Level 0 step 20] ADVANCE with dt = 7.365947447e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 20] Advanced 262144 cells
+
+TIME= 1.057566495e-05 MASS        = 0.009412229371
+TIME= 1.057566495e-05 XMOM        = 3.627693221e-18
+TIME= 1.057566495e-05 YMOM        = 3.512815039e-17
+TIME= 1.057566495e-05 ZMOM        = 2.905661822e-17
+TIME= 1.057566495e-05 RHO*e       = 20260009.62
+TIME= 1.057566495e-05 RHO*K       = 14172.38225
+TIME= 1.057566495e-05 RHO*E       = 20274182
+TIME= 1.057566495e-05 ENSTROPHY   = 418245.1983
+TIME= 1.057566495e-05 FUEL PROD   = 0
+TIME= 1.057566495e-05 TEMP        = 2400.001141
+
+[STEP 20] Coarse TimeStep time: 0.47950918
+[STEP 20] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 20 TIME = 1.057566495e-05 DT = 7.365947447e-07
+
+...estimated hydro-limited timestep at level 0: 7.366058742e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.366058742e-07
+[Level 0 step 21] ADVANCE with dt = 7.366058742e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 21] Advanced 262144 cells
+
+TIME= 1.131227082e-05 MASS        = 0.009412229371
+TIME= 1.131227082e-05 XMOM        = -4.446173713e-17
+TIME= 1.131227082e-05 YMOM        = 3.686287386e-17
+TIME= 1.131227082e-05 ZMOM        = -4.510281038e-17
+TIME= 1.131227082e-05 RHO*e       = 20260010.36
+TIME= 1.131227082e-05 RHO*K       = 14171.64199
+TIME= 1.131227082e-05 RHO*E       = 20274182
+TIME= 1.131227082e-05 ENSTROPHY   = 418305.9004
+TIME= 1.131227082e-05 FUEL PROD   = 0
+TIME= 1.131227082e-05 TEMP        = 2400.001228
+
+[STEP 21] Coarse TimeStep time: 0.48937761
+[STEP 21] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 21 TIME = 1.131227082e-05 DT = 7.366058742e-07
+
+...estimated hydro-limited timestep at level 0: 7.366188757e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.366188757e-07
+[Level 0 step 22] ADVANCE with dt = 7.366188757e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 22] Advanced 262144 cells
+
+TIME= 1.20488897e-05 MASS        = 0.009412229371
+TIME= 1.20488897e-05 XMOM        = -2.745262899e-17
+TIME= 1.20488897e-05 YMOM        = 8.67361738e-19
+TIME= 1.20488897e-05 ZMOM        = 8.326672685e-17
+TIME= 1.20488897e-05 RHO*e       = 20260011.1
+TIME= 1.20488897e-05 RHO*K       = 14170.90138
+TIME= 1.20488897e-05 RHO*E       = 20274182
+TIME= 1.20488897e-05 ENSTROPHY   = 418372.1263
+TIME= 1.20488897e-05 FUEL PROD   = 0
+TIME= 1.20488897e-05 TEMP        = 2400.001316
+
+[STEP 22] Coarse TimeStep time: 0.498556339
+[STEP 22] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 22 TIME = 1.20488897e-05 DT = 7.366188757e-07
+
+...estimated hydro-limited timestep at level 0: 7.366327336e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.366327336e-07
+[Level 0 step 23] ADVANCE with dt = 7.366327336e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 23] Advanced 262144 cells
+
+TIME= 1.278552243e-05 MASS        = 0.009412229371
+TIME= 1.278552243e-05 XMOM        = -2.47376634e-19
+TIME= 1.278552243e-05 YMOM        = -7.155734338e-17
+TIME= 1.278552243e-05 ZMOM        = -3.599551213e-17
+TIME= 1.278552243e-05 RHO*e       = 20260011.84
+TIME= 1.278552243e-05 RHO*K       = 14170.16184
+TIME= 1.278552243e-05 RHO*E       = 20274182
+TIME= 1.278552243e-05 ENSTROPHY   = 418443.9179
+TIME= 1.278552243e-05 FUEL PROD   = 0
+TIME= 1.278552243e-05 TEMP        = 2400.001403
+
+[STEP 23] Coarse TimeStep time: 0.48443043
+[STEP 23] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 23 TIME = 1.278552243e-05 DT = 7.366327336e-07
+
+...estimated hydro-limited timestep at level 0: 7.366474904e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.366474904e-07
+[Level 0 step 24] ADVANCE with dt = 7.366474904e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 24] Advanced 262144 cells
+
+TIME= 1.352216992e-05 MASS        = 0.009412229371
+TIME= 1.352216992e-05 XMOM        = -2.802269043e-17
+TIME= 1.352216992e-05 YMOM        = 7.41594286e-17
+TIME= 1.352216992e-05 ZMOM        = -1.908195824e-17
+TIME= 1.352216992e-05 RHO*e       = 20260012.58
+TIME= 1.352216992e-05 RHO*K       = 14169.42388
+TIME= 1.352216992e-05 RHO*E       = 20274182
+TIME= 1.352216992e-05 ENSTROPHY   = 418521.2864
+TIME= 1.352216992e-05 FUEL PROD   = 0
+TIME= 1.352216992e-05 TEMP        = 2400.001491
+
+[STEP 24] Coarse TimeStep time: 0.486501052
+[STEP 24] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 24 TIME = 1.352216992e-05 DT = 7.366474904e-07
+
+...estimated hydro-limited timestep at level 0: 7.366632338e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.366632338e-07
+[Level 0 step 25] ADVANCE with dt = 7.366632338e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 25] Advanced 262144 cells
+
+TIME= 1.425883315e-05 MASS        = 0.009412229371
+TIME= 1.425883315e-05 XMOM        = 1.506282495e-17
+TIME= 1.425883315e-05 YMOM        = 9.454242944e-17
+TIME= 1.425883315e-05 ZMOM        = 8.239936511e-17
+TIME= 1.425883315e-05 RHO*e       = 20260013.31
+TIME= 1.425883315e-05 RHO*K       = 14168.68672
+TIME= 1.425883315e-05 RHO*E       = 20274182
+TIME= 1.425883315e-05 ENSTROPHY   = 418604.2029
+TIME= 1.425883315e-05 FUEL PROD   = 0
+TIME= 1.425883315e-05 TEMP        = 2400.001578
+
+[STEP 25] Coarse TimeStep time: 0.482212624
+[STEP 25] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 25 TIME = 1.425883315e-05 DT = 7.366632338e-07
+
+...estimated hydro-limited timestep at level 0: 7.36679263e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.36679263e-07
+[Level 0 step 26] ADVANCE with dt = 7.36679263e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 26] Advanced 262144 cells
+
+TIME= 1.499551242e-05 MASS        = 0.009412229371
+TIME= 1.499551242e-05 XMOM        = -1.165534872e-17
+TIME= 1.499551242e-05 YMOM        = -9.107298249e-17
+TIME= 1.499551242e-05 ZMOM        = 2.341876693e-17
+TIME= 1.499551242e-05 RHO*e       = 20260014.05
+TIME= 1.499551242e-05 RHO*K       = 14167.94931
+TIME= 1.499551242e-05 RHO*E       = 20274182
+TIME= 1.499551242e-05 ENSTROPHY   = 418692.6424
+TIME= 1.499551242e-05 FUEL PROD   = 0
+TIME= 1.499551242e-05 TEMP        = 2400.001666
+
+[STEP 26] Coarse TimeStep time: 0.485291986
+[STEP 26] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 26 TIME = 1.499551242e-05 DT = 7.36679263e-07
+
+...estimated hydro-limited timestep at level 0: 7.366949406e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.366949406e-07
+[Level 0 step 27] ADVANCE with dt = 7.366949406e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 27] Advanced 262144 cells
+
+TIME= 1.573220736e-05 MASS        = 0.009412229371
+TIME= 1.573220736e-05 XMOM        = 4.302397976e-19
+TIME= 1.573220736e-05 YMOM        = 1.196959198e-16
+TIME= 1.573220736e-05 ZMOM        = -1.023486851e-16
+TIME= 1.573220736e-05 RHO*e       = 20260014.79
+TIME= 1.573220736e-05 RHO*K       = 14167.2114
+TIME= 1.573220736e-05 RHO*E       = 20274182
+TIME= 1.573220736e-05 ENSTROPHY   = 418786.61
+TIME= 1.573220736e-05 FUEL PROD   = 0
+TIME= 1.573220736e-05 TEMP        = 2400.001754
+
+[STEP 27] Coarse TimeStep time: 0.486721197
+[STEP 27] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 27 TIME = 1.573220736e-05 DT = 7.366949406e-07
+
+...estimated hydro-limited timestep at level 0: 7.367102175e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.367102175e-07
+[Level 0 step 28] ADVANCE with dt = 7.367102175e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 28] Advanced 262144 cells
+
+TIME= 1.646891758e-05 MASS        = 0.009412229371
+TIME= 1.646891758e-05 XMOM        = 1.351309049e-17
+TIME= 1.646891758e-05 YMOM        = 6.15826834e-17
+TIME= 1.646891758e-05 ZMOM        = -1.387778781e-17
+TIME= 1.646891758e-05 RHO*e       = 20260015.53
+TIME= 1.646891758e-05 RHO*K       = 14166.47373
+TIME= 1.646891758e-05 RHO*E       = 20274182
+TIME= 1.646891758e-05 ENSTROPHY   = 418886.1368
+TIME= 1.646891758e-05 FUEL PROD   = 0
+TIME= 1.646891758e-05 TEMP        = 2400.001842
+
+[STEP 28] Coarse TimeStep time: 0.4799382
+[STEP 28] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 28 TIME = 1.646891758e-05 DT = 7.367102175e-07
+
+...estimated hydro-limited timestep at level 0: 7.367248438e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.367248438e-07
+[Level 0 step 29] ADVANCE with dt = 7.367248438e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 29] Advanced 262144 cells
+
+TIME= 1.720564242e-05 MASS        = 0.009412229371
+TIME= 1.720564242e-05 XMOM        = -2.617961457e-17
+TIME= 1.720564242e-05 YMOM        = 2.602085214e-18
+TIME= 1.720564242e-05 ZMOM        = -5.204170428e-18
+TIME= 1.720564242e-05 RHO*e       = 20260016.26
+TIME= 1.720564242e-05 RHO*K       = 14165.73682
+TIME= 1.720564242e-05 RHO*E       = 20274182
+TIME= 1.720564242e-05 ENSTROPHY   = 418991.2499
+TIME= 1.720564242e-05 FUEL PROD   = 0
+TIME= 1.720564242e-05 TEMP        = 2400.00193
+
+[STEP 29] Coarse TimeStep time: 0.481068975
+[STEP 29] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 29 TIME = 1.720564242e-05 DT = 7.367248438e-07
+
+...estimated hydro-limited timestep at level 0: 7.367381361e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.367381361e-07
+[Level 0 step 30] ADVANCE with dt = 7.367381361e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 30] Advanced 262144 cells
+
+TIME= 1.794238056e-05 MASS        = 0.009412229371
+TIME= 1.794238056e-05 XMOM        = 1.014386971e-17
+TIME= 1.794238056e-05 YMOM        = -9.540979118e-18
+TIME= 1.794238056e-05 ZMOM        = 2.602085214e-17
+TIME= 1.794238056e-05 RHO*e       = 20260017
+TIME= 1.794238056e-05 RHO*K       = 14165.00062
+TIME= 1.794238056e-05 RHO*E       = 20274182
+TIME= 1.794238056e-05 ENSTROPHY   = 419101.9647
+TIME= 1.794238056e-05 FUEL PROD   = 0
+TIME= 1.794238056e-05 TEMP        = 2400.002018
+
+[STEP 30] Coarse TimeStep time: 0.480677219
+[STEP 30] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 30 TIME = 1.794238056e-05 DT = 7.367381361e-07
+
+...estimated hydro-limited timestep at level 0: 7.367492953e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.367492953e-07
+[Level 0 step 31] ADVANCE with dt = 7.367492953e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 31] Advanced 262144 cells
+
+TIME= 1.867912985e-05 MASS        = 0.009412229371
+TIME= 1.867912985e-05 XMOM        = 1.616042249e-17
+TIME= 1.867912985e-05 YMOM        = -1.396452398e-16
+TIME= 1.867912985e-05 ZMOM        = -1.387778781e-17
+TIME= 1.867912985e-05 RHO*e       = 20260017.74
+TIME= 1.867912985e-05 RHO*K       = 14164.26491
+TIME= 1.867912985e-05 RHO*E       = 20274182
+TIME= 1.867912985e-05 ENSTROPHY   = 419218.2952
+TIME= 1.867912985e-05 FUEL PROD   = 0
+TIME= 1.867912985e-05 TEMP        = 2400.002107
+
+[STEP 31] Coarse TimeStep time: 0.499194846
+[STEP 31] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 31 TIME = 1.867912985e-05 DT = 7.367492953e-07
+
+...estimated hydro-limited timestep at level 0: 7.36758706e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.36758706e-07
+[Level 0 step 32] ADVANCE with dt = 7.36758706e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 32] Advanced 262144 cells
+
+TIME= 1.941588856e-05 MASS        = 0.009412229371
+TIME= 1.941588856e-05 XMOM        = 2.573502484e-17
+TIME= 1.941588856e-05 YMOM        = -1.075528555e-16
+TIME= 1.941588856e-05 ZMOM        = 8.67361738e-17
+TIME= 1.941588856e-05 RHO*e       = 20260018.47
+TIME= 1.941588856e-05 RHO*K       = 14163.52952
+TIME= 1.941588856e-05 RHO*E       = 20274182
+TIME= 1.941588856e-05 ENSTROPHY   = 419340.2556
+TIME= 1.941588856e-05 FUEL PROD   = 0
+TIME= 1.941588856e-05 TEMP        = 2400.002195
+
+[STEP 32] Coarse TimeStep time: 0.482484215
+[STEP 32] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 32 TIME = 1.941588856e-05 DT = 7.36758706e-07
+
+...estimated hydro-limited timestep at level 0: 7.367673593e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.367673593e-07
+[Level 0 step 33] ADVANCE with dt = 7.367673593e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 33] Advanced 262144 cells
+
+TIME= 2.015265592e-05 MASS        = 0.009412229371
+TIME= 2.015265592e-05 XMOM        = -1.84318803e-17
+TIME= 2.015265592e-05 YMOM        = 1.084202172e-16
+TIME= 2.015265592e-05 ZMOM        = 4.770489559e-17
+TIME= 2.015265592e-05 RHO*e       = 20260019.21
+TIME= 2.015265592e-05 RHO*K       = 14162.79441
+TIME= 2.015265592e-05 RHO*E       = 20274182
+TIME= 2.015265592e-05 ENSTROPHY   = 419467.8571
+TIME= 2.015265592e-05 FUEL PROD   = 0
+TIME= 2.015265592e-05 TEMP        = 2400.002283
+
+[STEP 33] Coarse TimeStep time: 0.494093853
+[STEP 33] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 33 TIME = 2.015265592e-05 DT = 7.367673593e-07
+
+...estimated hydro-limited timestep at level 0: 7.367757692e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.367757692e-07
+[Level 0 step 34] ADVANCE with dt = 7.367757692e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 34] Advanced 262144 cells
+
+TIME= 2.088943169e-05 MASS        = 0.009412229371
+TIME= 2.088943169e-05 XMOM        = 3.230735862e-18
+TIME= 2.088943169e-05 YMOM        = -4.423544864e-17
+TIME= 2.088943169e-05 ZMOM        = 1.413799633e-16
+TIME= 2.088943169e-05 RHO*e       = 20260019.94
+TIME= 2.088943169e-05 RHO*K       = 14162.05944
+TIME= 2.088943169e-05 RHO*E       = 20274182
+TIME= 2.088943169e-05 ENSTROPHY   = 419601.1088
+TIME= 2.088943169e-05 FUEL PROD   = 0
+TIME= 2.088943169e-05 TEMP        = 2400.002371
+
+[STEP 34] Coarse TimeStep time: 0.483022395
+[STEP 34] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 34 TIME = 2.088943169e-05 DT = 7.367757692e-07
+
+...estimated hydro-limited timestep at level 0: 7.367838191e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.367838191e-07
+[Level 0 step 35] ADVANCE with dt = 7.367838191e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 35] Advanced 262144 cells
+
+TIME= 2.16262155e-05 MASS        = 0.009412229371
+TIME= 2.16262155e-05 XMOM        = -2.078162911e-17
+TIME= 2.16262155e-05 YMOM        = -9.194034423e-17
+TIME= 2.16262155e-05 ZMOM        = -8.67361738e-17
+TIME= 2.16262155e-05 RHO*e       = 20260020.68
+TIME= 2.16262155e-05 RHO*K       = 14161.32444
+TIME= 2.16262155e-05 RHO*E       = 20274182
+TIME= 2.16262155e-05 ENSTROPHY   = 419740.0179
+TIME= 2.16262155e-05 FUEL PROD   = 0
+TIME= 2.16262155e-05 TEMP        = 2400.002459
+
+[STEP 35] Coarse TimeStep time: 0.482714511
+[STEP 35] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 35 TIME = 2.16262155e-05 DT = 7.367838191e-07
+
+...estimated hydro-limited timestep at level 0: 7.367922198e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.367922198e-07
+[Level 0 step 36] ADVANCE with dt = 7.367922198e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 36] Advanced 262144 cells
+
+TIME= 2.236300772e-05 MASS        = 0.009412229371
+TIME= 2.236300772e-05 XMOM        = -2.55808847e-17
+TIME= 2.236300772e-05 YMOM        = -1.196959198e-16
+TIME= 2.236300772e-05 ZMOM        = -1.734723476e-18
+TIME= 2.236300772e-05 RHO*e       = 20260021.41
+TIME= 2.236300772e-05 RHO*K       = 14160.58931
+TIME= 2.236300772e-05 RHO*E       = 20274182
+TIME= 2.236300772e-05 ENSTROPHY   = 419884.5935
+TIME= 2.236300772e-05 FUEL PROD   = 0
+TIME= 2.236300772e-05 TEMP        = 2400.002547
+
+[STEP 36] Coarse TimeStep time: 0.497650647
+[STEP 36] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 36 TIME = 2.236300772e-05 DT = 7.367922198e-07
+
+...estimated hydro-limited timestep at level 0: 7.368023697e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.368023697e-07
+[Level 0 step 37] ADVANCE with dt = 7.368023697e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 37] Advanced 262144 cells
+
+TIME= 2.309981009e-05 MASS        = 0.009412229371
+TIME= 2.309981009e-05 XMOM        = -4.886625717e-18
+TIME= 2.309981009e-05 YMOM        = -3.209238431e-17
+TIME= 2.309981009e-05 ZMOM        = 1.908195824e-17
+TIME= 2.309981009e-05 RHO*e       = 20260022.15
+TIME= 2.309981009e-05 RHO*K       = 14159.85391
+TIME= 2.309981009e-05 RHO*E       = 20274182
+TIME= 2.309981009e-05 ENSTROPHY   = 420034.8367
+TIME= 2.309981009e-05 FUEL PROD   = 0
+TIME= 2.309981009e-05 TEMP        = 2400.002635
+
+[STEP 37] Coarse TimeStep time: 0.509146339
+[STEP 37] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 37 TIME = 2.309981009e-05 DT = 7.368023697e-07
+
+...estimated hydro-limited timestep at level 0: 7.368139331e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.368139331e-07
+[Level 0 step 38] ADVANCE with dt = 7.368139331e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 38] Advanced 262144 cells
+
+TIME= 2.383662403e-05 MASS        = 0.009412229371
+TIME= 2.383662403e-05 XMOM        = 5.063486196e-17
+TIME= 2.383662403e-05 YMOM        = 7.806255642e-18
+TIME= 2.383662403e-05 ZMOM        = 5.637851297e-17
+TIME= 2.383662403e-05 RHO*e       = 20260022.88
+TIME= 2.383662403e-05 RHO*K       = 14159.11788
+TIME= 2.383662403e-05 RHO*E       = 20274182
+TIME= 2.383662403e-05 ENSTROPHY   = 420190.7345
+TIME= 2.383662403e-05 FUEL PROD   = 0
+TIME= 2.383662403e-05 TEMP        = 2400.002723
+
+[STEP 38] Coarse TimeStep time: 0.494420263
+[STEP 38] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 38 TIME = 2.383662403e-05 DT = 7.368139331e-07
+
+...estimated hydro-limited timestep at level 0: 7.368246689e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.368246689e-07
+[Level 0 step 39] ADVANCE with dt = 7.368246689e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 39] Advanced 262144 cells
+
+TIME= 2.45734487e-05 MASS        = 0.009412229371
+TIME= 2.45734487e-05 XMOM        = -1.430387185e-18
+TIME= 2.45734487e-05 YMOM        = -6.85215773e-17
+TIME= 2.45734487e-05 ZMOM        = 1.09287579e-16
+TIME= 2.45734487e-05 RHO*e       = 20260023.62
+TIME= 2.45734487e-05 RHO*K       = 14158.3808
+TIME= 2.45734487e-05 RHO*E       = 20274182
+TIME= 2.45734487e-05 ENSTROPHY   = 420352.2719
+TIME= 2.45734487e-05 FUEL PROD   = 0
+TIME= 2.45734487e-05 TEMP        = 2400.002811
+
+[STEP 39] Coarse TimeStep time: 0.480596652
+[STEP 39] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 39 TIME = 2.45734487e-05 DT = 7.368246689e-07
+
+...estimated hydro-limited timestep at level 0: 7.368355311e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.368355311e-07
+[Level 0 step 40] ADVANCE with dt = 7.368355311e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 40] Advanced 262144 cells
+
+TIME= 2.531028423e-05 MASS        = 0.009412229371
+TIME= 2.531028423e-05 XMOM        = -2.197378166e-17
+TIME= 2.531028423e-05 YMOM        = -1.708702624e-16
+TIME= 2.531028423e-05 ZMOM        = 2.220446049e-16
+TIME= 2.531028423e-05 RHO*e       = 20260024.36
+TIME= 2.531028423e-05 RHO*K       = 14157.6424
+TIME= 2.531028423e-05 RHO*E       = 20274182
+TIME= 2.531028423e-05 ENSTROPHY   = 420519.4388
+TIME= 2.531028423e-05 FUEL PROD   = 0
+TIME= 2.531028423e-05 TEMP        = 2400.002899
+
+[STEP 40] Coarse TimeStep time: 0.479868907
+[STEP 40] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 40 TIME = 2.531028423e-05 DT = 7.368355311e-07
+
+...estimated hydro-limited timestep at level 0: 7.368517031e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.368517031e-07
+[Level 0 step 41] ADVANCE with dt = 7.368517031e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 41] Advanced 262144 cells
+
+TIME= 2.604713593e-05 MASS        = 0.009412229371
+TIME= 2.604713593e-05 XMOM        = 3.019407759e-18
+TIME= 2.604713593e-05 YMOM        = -7.719519468e-17
+TIME= 2.604713593e-05 ZMOM        = -2.255140519e-17
+TIME= 2.604713593e-05 RHO*e       = 20260025.1
+TIME= 2.604713593e-05 RHO*K       = 14156.9025
+TIME= 2.604713593e-05 RHO*E       = 20274182
+TIME= 2.604713593e-05 ENSTROPHY   = 420692.22
+TIME= 2.604713593e-05 FUEL PROD   = 0
+TIME= 2.604713593e-05 TEMP        = 2400.002987
+
+[STEP 41] Coarse TimeStep time: 0.497946755
+[STEP 41] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 41 TIME = 2.604713593e-05 DT = 7.368517031e-07
+
+...estimated hydro-limited timestep at level 0: 7.368771148e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.368771148e-07
+[Level 0 step 42] ADVANCE with dt = 7.368771148e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 42] Advanced 262144 cells
+
+TIME= 2.678401305e-05 MASS        = 0.009412229371
+TIME= 2.678401305e-05 XMOM        = 3.467091142e-18
+TIME= 2.678401305e-05 YMOM        = -8.847089727e-17
+TIME= 2.678401305e-05 ZMOM        = 1.283695372e-16
+TIME= 2.678401305e-05 RHO*e       = 20260025.84
+TIME= 2.678401305e-05 RHO*K       = 14156.16095
+TIME= 2.678401305e-05 RHO*E       = 20274182
+TIME= 2.678401305e-05 ENSTROPHY   = 420870.5897
+TIME= 2.678401305e-05 FUEL PROD   = 0
+TIME= 2.678401305e-05 TEMP        = 2400.003075
+
+[STEP 42] Coarse TimeStep time: 0.480695055
+[STEP 42] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 42 TIME = 2.678401305e-05 DT = 7.368771148e-07
+
+...estimated hydro-limited timestep at level 0: 7.369104609e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.369104609e-07
+[Level 0 step 43] ADVANCE with dt = 7.369104609e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 43] Advanced 262144 cells
+
+TIME= 2.752092351e-05 MASS        = 0.009412229371
+TIME= 2.752092351e-05 XMOM        = 2.699144602e-17
+TIME= 2.752092351e-05 YMOM        = -1.127570259e-16
+TIME= 2.752092351e-05 ZMOM        = 1.439820485e-16
+TIME= 2.752092351e-05 RHO*e       = 20260026.58
+TIME= 2.752092351e-05 RHO*K       = 14155.4173
+TIME= 2.752092351e-05 RHO*E       = 20274182
+TIME= 2.752092351e-05 ENSTROPHY   = 421054.5149
+TIME= 2.752092351e-05 FUEL PROD   = 0
+TIME= 2.752092351e-05 TEMP        = 2400.003163
+
+[STEP 43] Coarse TimeStep time: 0.501407901
+[STEP 43] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 43 TIME = 2.752092351e-05 DT = 7.369104609e-07
+
+...estimated hydro-limited timestep at level 0: 7.369382425e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.369382425e-07
+[Level 0 step 44] ADVANCE with dt = 7.369382425e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 44] Advanced 262144 cells
+
+TIME= 2.825786175e-05 MASS        = 0.009412229371
+TIME= 2.825786175e-05 XMOM        = -1.91811405e-17
+TIME= 2.825786175e-05 YMOM        = -6.938893904e-17
+TIME= 2.825786175e-05 ZMOM        = 1.734723476e-17
+TIME= 2.825786175e-05 RHO*e       = 20260027.33
+TIME= 2.825786175e-05 RHO*K       = 14154.67132
+TIME= 2.825786175e-05 RHO*E       = 20274182
+TIME= 2.825786175e-05 ENSTROPHY   = 421243.9704
+TIME= 2.825786175e-05 FUEL PROD   = 0
+TIME= 2.825786175e-05 TEMP        = 2400.003251
+
+[STEP 44] Coarse TimeStep time: 0.480261526
+[STEP 44] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 44 TIME = 2.825786175e-05 DT = 7.369382425e-07
+
+...estimated hydro-limited timestep at level 0: 7.369554416e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.369554416e-07
+[Level 0 step 45] ADVANCE with dt = 7.369554416e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 45] Advanced 262144 cells
+
+TIME= 2.899481719e-05 MASS        = 0.009412229371
+TIME= 2.899481719e-05 XMOM        = -1.466229914e-17
+TIME= 2.899481719e-05 YMOM        = 1.387778781e-17
+TIME= 2.899481719e-05 ZMOM        = 2.376571162e-16
+TIME= 2.899481719e-05 RHO*e       = 20260028.08
+TIME= 2.899481719e-05 RHO*K       = 14153.92346
+TIME= 2.899481719e-05 RHO*E       = 20274182
+TIME= 2.899481719e-05 ENSTROPHY   = 421438.9427
+TIME= 2.899481719e-05 FUEL PROD   = 0
+TIME= 2.899481719e-05 TEMP        = 2400.00334
+
+[STEP 45] Coarse TimeStep time: 0.481086398
+[STEP 45] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 45 TIME = 2.899481719e-05 DT = 7.369554416e-07
+
+...estimated hydro-limited timestep at level 0: 7.369682593e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.369682593e-07
+[Level 0 step 46] ADVANCE with dt = 7.369682593e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 46] Advanced 262144 cells
+
+TIME= 2.973178545e-05 MASS        = 0.009412229371
+TIME= 2.973178545e-05 XMOM        = 2.622726348e-17
+TIME= 2.973178545e-05 YMOM        = -2.87964097e-16
+TIME= 2.973178545e-05 ZMOM        = -4.423544864e-16
+TIME= 2.973178545e-05 RHO*e       = 20260028.83
+TIME= 2.973178545e-05 RHO*K       = 14153.17423
+TIME= 2.973178545e-05 RHO*E       = 20274182
+TIME= 2.973178545e-05 ENSTROPHY   = 421639.4309
+TIME= 2.973178545e-05 FUEL PROD   = 0
+TIME= 2.973178545e-05 TEMP        = 2400.003428
+
+[STEP 46] Coarse TimeStep time: 0.487864175
+[STEP 46] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 46 TIME = 2.973178545e-05 DT = 7.369682593e-07
+
+...estimated hydro-limited timestep at level 0: 7.369820072e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.369820072e-07
+[Level 0 step 47] ADVANCE with dt = 7.369820072e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 47] Advanced 262144 cells
+
+TIME= 3.046876746e-05 MASS        = 0.009412229371
+TIME= 3.046876746e-05 XMOM        = 3.567615424e-17
+TIME= 3.046876746e-05 YMOM        = -3.816391647e-17
+TIME= 3.046876746e-05 ZMOM        = 4.475586568e-16
+TIME= 3.046876746e-05 RHO*e       = 20260029.58
+TIME= 3.046876746e-05 RHO*K       = 14152.42378
+TIME= 3.046876746e-05 RHO*E       = 20274182
+TIME= 3.046876746e-05 ENSTROPHY   = 421845.4361
+TIME= 3.046876746e-05 FUEL PROD   = 0
+TIME= 3.046876746e-05 TEMP        = 2400.003517
+
+[STEP 47] Coarse TimeStep time: 0.485679848
+[STEP 47] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 47 TIME = 3.046876746e-05 DT = 7.369820072e-07
+
+...estimated hydro-limited timestep at level 0: 7.370055482e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.370055482e-07
+[Level 0 step 48] ADVANCE with dt = 7.370055482e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 48] Advanced 262144 cells
+
+TIME= 3.1205773e-05 MASS        = 0.009412229371
+TIME= 3.1205773e-05 XMOM        = 2.26741985e-17
+TIME= 3.1205773e-05 YMOM        = -1.387778781e-17
+TIME= 3.1205773e-05 ZMOM        = -1.769417945e-16
+TIME= 3.1205773e-05 RHO*e       = 20260030.33
+TIME= 3.1205773e-05 RHO*K       = 14151.67218
+TIME= 3.1205773e-05 RHO*E       = 20274182
+TIME= 3.1205773e-05 ENSTROPHY   = 422056.9698
+TIME= 3.1205773e-05 FUEL PROD   = 0
+TIME= 3.1205773e-05 TEMP        = 2400.003606
+
+[STEP 48] Coarse TimeStep time: 0.480946742
+[STEP 48] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 48 TIME = 3.1205773e-05 DT = 7.370055482e-07
+
+...estimated hydro-limited timestep at level 0: 7.370404378e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.370404378e-07
+[Level 0 step 49] ADVANCE with dt = 7.370404378e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 49] Advanced 262144 cells
+
+TIME= 3.194281344e-05 MASS        = 0.009412229371
+TIME= 3.194281344e-05 XMOM        = -1.699576903e-17
+TIME= 3.194281344e-05 YMOM        = -1.491862189e-16
+TIME= 3.194281344e-05 ZMOM        = -6.938893904e-18
+TIME= 3.194281344e-05 RHO*e       = 20260031.08
+TIME= 3.194281344e-05 RHO*K       = 14150.91969
+TIME= 3.194281344e-05 RHO*E       = 20274182
+TIME= 3.194281344e-05 ENSTROPHY   = 422274.0529
+TIME= 3.194281344e-05 FUEL PROD   = 0
+TIME= 3.194281344e-05 TEMP        = 2400.003696
+
+[STEP 49] Coarse TimeStep time: 0.481570733
+[STEP 49] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 49 TIME = 3.194281344e-05 DT = 7.370404378e-07
+
+...estimated hydro-limited timestep at level 0: 7.37081705e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.37081705e-07
+[Level 0 step 50] ADVANCE with dt = 7.37081705e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 50] Advanced 262144 cells
+
+TIME= 3.267989515e-05 MASS        = 0.009412229371
+TIME= 3.267989515e-05 XMOM        = 2.536996026e-18
+TIME= 3.267989515e-05 YMOM        = -1.717376241e-16
+TIME= 3.267989515e-05 ZMOM        = -3.330669074e-16
+TIME= 3.267989515e-05 RHO*e       = 20260031.83
+TIME= 3.267989515e-05 RHO*K       = 14150.1666
+TIME= 3.267989515e-05 RHO*E       = 20274182
+TIME= 3.267989515e-05 ENSTROPHY   = 422496.7187
+TIME= 3.267989515e-05 FUEL PROD   = 0
+TIME= 3.267989515e-05 TEMP        = 2400.003785
+
+[STEP 50] Coarse TimeStep time: 0.480718184
+[STEP 50] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 50 TIME = 3.267989515e-05 DT = 7.37081705e-07
+
+...estimated hydro-limited timestep at level 0: 7.3712413e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.3712413e-07
+[Level 0 step 51] ADVANCE with dt = 7.3712413e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 51] Advanced 262144 cells
+
+TIME= 3.341701928e-05 MASS        = 0.009412229371
+TIME= 3.341701928e-05 XMOM        = 2.315007219e-17
+TIME= 3.341701928e-05 YMOM        = -3.573530361e-16
+TIME= 3.341701928e-05 ZMOM        = 5.551115123e-17
+TIME= 3.341701928e-05 RHO*e       = 20260032.59
+TIME= 3.341701928e-05 RHO*K       = 14149.41303
+TIME= 3.341701928e-05 RHO*E       = 20274182
+TIME= 3.341701928e-05 ENSTROPHY   = 422725.0071
+TIME= 3.341701928e-05 FUEL PROD   = 0
+TIME= 3.341701928e-05 TEMP        = 2400.003875
+
+[STEP 51] Coarse TimeStep time: 0.50273361
+[STEP 51] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 51 TIME = 3.341701928e-05 DT = 7.3712413e-07
+
+...estimated hydro-limited timestep at level 0: 7.371636696e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.371636696e-07
+[Level 0 step 52] ADVANCE with dt = 7.371636696e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 52] Advanced 262144 cells
+
+TIME= 3.415418295e-05 MASS        = 0.009412229371
+TIME= 3.415418295e-05 XMOM        = -5.036140267e-19
+TIME= 3.415418295e-05 YMOM        = 7.459310947e-17
+TIME= 3.415418295e-05 ZMOM        = -8.67361738e-18
+TIME= 3.415418295e-05 RHO*e       = 20260033.34
+TIME= 3.415418295e-05 RHO*K       = 14148.65897
+TIME= 3.415418295e-05 RHO*E       = 20274182
+TIME= 3.415418295e-05 ENSTROPHY   = 422958.9601
+TIME= 3.415418295e-05 FUEL PROD   = 0
+TIME= 3.415418295e-05 TEMP        = 2400.003965
+
+[STEP 52] Coarse TimeStep time: 0.481430286
+[STEP 52] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 52 TIME = 3.415418295e-05 DT = 7.371636696e-07
+
+...estimated hydro-limited timestep at level 0: 7.371981823e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.371981823e-07
+[Level 0 step 53] ADVANCE with dt = 7.371981823e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 53] Advanced 262144 cells
+
+TIME= 3.489138113e-05 MASS        = 0.009412229371
+TIME= 3.489138113e-05 XMOM        = -3.562461757e-17
+TIME= 3.489138113e-05 YMOM        = -4.718447855e-16
+TIME= 3.489138113e-05 ZMOM        = -1.335737077e-16
+TIME= 3.489138113e-05 RHO*e       = 20260034.1
+TIME= 3.489138113e-05 RHO*K       = 14147.90455
+TIME= 3.489138113e-05 RHO*E       = 20274182
+TIME= 3.489138113e-05 ENSTROPHY   = 423198.6265
+TIME= 3.489138113e-05 FUEL PROD   = 0
+TIME= 3.489138113e-05 TEMP        = 2400.004056
+
+[STEP 53] Coarse TimeStep time: 0.494354598
+[STEP 53] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 53 TIME = 3.489138113e-05 DT = 7.371981823e-07
+
+...estimated hydro-limited timestep at level 0: 7.372284264e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.372284264e-07
+[Level 0 step 54] ADVANCE with dt = 7.372284264e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 54] Advanced 262144 cells
+
+TIME= 3.562860956e-05 MASS        = 0.009412229371
+TIME= 3.562860956e-05 XMOM        = 2.069195611e-18
+TIME= 3.562860956e-05 YMOM        = 2.602085214e-17
+TIME= 3.562860956e-05 ZMOM        = -3.087807787e-16
+TIME= 3.562860956e-05 RHO*e       = 20260034.85
+TIME= 3.562860956e-05 RHO*K       = 14147.14998
+TIME= 3.562860956e-05 RHO*E       = 20274182
+TIME= 3.562860956e-05 ENSTROPHY   = 423444.0566
+TIME= 3.562860956e-05 FUEL PROD   = 0
+TIME= 3.562860956e-05 TEMP        = 2400.004146
+
+[STEP 54] Coarse TimeStep time: 0.481339695
+[STEP 54] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 54 TIME = 3.562860956e-05 DT = 7.372284264e-07
+
+...estimated hydro-limited timestep at level 0: 7.372419439e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.372419439e-07
+[Level 0 step 55] ADVANCE with dt = 7.372419439e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 55] Advanced 262144 cells
+
+TIME= 3.63658515e-05 MASS        = 0.009412229371
+TIME= 3.63658515e-05 XMOM        = -9.177337286e-18
+TIME= 3.63658515e-05 YMOM        = -4.354155925e-16
+TIME= 3.63658515e-05 ZMOM        = -2.255140519e-17
+TIME= 3.63658515e-05 RHO*e       = 20260035.6
+TIME= 3.63658515e-05 RHO*K       = 14146.39528
+TIME= 3.63658515e-05 RHO*E       = 20274182
+TIME= 3.63658515e-05 ENSTROPHY   = 423695.2884
+TIME= 3.63658515e-05 FUEL PROD   = 0
+TIME= 3.63658515e-05 TEMP        = 2400.004237
+
+[STEP 55] Coarse TimeStep time: 0.481336089
+[STEP 55] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 55 TIME = 3.63658515e-05 DT = 7.372419439e-07
+
+...estimated hydro-limited timestep at level 0: 7.372523278e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.372523278e-07
+[Level 0 step 56] ADVANCE with dt = 7.372523278e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 56] Advanced 262144 cells
+
+TIME= 3.710310383e-05 MASS        = 0.009412229371
+TIME= 3.710310383e-05 XMOM        = 2.524584346e-17
+TIME= 3.710310383e-05 YMOM        = -2.272487754e-16
+TIME= 3.710310383e-05 ZMOM        = 7.511352651e-16
+TIME= 3.710310383e-05 RHO*e       = 20260036.36
+TIME= 3.710310383e-05 RHO*K       = 14145.64038
+TIME= 3.710310383e-05 RHO*E       = 20274182
+TIME= 3.710310383e-05 ENSTROPHY   = 423952.354
+TIME= 3.710310383e-05 FUEL PROD   = 0
+TIME= 3.710310383e-05 TEMP        = 2400.004327
+
+[STEP 56] Coarse TimeStep time: 0.482073616
+[STEP 56] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 56 TIME = 3.710310383e-05 DT = 7.372523278e-07
+
+...estimated hydro-limited timestep at level 0: 7.372616277e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.372616277e-07
+[Level 0 step 57] ADVANCE with dt = 7.372616277e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 57] Advanced 262144 cells
+
+TIME= 3.784036546e-05 MASS        = 0.009412229371
+TIME= 3.784036546e-05 XMOM        = -3.890701583e-17
+TIME= 3.784036546e-05 YMOM        = 6.418476861e-17
+TIME= 3.784036546e-05 ZMOM        = 4.614364446e-16
+TIME= 3.784036546e-05 RHO*e       = 20260037.11
+TIME= 3.784036546e-05 RHO*K       = 14144.88548
+TIME= 3.784036546e-05 RHO*E       = 20274182
+TIME= 3.784036546e-05 ENSTROPHY   = 424215.2865
+TIME= 3.784036546e-05 FUEL PROD   = 0
+TIME= 3.784036546e-05 TEMP        = 2400.004418
+
+[STEP 57] Coarse TimeStep time: 0.485321743
+[STEP 57] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 57 TIME = 3.784036546e-05 DT = 7.372616277e-07
+
+...estimated hydro-limited timestep at level 0: 7.372714384e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.372714384e-07
+[Level 0 step 58] ADVANCE with dt = 7.372714384e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 58] Advanced 262144 cells
+
+TIME= 3.857763689e-05 MASS        = 0.009412229371
+TIME= 3.857763689e-05 XMOM        = -1.239495075e-17
+TIME= 3.857763689e-05 YMOM        = -8.67361738e-17
+TIME= 3.857763689e-05 ZMOM        = -5.967448757e-16
+TIME= 3.857763689e-05 RHO*e       = 20260037.87
+TIME= 3.857763689e-05 RHO*K       = 14144.13092
+TIME= 3.857763689e-05 RHO*E       = 20274182
+TIME= 3.857763689e-05 ENSTROPHY   = 424484.1176
+TIME= 3.857763689e-05 FUEL PROD   = 0
+TIME= 3.857763689e-05 TEMP        = 2400.004509
+
+[STEP 58] Coarse TimeStep time: 0.481436188
+[STEP 58] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 58 TIME = 3.857763689e-05 DT = 7.372714384e-07
+
+...estimated hydro-limited timestep at level 0: 7.37282519e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.37282519e-07
+[Level 0 step 59] ADVANCE with dt = 7.37282519e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 59] Advanced 262144 cells
+
+TIME= 3.931491941e-05 MASS        = 0.009412229371
+TIME= 3.931491941e-05 XMOM        = 1.122085721e-17
+TIME= 3.931491941e-05 YMOM        = -1.283695372e-16
+TIME= 3.931491941e-05 ZMOM        = -7.389922008e-16
+TIME= 3.931491941e-05 RHO*e       = 20260038.62
+TIME= 3.931491941e-05 RHO*K       = 14143.37662
+TIME= 3.931491941e-05 RHO*E       = 20274182
+TIME= 3.931491941e-05 ENSTROPHY   = 424758.8577
+TIME= 3.931491941e-05 FUEL PROD   = 0
+TIME= 3.931491941e-05 TEMP        = 2400.0046
+
+[STEP 59] Coarse TimeStep time: 0.481830394
+[STEP 59] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 59 TIME = 3.931491941e-05 DT = 7.37282519e-07
+
+...estimated hydro-limited timestep at level 0: 7.372945258e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.372945258e-07
+[Level 0 step 60] ADVANCE with dt = 7.372945258e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 60] Advanced 262144 cells
+
+TIME= 4.005221394e-05 MASS        = 0.009412229371
+TIME= 4.005221394e-05 XMOM        = -1.979293652e-17
+TIME= 4.005221394e-05 YMOM        = -2.688821388e-16
+TIME= 4.005221394e-05 ZMOM        = -2.376571162e-16
+TIME= 4.005221394e-05 RHO*e       = 20260039.38
+TIME= 4.005221394e-05 RHO*K       = 14142.62189
+TIME= 4.005221394e-05 RHO*E       = 20274182
+TIME= 4.005221394e-05 ENSTROPHY   = 425039.4951
+TIME= 4.005221394e-05 FUEL PROD   = 0
+TIME= 4.005221394e-05 TEMP        = 2400.00469
+
+[STEP 60] Coarse TimeStep time: 0.481550703
+[STEP 60] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 60 TIME = 4.005221394e-05 DT = 7.372945258e-07
+
+...estimated hydro-limited timestep at level 0: 7.373072448e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.373072448e-07
+[Level 0 step 61] ADVANCE with dt = 7.373072448e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 61] Advanced 262144 cells
+
+TIME= 4.078952118e-05 MASS        = 0.009412229371
+TIME= 4.078952118e-05 XMOM        = 3.573605535e-18
+TIME= 4.078952118e-05 YMOM        = -2.203098814e-16
+TIME= 4.078952118e-05 ZMOM        = 1.45716772e-16
+TIME= 4.078952118e-05 RHO*e       = 20260040.13
+TIME= 4.078952118e-05 RHO*K       = 14141.86617
+TIME= 4.078952118e-05 RHO*E       = 20274182
+TIME= 4.078952118e-05 ENSTROPHY   = 425326.0135
+TIME= 4.078952118e-05 FUEL PROD   = 0
+TIME= 4.078952118e-05 TEMP        = 2400.004781
+
+[STEP 61] Coarse TimeStep time: 0.508851648
+[STEP 61] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 61 TIME = 4.078952118e-05 DT = 7.373072448e-07
+
+...estimated hydro-limited timestep at level 0: 7.373209943e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.373209943e-07
+[Level 0 step 62] ADVANCE with dt = 7.373209943e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 62] Advanced 262144 cells
+
+TIME= 4.152684218e-05 MASS        = 0.009412229371
+TIME= 4.152684218e-05 XMOM        = -1.779483873e-18
+TIME= 4.152684218e-05 YMOM        = -1.977584763e-16
+TIME= 4.152684218e-05 ZMOM        = 3.677613769e-16
+TIME= 4.152684218e-05 RHO*e       = 20260040.89
+TIME= 4.152684218e-05 RHO*K       = 14141.10926
+TIME= 4.152684218e-05 RHO*E       = 20274182
+TIME= 4.152684218e-05 ENSTROPHY   = 425618.4033
+TIME= 4.152684218e-05 FUEL PROD   = 0
+TIME= 4.152684218e-05 TEMP        = 2400.004872
+
+[STEP 62] Coarse TimeStep time: 0.482084652
+[STEP 62] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 62 TIME = 4.152684218e-05 DT = 7.373209943e-07
+
+...estimated hydro-limited timestep at level 0: 7.373355676e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.373355676e-07
+[Level 0 step 63] ADVANCE with dt = 7.373355676e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 63] Advanced 262144 cells
+
+TIME= 4.226417775e-05 MASS        = 0.009412229371
+TIME= 4.226417775e-05 XMOM        = -8.965856982e-18
+TIME= 4.226417775e-05 YMOM        = -3.573530361e-16
+TIME= 4.226417775e-05 ZMOM        = -6.921546669e-16
+TIME= 4.226417775e-05 RHO*e       = 20260041.65
+TIME= 4.226417775e-05 RHO*K       = 14140.35101
+TIME= 4.226417775e-05 RHO*E       = 20274182
+TIME= 4.226417775e-05 ENSTROPHY   = 425916.6597
+TIME= 4.226417775e-05 FUEL PROD   = 0
+TIME= 4.226417775e-05 TEMP        = 2400.004963
+
+[STEP 63] Coarse TimeStep time: 0.490985305
+[STEP 63] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 63 TIME = 4.226417775e-05 DT = 7.373355676e-07
+
+...estimated hydro-limited timestep at level 0: 7.373512268e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.373512268e-07
+[Level 0 step 64] ADVANCE with dt = 7.373512268e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 64] Advanced 262144 cells
+
+TIME= 4.300152897e-05 MASS        = 0.009412229371
+TIME= 4.300152897e-05 XMOM        = 1.09821395e-17
+TIME= 4.300152897e-05 YMOM        = -2.602085214e-17
+TIME= 4.300152897e-05 ZMOM        = -7.459310947e-17
+TIME= 4.300152897e-05 RHO*e       = 20260042.41
+TIME= 4.300152897e-05 RHO*K       = 14139.59123
+TIME= 4.300152897e-05 RHO*E       = 20274182
+TIME= 4.300152897e-05 ENSTROPHY   = 426220.7717
+TIME= 4.300152897e-05 FUEL PROD   = 0
+TIME= 4.300152897e-05 TEMP        = 2400.005053
+
+[STEP 64] Coarse TimeStep time: 0.48145452
+[STEP 64] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 64 TIME = 4.300152897e-05 DT = 7.373512268e-07
+
+...estimated hydro-limited timestep at level 0: 7.373683378e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.373683378e-07
+[Level 0 step 65] ADVANCE with dt = 7.373683378e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 65] Advanced 262144 cells
+
+TIME= 4.373889731e-05 MASS        = 0.009412229371
+TIME= 4.373889731e-05 XMOM        = -9.903932736e-18
+TIME= 4.373889731e-05 YMOM        = -7.459310947e-17
+TIME= 4.373889731e-05 ZMOM        = 9.020562075e-17
+TIME= 4.373889731e-05 RHO*e       = 20260043.17
+TIME= 4.373889731e-05 RHO*K       = 14138.82968
+TIME= 4.373889731e-05 RHO*E       = 20274182
+TIME= 4.373889731e-05 ENSTROPHY   = 426530.7185
+TIME= 4.373889731e-05 FUEL PROD   = 0
+TIME= 4.373889731e-05 TEMP        = 2400.005144
+
+[STEP 65] Coarse TimeStep time: 0.485059338
+[STEP 65] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 65 TIME = 4.373889731e-05 DT = 7.373683378e-07
+
+...estimated hydro-limited timestep at level 0: 7.373878293e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.373878293e-07
+[Level 0 step 66] ADVANCE with dt = 7.373878293e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 66] Advanced 262144 cells
+
+TIME= 4.447628514e-05 MASS        = 0.009412229371
+TIME= 4.447628514e-05 XMOM        = 7.981088536e-18
+TIME= 4.447628514e-05 YMOM        = -1.752070711e-16
+TIME= 4.447628514e-05 ZMOM        = 5.863365349e-16
+TIME= 4.447628514e-05 RHO*e       = 20260043.93
+TIME= 4.447628514e-05 RHO*K       = 14138.06591
+TIME= 4.447628514e-05 RHO*E       = 20274182
+TIME= 4.447628514e-05 ENSTROPHY   = 426846.4728
+TIME= 4.447628514e-05 FUEL PROD   = 0
+TIME= 4.447628514e-05 TEMP        = 2400.005235
+
+[STEP 66] Coarse TimeStep time: 0.481838048
+[STEP 66] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 66 TIME = 4.447628514e-05 DT = 7.373878293e-07
+
+...estimated hydro-limited timestep at level 0: 7.374101211e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.374101211e-07
+[Level 0 step 67] ADVANCE with dt = 7.374101211e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 67] Advanced 262144 cells
+
+TIME= 4.521369526e-05 MASS        = 0.009412229371
+TIME= 4.521369526e-05 XMOM        = 1.947510064e-17
+TIME= 4.521369526e-05 YMOM        = -2.376571162e-16
+TIME= 4.521369526e-05 ZMOM        = 8.27463098e-16
+TIME= 4.521369526e-05 RHO*e       = 20260044.7
+TIME= 4.521369526e-05 RHO*K       = 14137.29947
+TIME= 4.521369526e-05 RHO*E       = 20274182
+TIME= 4.521369526e-05 ENSTROPHY   = 427168.0097
+TIME= 4.521369526e-05 FUEL PROD   = 0
+TIME= 4.521369526e-05 TEMP        = 2400.005326
+
+[STEP 67] Coarse TimeStep time: 0.482787245
+[STEP 67] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 67 TIME = 4.521369526e-05 DT = 7.374101211e-07
+
+...estimated hydro-limited timestep at level 0: 7.374351074e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.374351074e-07
+[Level 0 step 68] ADVANCE with dt = 7.374351074e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 68] Advanced 262144 cells
+
+TIME= 4.595113037e-05 MASS        = 0.009412229371
+TIME= 4.595113037e-05 XMOM        = 3.805895056e-17
+TIME= 4.595113037e-05 YMOM        = -8.67361738e-17
+TIME= 4.595113037e-05 ZMOM        = 6.52256027e-16
+TIME= 4.595113037e-05 RHO*e       = 20260045.47
+TIME= 4.595113037e-05 RHO*K       = 14136.53009
+TIME= 4.595113037e-05 RHO*E       = 20274182
+TIME= 4.595113037e-05 ENSTROPHY   = 427495.3131
+TIME= 4.595113037e-05 FUEL PROD   = 0
+TIME= 4.595113037e-05 TEMP        = 2400.005417
+
+[STEP 68] Coarse TimeStep time: 0.487855243
+[STEP 68] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 68 TIME = 4.595113037e-05 DT = 7.374351074e-07
+
+...estimated hydro-limited timestep at level 0: 7.374624273e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.374624273e-07
+[Level 0 step 69] ADVANCE with dt = 7.374624273e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 69] Advanced 262144 cells
+
+TIME= 4.66885928e-05 MASS        = 0.009412229371
+TIME= 4.66885928e-05 XMOM        = 2.826586003e-17
+TIME= 4.66885928e-05 YMOM        = -2.602085214e-16
+TIME= 4.66885928e-05 ZMOM        = 1.977584763e-16
+TIME= 4.66885928e-05 RHO*e       = 20260046.24
+TIME= 4.66885928e-05 RHO*K       = 14135.75781
+TIME= 4.66885928e-05 RHO*E       = 20274182
+TIME= 4.66885928e-05 ENSTROPHY   = 427828.3755
+TIME= 4.66885928e-05 FUEL PROD   = 0
+TIME= 4.66885928e-05 TEMP        = 2400.005508
+
+[STEP 69] Coarse TimeStep time: 0.482717243
+[STEP 69] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 69 TIME = 4.66885928e-05 DT = 7.374624273e-07
+
+...estimated hydro-limited timestep at level 0: 7.374920918e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.374920918e-07
+[Level 0 step 70] ADVANCE with dt = 7.374920918e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 70] Advanced 262144 cells
+
+TIME= 4.742608489e-05 MASS        = 0.009412229371
+TIME= 4.742608489e-05 XMOM        = -2.033678461e-17
+TIME= 4.742608489e-05 YMOM        = -1.09287579e-16
+TIME= 4.742608489e-05 ZMOM        = 2.827599266e-16
+TIME= 4.742608489e-05 RHO*e       = 20260047.02
+TIME= 4.742608489e-05 RHO*K       = 14134.98286
+TIME= 4.742608489e-05 RHO*E       = 20274182
+TIME= 4.742608489e-05 ENSTROPHY   = 428167.1973
+TIME= 4.742608489e-05 FUEL PROD   = 0
+TIME= 4.742608489e-05 TEMP        = 2400.0056
+
+[STEP 70] Coarse TimeStep time: 0.482974571
+[STEP 70] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 70 TIME = 4.742608489e-05 DT = 7.374920918e-07
+
+...estimated hydro-limited timestep at level 0: 7.375244725e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.375244725e-07
+[Level 0 step 71] ADVANCE with dt = 7.375244725e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 71] Advanced 262144 cells
+
+TIME= 4.816360936e-05 MASS        = 0.009412229371
+TIME= 4.816360936e-05 XMOM        = 1.28822991e-17
+TIME= 4.816360936e-05 YMOM        = 8.153200337e-17
+TIME= 4.816360936e-05 ZMOM        = -4.076600169e-16
+TIME= 4.816360936e-05 RHO*e       = 20260047.79
+TIME= 4.816360936e-05 RHO*K       = 14134.20557
+TIME= 4.816360936e-05 RHO*E       = 20274182
+TIME= 4.816360936e-05 ENSTROPHY   = 428511.7878
+TIME= 4.816360936e-05 FUEL PROD   = 0
+TIME= 4.816360936e-05 TEMP        = 2400.005692
+
+[STEP 71] Coarse TimeStep time: 0.493714591
+[STEP 71] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 71 TIME = 4.816360936e-05 DT = 7.375244725e-07
+
+...estimated hydro-limited timestep at level 0: 7.375589755e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.375589755e-07
+[Level 0 step 72] ADVANCE with dt = 7.375589755e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 72] Advanced 262144 cells
+
+TIME= 4.890116833e-05 MASS        = 0.009412229371
+TIME= 4.890116833e-05 XMOM        = 4.261660986e-17
+TIME= 4.890116833e-05 YMOM        = 4.857225733e-17
+TIME= 4.890116833e-05 ZMOM        = -5.342948306e-16
+TIME= 4.890116833e-05 RHO*e       = 20260048.57
+TIME= 4.890116833e-05 RHO*K       = 14133.42631
+TIME= 4.890116833e-05 RHO*E       = 20274182
+TIME= 4.890116833e-05 ENSTROPHY   = 428862.1628
+TIME= 4.890116833e-05 FUEL PROD   = 0
+TIME= 4.890116833e-05 TEMP        = 2400.005785
+
+[STEP 72] Coarse TimeStep time: 0.483350898
+[STEP 72] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 72 TIME = 4.890116833e-05 DT = 7.375589755e-07
+
+...estimated hydro-limited timestep at level 0: 7.375943295e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.375943295e-07
+[Level 0 step 73] ADVANCE with dt = 7.375943295e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 73] Advanced 262144 cells
+
+TIME= 4.963876266e-05 MASS        = 0.009412229371
+TIME= 4.963876266e-05 XMOM        = 1.863594245e-17
+TIME= 4.963876266e-05 YMOM        = 2.775557562e-17
+TIME= 4.963876266e-05 ZMOM        = -8.899131432e-16
+TIME= 4.963876266e-05 RHO*e       = 20260049.35
+TIME= 4.963876266e-05 RHO*K       = 14132.64541
+TIME= 4.963876266e-05 RHO*E       = 20274182
+TIME= 4.963876266e-05 ENSTROPHY   = 429218.3473
+TIME= 4.963876266e-05 FUEL PROD   = 0
+TIME= 4.963876266e-05 TEMP        = 2400.005878
+
+[STEP 73] Coarse TimeStep time: 0.482399227
+[STEP 73] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 73 TIME = 4.963876266e-05 DT = 7.375943295e-07
+
+...estimated hydro-limited timestep at level 0: 7.376305732e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.376305732e-07
+[Level 0 step 74] ADVANCE with dt = 7.376305732e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 74] Advanced 262144 cells
+
+TIME= 5.037639324e-05 MASS        = 0.009412229371
+TIME= 5.037639324e-05 XMOM        = -4.928540613e-18
+TIME= 5.037639324e-05 YMOM        = 1.249000903e-16
+TIME= 5.037639324e-05 ZMOM        = 7.54604712e-16
+TIME= 5.037639324e-05 RHO*e       = 20260050.14
+TIME= 5.037639324e-05 RHO*K       = 14131.86316
+TIME= 5.037639324e-05 RHO*E       = 20274182
+TIME= 5.037639324e-05 ENSTROPHY   = 429580.372
+TIME= 5.037639324e-05 FUEL PROD   = 0
+TIME= 5.037639324e-05 TEMP        = 2400.005972
+
+[STEP 74] Coarse TimeStep time: 0.483861629
+[STEP 74] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 74 TIME = 5.037639324e-05 DT = 7.376305732e-07
+
+...estimated hydro-limited timestep at level 0: 7.376677591e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.376677591e-07
+[Level 0 step 75] ADVANCE with dt = 7.376677591e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 75] Advanced 262144 cells
+
+TIME= 5.1114061e-05 MASS        = 0.009412229371
+TIME= 5.1114061e-05 XMOM        = -2.13216457e-17
+TIME= 5.1114061e-05 YMOM        = -3.295974604e-17
+TIME= 5.1114061e-05 ZMOM        = -4.093947403e-16
+TIME= 5.1114061e-05 RHO*e       = 20260050.92
+TIME= 5.1114061e-05 RHO*K       = 14131.07974
+TIME= 5.1114061e-05 RHO*E       = 20274182
+TIME= 5.1114061e-05 ENSTROPHY   = 429948.2711
+TIME= 5.1114061e-05 FUEL PROD   = 0
+TIME= 5.1114061e-05 TEMP        = 2400.006066
+
+[STEP 75] Coarse TimeStep time: 0.482516253
+[STEP 75] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 75 TIME = 5.1114061e-05 DT = 7.376677591e-07
+
+...estimated hydro-limited timestep at level 0: 7.377039685e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.377039685e-07
+[Level 0 step 76] ADVANCE with dt = 7.377039685e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 76] Advanced 262144 cells
+
+TIME= 5.185176497e-05 MASS        = 0.009412229371
+TIME= 5.185176497e-05 XMOM        = 5.29336035e-18
+TIME= 5.185176497e-05 YMOM        = 3.330669074e-16
+TIME= 5.185176497e-05 ZMOM        = 4.683753385e-17
+TIME= 5.185176497e-05 RHO*e       = 20260051.7
+TIME= 5.185176497e-05 RHO*K       = 14130.29527
+TIME= 5.185176497e-05 RHO*E       = 20274182
+TIME= 5.185176497e-05 ENSTROPHY   = 430322.08
+TIME= 5.185176497e-05 FUEL PROD   = 0
+TIME= 5.185176497e-05 TEMP        = 2400.00616
+
+[STEP 76] Coarse TimeStep time: 0.484207521
+[STEP 76] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 76 TIME = 5.185176497e-05 DT = 7.377039685e-07
+
+...estimated hydro-limited timestep at level 0: 7.377361079e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.377361079e-07
+[Level 0 step 77] ADVANCE with dt = 7.377361079e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 77] Advanced 262144 cells
+
+TIME= 5.258950107e-05 MASS        = 0.009412229371
+TIME= 5.258950107e-05 XMOM        = 2.601473762e-17
+TIME= 5.258950107e-05 YMOM        = -7.806255642e-17
+TIME= 5.258950107e-05 ZMOM        = -8.326672685e-17
+TIME= 5.258950107e-05 RHO*e       = 20260052.49
+TIME= 5.258950107e-05 RHO*K       = 14129.50987
+TIME= 5.258950107e-05 RHO*E       = 20274182
+TIME= 5.258950107e-05 ENSTROPHY   = 430701.8362
+TIME= 5.258950107e-05 FUEL PROD   = 0
+TIME= 5.258950107e-05 TEMP        = 2400.006255
+
+[STEP 77] Coarse TimeStep time: 0.483871619
+[STEP 77] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 77 TIME = 5.258950107e-05 DT = 7.377361079e-07
+
+...estimated hydro-limited timestep at level 0: 7.377628934e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.377628934e-07
+[Level 0 step 78] ADVANCE with dt = 7.377628934e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 78] Advanced 262144 cells
+
+TIME= 5.332726397e-05 MASS        = 0.009412229371
+TIME= 5.332726397e-05 XMOM        = 3.325283268e-17
+TIME= 5.332726397e-05 YMOM        = -5.03069808e-17
+TIME= 5.332726397e-05 ZMOM        = 2.289834988e-16
+TIME= 5.332726397e-05 RHO*e       = 20260053.28
+TIME= 5.332726397e-05 RHO*K       = 14128.72364
+TIME= 5.332726397e-05 RHO*E       = 20274182
+TIME= 5.332726397e-05 ENSTROPHY   = 431087.5803
+TIME= 5.332726397e-05 FUEL PROD   = 0
+TIME= 5.332726397e-05 TEMP        = 2400.00635
+
+[STEP 78] Coarse TimeStep time: 0.484885239
+[STEP 78] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 78 TIME = 5.332726397e-05 DT = 7.377628934e-07
+
+...estimated hydro-limited timestep at level 0: 7.377863355e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.377863355e-07
+[Level 0 step 79] ADVANCE with dt = 7.377863355e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 79] Advanced 262144 cells
+
+TIME= 5.40650503e-05 MASS        = 0.009412229371
+TIME= 5.40650503e-05 XMOM        = 1.420884534e-18
+TIME= 5.40650503e-05 YMOM        = 1.05818132e-16
+TIME= 5.40650503e-05 ZMOM        = -2.51534904e-16
+TIME= 5.40650503e-05 RHO*e       = 20260054.06
+TIME= 5.40650503e-05 RHO*K       = 14127.93661
+TIME= 5.40650503e-05 RHO*E       = 20274182
+TIME= 5.40650503e-05 ENSTROPHY   = 431479.3542
+TIME= 5.40650503e-05 FUEL PROD   = 0
+TIME= 5.40650503e-05 TEMP        = 2400.006445
+
+[STEP 79] Coarse TimeStep time: 0.483110786
+[STEP 79] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 79 TIME = 5.40650503e-05 DT = 7.377863355e-07
+
+...estimated hydro-limited timestep at level 0: 7.378113342e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.378113342e-07
+[Level 0 step 80] ADVANCE with dt = 7.378113342e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 80] Advanced 262144 cells
+
+TIME= 5.480286164e-05 MASS        = 0.009412229371
+TIME= 5.480286164e-05 XMOM        = -4.878248032e-19
+TIME= 5.480286164e-05 YMOM        = 3.955169525e-16
+TIME= 5.480286164e-05 ZMOM        = -9.315465066e-16
+TIME= 5.480286164e-05 RHO*e       = 20260054.85
+TIME= 5.480286164e-05 RHO*K       = 14127.14891
+TIME= 5.480286164e-05 RHO*E       = 20274182
+TIME= 5.480286164e-05 ENSTROPHY   = 431877.1989
+TIME= 5.480286164e-05 FUEL PROD   = 0
+TIME= 5.480286164e-05 TEMP        = 2400.00654
+
+[STEP 80] Coarse TimeStep time: 0.490755077
+[STEP 80] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 80 TIME = 5.480286164e-05 DT = 7.378113342e-07
+
+...estimated hydro-limited timestep at level 0: 7.378366669e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.378366669e-07
+[Level 0 step 81] ADVANCE with dt = 7.378366669e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 81] Advanced 262144 cells
+
+TIME= 5.55406983e-05 MASS        = 0.009412229371
+TIME= 5.55406983e-05 XMOM        = 2.791567146e-17
+TIME= 5.55406983e-05 YMOM        = -1.179611964e-16
+TIME= 5.55406983e-05 ZMOM        = 6.574601974e-16
+TIME= 5.55406983e-05 RHO*e       = 20260055.64
+TIME= 5.55406983e-05 RHO*K       = 14126.36058
+TIME= 5.55406983e-05 RHO*E       = 20274182
+TIME= 5.55406983e-05 ENSTROPHY   = 432281.146
+TIME= 5.55406983e-05 FUEL PROD   = 0
+TIME= 5.55406983e-05 TEMP        = 2400.006635
+
+[STEP 81] Coarse TimeStep time: 0.484080876
+[STEP 81] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 81 TIME = 5.55406983e-05 DT = 7.378366669e-07
+
+...estimated hydro-limited timestep at level 0: 7.37862236e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.37862236e-07
+[Level 0 step 82] ADVANCE with dt = 7.37862236e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 82] Advanced 262144 cells
+
+TIME= 5.627856054e-05 MASS        = 0.009412229371
+TIME= 5.627856054e-05 XMOM        = -1.19690123e-17
+TIME= 5.627856054e-05 YMOM        = -2.237793284e-16
+TIME= 5.627856054e-05 ZMOM        = -2.931682674e-16
+TIME= 5.627856054e-05 RHO*e       = 20260056.43
+TIME= 5.627856054e-05 RHO*K       = 14125.57148
+TIME= 5.627856054e-05 RHO*E       = 20274182
+TIME= 5.627856054e-05 ENSTROPHY   = 432691.2223
+TIME= 5.627856054e-05 FUEL PROD   = 0
+TIME= 5.627856054e-05 TEMP        = 2400.00673
+
+[STEP 82] Coarse TimeStep time: 0.48530166
+[STEP 82] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 82 TIME = 5.627856054e-05 DT = 7.37862236e-07
+
+...estimated hydro-limited timestep at level 0: 7.378862265e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.378862265e-07
+[Level 0 step 83] ADVANCE with dt = 7.378862265e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 83] Advanced 262144 cells
+
+TIME= 5.701644677e-05 MASS        = 0.009412229371
+TIME= 5.701644677e-05 XMOM        = -5.396261618e-19
+TIME= 5.701644677e-05 YMOM        = 2.775557562e-17
+TIME= 5.701644677e-05 ZMOM        = 2.428612866e-16
+TIME= 5.701644677e-05 RHO*e       = 20260057.22
+TIME= 5.701644677e-05 RHO*K       = 14124.78145
+TIME= 5.701644677e-05 RHO*E       = 20274182
+TIME= 5.701644677e-05 ENSTROPHY   = 433107.4475
+TIME= 5.701644677e-05 FUEL PROD   = 0
+TIME= 5.701644677e-05 TEMP        = 2400.006826
+
+[STEP 83] Coarse TimeStep time: 0.48326111
+[STEP 83] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 83 TIME = 5.701644677e-05 DT = 7.378862265e-07
+
+...estimated hydro-limited timestep at level 0: 7.379093217e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.379093217e-07
+[Level 0 step 84] ADVANCE with dt = 7.379093217e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 84] Advanced 262144 cells
+
+TIME= 5.775435609e-05 MASS        = 0.009412229371
+TIME= 5.775435609e-05 XMOM        = 1.150790212e-17
+TIME= 5.775435609e-05 YMOM        = -9.020562075e-17
+TIME= 5.775435609e-05 ZMOM        = 9.350159536e-16
+TIME= 5.775435609e-05 RHO*e       = 20260058.01
+TIME= 5.775435609e-05 RHO*K       = 14123.99029
+TIME= 5.775435609e-05 RHO*E       = 20274182
+TIME= 5.775435609e-05 ENSTROPHY   = 433529.8329
+TIME= 5.775435609e-05 FUEL PROD   = 0
+TIME= 5.775435609e-05 TEMP        = 2400.006921
+
+[STEP 84] Coarse TimeStep time: 0.484755977
+[STEP 84] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 84 TIME = 5.775435609e-05 DT = 7.379093217e-07
+
+...estimated hydro-limited timestep at level 0: 7.379329621e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.379329621e-07
+[Level 0 step 85] ADVANCE with dt = 7.379329621e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 85] Advanced 262144 cells
+
+TIME= 5.849228905e-05 MASS        = 0.009412229371
+TIME= 5.849228905e-05 XMOM        = 2.814149177e-17
+TIME= 5.849228905e-05 YMOM        = -2.324529458e-16
+TIME= 5.849228905e-05 ZMOM        = -1.151856388e-15
+TIME= 5.849228905e-05 RHO*e       = 20260058.8
+TIME= 5.849228905e-05 RHO*K       = 14123.19752
+TIME= 5.849228905e-05 RHO*E       = 20274182
+TIME= 5.849228905e-05 ENSTROPHY   = 433958.3869
+TIME= 5.849228905e-05 FUEL PROD   = 0
+TIME= 5.849228905e-05 TEMP        = 2400.007016
+
+[STEP 85] Coarse TimeStep time: 0.487633582
+[STEP 85] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 85 TIME = 5.849228905e-05 DT = 7.379329621e-07
+
+...estimated hydro-limited timestep at level 0: 7.379582035e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.379582035e-07
+[Level 0 step 86] ADVANCE with dt = 7.379582035e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 86] Advanced 262144 cells
+
+TIME= 5.923024725e-05 MASS        = 0.009412229371
+TIME= 5.923024725e-05 XMOM        = -3.134176753e-17
+TIME= 5.923024725e-05 YMOM        = -5.898059818e-17
+TIME= 5.923024725e-05 ZMOM        = -8.708311849e-16
+TIME= 5.923024725e-05 RHO*e       = 20260059.6
+TIME= 5.923024725e-05 RHO*K       = 14122.40242
+TIME= 5.923024725e-05 RHO*E       = 20274182
+TIME= 5.923024725e-05 ENSTROPHY   = 434393.1138
+TIME= 5.923024725e-05 FUEL PROD   = 0
+TIME= 5.923024725e-05 TEMP        = 2400.007111
+
+[STEP 86] Coarse TimeStep time: 0.483137483
+[STEP 86] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 86 TIME = 5.923024725e-05 DT = 7.379582035e-07
+
+...estimated hydro-limited timestep at level 0: 7.379853146e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.379853146e-07
+[Level 0 step 87] ADVANCE with dt = 7.379853146e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 87] Advanced 262144 cells
+
+TIME= 5.996823257e-05 MASS        = 0.009412229371
+TIME= 5.996823257e-05 XMOM        = 6.267203394e-18
+TIME= 5.996823257e-05 YMOM        = -2.775557562e-17
+TIME= 5.996823257e-05 ZMOM        = -8.951173136e-16
+TIME= 5.996823257e-05 RHO*e       = 20260060.4
+TIME= 5.996823257e-05 RHO*K       = 14121.60444
+TIME= 5.996823257e-05 RHO*E       = 20274182
+TIME= 5.996823257e-05 ENSTROPHY   = 434834.0126
+TIME= 5.996823257e-05 FUEL PROD   = 0
+TIME= 5.996823257e-05 TEMP        = 2400.007207
+
+[STEP 87] Coarse TimeStep time: 0.48266611
+[STEP 87] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 87 TIME = 5.996823257e-05 DT = 7.379853146e-07
+
+...estimated hydro-limited timestep at level 0: 7.380138833e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.380138833e-07
+[Level 0 step 88] ADVANCE with dt = 7.380138833e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 88] Advanced 262144 cells
+
+TIME= 6.070624645e-05 MASS        = 0.009412229371
+TIME= 6.070624645e-05 XMOM        = 1.053269588e-17
+TIME= 6.070624645e-05 YMOM        = -1.283695372e-16
+TIME= 6.070624645e-05 ZMOM        = -3.469446952e-17
+TIME= 6.070624645e-05 RHO*e       = 20260061.2
+TIME= 6.070624645e-05 RHO*K       = 14120.80322
+TIME= 6.070624645e-05 RHO*E       = 20274182
+TIME= 6.070624645e-05 ENSTROPHY   = 435281.076
+TIME= 6.070624645e-05 FUEL PROD   = 0
+TIME= 6.070624645e-05 TEMP        = 2400.007302
+
+[STEP 88] Coarse TimeStep time: 0.484581266
+[STEP 88] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 88 TIME = 6.070624645e-05 DT = 7.380138833e-07
+
+...estimated hydro-limited timestep at level 0: 7.380428316e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.380428316e-07
+[Level 0 step 89] ADVANCE with dt = 7.380428316e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 89] Advanced 262144 cells
+
+TIME= 6.144428928e-05 MASS        = 0.009412229371
+TIME= 6.144428928e-05 XMOM        = -8.841991648e-18
+TIME= 6.144428928e-05 YMOM        = -1.040834086e-17
+TIME= 6.144428928e-05 ZMOM        = -1.193489751e-15
+TIME= 6.144428928e-05 RHO*e       = 20260062
+TIME= 6.144428928e-05 RHO*K       = 14119.99849
+TIME= 6.144428928e-05 RHO*E       = 20274182
+TIME= 6.144428928e-05 ENSTROPHY   = 435734.2957
+TIME= 6.144428928e-05 FUEL PROD   = 0
+TIME= 6.144428928e-05 TEMP        = 2400.007398
+
+[STEP 89] Coarse TimeStep time: 0.482881816
+[STEP 89] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 89 TIME = 6.144428928e-05 DT = 7.380428316e-07
+
+...estimated hydro-limited timestep at level 0: 7.380718078e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.380718078e-07
+[Level 0 step 90] ADVANCE with dt = 7.380718078e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 90] Advanced 262144 cells
+
+TIME= 6.218236109e-05 MASS        = 0.009412229371
+TIME= 6.218236109e-05 XMOM        = 1.136057132e-17
+TIME= 6.218236109e-05 YMOM        = -3.816391647e-17
+TIME= 6.218236109e-05 ZMOM        = -5.447031715e-16
+TIME= 6.218236109e-05 RHO*e       = 20260062.81
+TIME= 6.218236109e-05 RHO*K       = 14119.18996
+TIME= 6.218236109e-05 RHO*E       = 20274182
+TIME= 6.218236109e-05 ENSTROPHY   = 436193.6618
+TIME= 6.218236109e-05 FUEL PROD   = 0
+TIME= 6.218236109e-05 TEMP        = 2400.007494
+
+[STEP 90] Coarse TimeStep time: 0.484230017
+[STEP 90] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 90 TIME = 6.218236109e-05 DT = 7.380718078e-07
+
+...estimated hydro-limited timestep at level 0: 7.381020447e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.381020447e-07
+[Level 0 step 91] ADVANCE with dt = 7.381020447e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 91] Advanced 262144 cells
+
+TIME= 6.292046313e-05 MASS        = 0.009412229371
+TIME= 6.292046313e-05 XMOM        = -1.249140332e-17
+TIME= 6.292046313e-05 YMOM        = -6.973588373e-16
+TIME= 6.292046313e-05 ZMOM        = -2.740863092e-16
+TIME= 6.292046313e-05 RHO*e       = 20260063.62
+TIME= 6.292046313e-05 RHO*K       = 14118.37739
+TIME= 6.292046313e-05 RHO*E       = 20274182
+TIME= 6.292046313e-05 ENSTROPHY   = 436659.16
+TIME= 6.292046313e-05 FUEL PROD   = 0
+TIME= 6.292046313e-05 TEMP        = 2400.00759
+
+[STEP 91] Coarse TimeStep time: 0.494909072
+[STEP 91] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 91 TIME = 6.292046313e-05 DT = 7.381020447e-07
+
+...estimated hydro-limited timestep at level 0: 7.381356133e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.381356133e-07
+[Level 0 step 92] ADVANCE with dt = 7.381356133e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 92] Advanced 262144 cells
+
+TIME= 6.365859875e-05 MASS        = 0.009412229371
+TIME= 6.365859875e-05 XMOM        = 1.891158881e-17
+TIME= 6.365859875e-05 YMOM        = -6.800116026e-16
+TIME= 6.365859875e-05 ZMOM        = 8.881784197e-16
+TIME= 6.365859875e-05 RHO*e       = 20260064.44
+TIME= 6.365859875e-05 RHO*K       = 14117.56073
+TIME= 6.365859875e-05 RHO*E       = 20274182
+TIME= 6.365859875e-05 ENSTROPHY   = 437130.7781
+TIME= 6.365859875e-05 FUEL PROD   = 0
+TIME= 6.365859875e-05 TEMP        = 2400.007687
+
+[STEP 92] Coarse TimeStep time: 0.484283592
+[STEP 92] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 92 TIME = 6.365859875e-05 DT = 7.381356133e-07
+
+...estimated hydro-limited timestep at level 0: 7.381737199e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.381737199e-07
+[Level 0 step 93] ADVANCE with dt = 7.381737199e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 93] Advanced 262144 cells
+
+TIME= 6.439677247e-05 MASS        = 0.009412229371
+TIME= 6.439677247e-05 XMOM        = 2.444556607e-17
+TIME= 6.439677247e-05 YMOM        = -2.116362641e-16
+TIME= 6.439677247e-05 ZMOM        = 1.734723476e-16
+TIME= 6.439677247e-05 RHO*e       = 20260065.26
+TIME= 6.439677247e-05 RHO*K       = 14116.74021
+TIME= 6.439677247e-05 RHO*E       = 20274182
+TIME= 6.439677247e-05 ENSTROPHY   = 437608.5136
+TIME= 6.439677247e-05 FUEL PROD   = 0
+TIME= 6.439677247e-05 TEMP        = 2400.007784
+
+[STEP 93] Coarse TimeStep time: 0.483497043
+[STEP 93] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 93 TIME = 6.439677247e-05 DT = 7.381737199e-07
+
+...estimated hydro-limited timestep at level 0: 7.382155808e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.382155808e-07
+[Level 0 step 94] ADVANCE with dt = 7.382155808e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 94] Advanced 262144 cells
+
+TIME= 6.513498805e-05 MASS        = 0.009412229371
+TIME= 6.513498805e-05 XMOM        = 1.995472643e-17
+TIME= 6.513498805e-05 YMOM        = -3.469446952e-16
+TIME= 6.513498805e-05 ZMOM        = -2.380040609e-15
+TIME= 6.513498805e-05 RHO*e       = 20260066.08
+TIME= 6.513498805e-05 RHO*K       = 14115.91623
+TIME= 6.513498805e-05 RHO*E       = 20274182
+TIME= 6.513498805e-05 ENSTROPHY   = 438092.3673
+TIME= 6.513498805e-05 FUEL PROD   = 0
+TIME= 6.513498805e-05 TEMP        = 2400.007882
+
+[STEP 94] Coarse TimeStep time: 0.48430309
+[STEP 94] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 94 TIME = 6.513498805e-05 DT = 7.382155808e-07
+
+...estimated hydro-limited timestep at level 0: 7.382598819e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.382598819e-07
+[Level 0 step 95] ADVANCE with dt = 7.382598819e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 95] Advanced 262144 cells
+
+TIME= 6.587324793e-05 MASS        = 0.009412229371
+TIME= 6.587324793e-05 XMOM        = 4.194666635e-17
+TIME= 6.587324793e-05 YMOM        = 3.504141421e-16
+TIME= 6.587324793e-05 ZMOM        = 6.4878658e-16
+TIME= 6.587324793e-05 RHO*e       = 20260066.91
+TIME= 6.587324793e-05 RHO*K       = 14115.08912
+TIME= 6.587324793e-05 RHO*E       = 20274182
+TIME= 6.587324793e-05 ENSTROPHY   = 438582.3489
+TIME= 6.587324793e-05 FUEL PROD   = 0
+TIME= 6.587324793e-05 TEMP        = 2400.00798
+
+[STEP 95] Coarse TimeStep time: 0.483474298
+[STEP 95] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 95 TIME = 6.587324793e-05 DT = 7.382598819e-07
+
+...estimated hydro-limited timestep at level 0: 7.38305214e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.38305214e-07
+[Level 0 step 96] ADVANCE with dt = 7.38305214e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 96] Advanced 262144 cells
+
+TIME= 6.661155314e-05 MASS        = 0.009412229371
+TIME= 6.661155314e-05 XMOM        = -1.600429132e-17
+TIME= 6.661155314e-05 YMOM        = 1.561251128e-16
+TIME= 6.661155314e-05 ZMOM        = -5.655198532e-16
+TIME= 6.661155314e-05 RHO*e       = 20260067.74
+TIME= 6.661155314e-05 RHO*K       = 14114.25898
+TIME= 6.661155314e-05 RHO*E       = 20274182
+TIME= 6.661155314e-05 ENSTROPHY   = 439078.4658
+TIME= 6.661155314e-05 FUEL PROD   = 0
+TIME= 6.661155314e-05 TEMP        = 2400.008079
+
+[STEP 96] Coarse TimeStep time: 0.484906815
+[STEP 96] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 96 TIME = 6.661155314e-05 DT = 7.38305214e-07
+
+...estimated hydro-limited timestep at level 0: 7.38350291e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.38350291e-07
+[Level 0 step 97] ADVANCE with dt = 7.38350291e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 97] Advanced 262144 cells
+
+TIME= 6.734990344e-05 MASS        = 0.009412229371
+TIME= 6.734990344e-05 XMOM        = -1.046195126e-17
+TIME= 6.734990344e-05 YMOM        = 2.602085214e-16
+TIME= 6.734990344e-05 ZMOM        = -4.753142324e-16
+TIME= 6.734990344e-05 RHO*e       = 20260068.57
+TIME= 6.734990344e-05 RHO*K       = 14113.4259
+TIME= 6.734990344e-05 RHO*E       = 20274182
+TIME= 6.734990344e-05 ENSTROPHY   = 439580.7359
+TIME= 6.734990344e-05 FUEL PROD   = 0
+TIME= 6.734990344e-05 TEMP        = 2400.008178
+
+[STEP 97] Coarse TimeStep time: 0.485306892
+[STEP 97] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 97 TIME = 6.734990344e-05 DT = 7.38350291e-07
+
+...estimated hydro-limited timestep at level 0: 7.383942169e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.383942169e-07
+[Level 0 step 98] ADVANCE with dt = 7.383942169e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 98] Advanced 262144 cells
+
+TIME= 6.808829765e-05 MASS        = 0.009412229371
+TIME= 6.808829765e-05 XMOM        = 3.139113243e-17
+TIME= 6.808829765e-05 YMOM        = -1.249000903e-16
+TIME= 6.808829765e-05 ZMOM        = 1.873501354e-16
+TIME= 6.808829765e-05 RHO*e       = 20260069.41
+TIME= 6.808829765e-05 RHO*K       = 14112.59021
+TIME= 6.808829765e-05 RHO*E       = 20274182
+TIME= 6.808829765e-05 ENSTROPHY   = 440089.1865
+TIME= 6.808829765e-05 FUEL PROD   = 0
+TIME= 6.808829765e-05 TEMP        = 2400.008278
+
+[STEP 98] Coarse TimeStep time: 0.521709167
+[STEP 98] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 98 TIME = 6.808829765e-05 DT = 7.383942169e-07
+
+...estimated hydro-limited timestep at level 0: 7.384360268e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.384360268e-07
+[Level 0 step 99] ADVANCE with dt = 7.384360268e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 99] Advanced 262144 cells
+
+TIME= 6.882673368e-05 MASS        = 0.009412229371
+TIME= 6.882673368e-05 XMOM        = 2.245061571e-17
+TIME= 6.882673368e-05 YMOM        = -1.873501354e-16
+TIME= 6.882673368e-05 ZMOM        = 6.938893904e-18
+TIME= 6.882673368e-05 RHO*e       = 20260070.25
+TIME= 6.882673368e-05 RHO*K       = 14111.75241
+TIME= 6.882673368e-05 RHO*E       = 20274182
+TIME= 6.882673368e-05 ENSTROPHY   = 440603.8659
+TIME= 6.882673368e-05 FUEL PROD   = 0
+TIME= 6.882673368e-05 TEMP        = 2400.008378
+
+[STEP 99] Coarse TimeStep time: 0.524912195
+[STEP 99] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 99 TIME = 6.882673368e-05 DT = 7.384360268e-07
+
+...estimated hydro-limited timestep at level 0: 7.384748867e-07
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 7.384748867e-07
+[Level 0 step 100] ADVANCE with dt = 7.384748867e-07
+... Computing diffusion terms at t^(n)
+... Computing hydro advance
+... Computing diffusion terms at t^(n+1,1)
+[Level 0 step 100] Advanced 262144 cells
+
+TIME= 6.956520857e-05 MASS        = 0.009412229371
+TIME= 6.956520857e-05 XMOM        = 1.379436333e-17
+TIME= 6.956520857e-05 YMOM        = -4.857225733e-17
+TIME= 6.956520857e-05 ZMOM        = -9.506284648e-16
+TIME= 6.956520857e-05 RHO*e       = 20260071.09
+TIME= 6.956520857e-05 RHO*K       = 14110.91301
+TIME= 6.956520857e-05 RHO*E       = 20274182
+TIME= 6.956520857e-05 ENSTROPHY   = 441124.8256
+TIME= 6.956520857e-05 FUEL PROD   = 0
+TIME= 6.956520857e-05 TEMP        = 2400.008479
+
+[STEP 100] Coarse TimeStep time: 0.48430215
+[STEP 100] FAB kilobyte spread across MPI nodes: [68508 ... 68508]
+
+STEP = 100 TIME = 6.956520857e-05 DT = 7.384748867e-07
+
+PLOTFILE: file = tg-vortex-3d_plt00100
+Write plotfile time = 0.027033626  seconds
+
+
+Ending run at 08:20:03 UTC on 2018-12-18.
+Run time = 48.68542339
+Run time w/o init = 48.59580023
+Unused ParmParse Variables:
+  [TOP]::pelec.do_grav(nvals = 1)  :: [0]
+  [TOP]::amr.ref_ratio(nvals = 4)  :: [2, 2, 2, 2]
+  [TOP]::amr.regrid_int(nvals = 4)  :: [2, 2, 2, 2]
+
+AMReX (18.12-336-g900ce1f3ba6c) finalized

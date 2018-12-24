@@ -1,0 +1,2210 @@
+MPI initialized with 2 MPI processes
+OMP initialized with 2 OMP threads
+AMReX (18.12-374-gd18c55b82cd5) initialized
+
+Starting run at 07:16:46 UTC on 2018-12-24.
+Successfully read inputs file ... 
+
+PeleC git hash: 5125bd1
+AMReX git hash: 18.12-374-gd18c55b82
+PelePhysics git hash: 6767379
+
+reading extern runtime parameters ...
+
+Time in set_method_params: 0.0003421459114
+1 Species: 
+X  
+0 Auxiliary Variables: 
+
+Successfully read inputs file ... 
+Starting to call amrex_probinit ... 
+Successfully run amrex_probinit
+Initializing the data at level 0
+Done initializing level 0 data 
+...estimated hydro-limited timestep at level 0: 0.02376996341
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.02376996341
+grid_places() time: 0.001548301 new finest: 1
+Initializing the data at level 1
+Done initializing level 1 data 
+grid_places() time: 0.002626081 new finest: 2
+Initializing the data at level 2
+Done initializing level 2 data 
+Now regridding at level lbase = 0
+grid_places() time: 0.003405794 new finest: 2
+Initializing the data at level 1
+Done initializing level 1 data 
+Initializing the data at level 2
+Done initializing level 2 data 
+STEP = 0 TIME = 0 : REGRID  with lbase = 0
+  Level 1   2 grids  8192 cells  50 % of domain
+            smallest grid: 16 x 16 x 16  biggest grid: 16 x 16 x 16
+  Level 2   2 grids  16384 cells  12.5 % of domain
+            smallest grid: 32 x 16 x 16  biggest grid: 32 x 16 x 16
+
+Now regridding at level lbase = 0
+grid_places() time: 0.00415507 new finest: 2
+Initializing the data at level 1
+Done initializing level 1 data 
+Initializing the data at level 2
+Done initializing level 2 data 
+STEP = 0 TIME = 0 : REGRID  with lbase = 0
+  Level 1   2 grids  8192 cells  50 % of domain
+            smallest grid: 16 x 16 x 16  biggest grid: 16 x 16 x 16
+  Level 2   2 grids  16384 cells  12.5 % of domain
+            smallest grid: 32 x 16 x 16  biggest grid: 32 x 16 x 16
+
+
+TIME= 0 MASS        = 0.03515625
+TIME= 0 XMOM        = 0
+TIME= 0 YMOM        = 0
+TIME= 0 ZMOM        = 0
+TIME= 0 RHO*e       = 0.0859375
+TIME= 0 RHO*K       = 0
+TIME= 0 RHO*E       = 0.0859375
+TIME= 0 ENSTROPHY   = 0
+TIME= 0 FUEL PROD   = 0
+TIME= 0 TEMP        = 6.765320356e-10
+INITIAL GRIDS 
+  Level 0   2 grids  2048 cells  100 % of domain
+            smallest grid: 8 x 8 x 16  biggest grid: 8 x 8 x 16
+  Level 1   2 grids  8192 cells  50 % of domain
+            smallest grid: 16 x 16 x 16  biggest grid: 16 x 16 x 16
+  Level 2   2 grids  16384 cells  12.5 % of domain
+            smallest grid: 32 x 16 x 16  biggest grid: 32 x 16 x 16
+
+PLOTFILE: file = Sod-3_plt00000
+Write plotfile time = 0.02931922  seconds
+
+...estimated hydro-limited timestep at level 0: 0.02376996341
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.02376996341
+...estimated hydro-limited timestep at level 1: 0.01188498171
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.01188498171
+...estimated hydro-limited timestep at level 2: 0.005942490854
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.005942490854
+[Level 0 step 1] ADVANCE with dt = 0.002376996341
+... Computing hydro advance
+[Level 0 step 1] Advanced 2048 cells
+[Level 1 step 1] ADVANCE with dt = 0.001188498171
+... Computing hydro advance
+[Level 1 step 1] Advanced 8192 cells
+[Level 2 step 1] ADVANCE with dt = 0.0005942490854
+... Computing hydro advance
+[Level 2 step 1] Advanced 16384 cells
+[Level 2 step 2] ADVANCE with dt = 0.0005942490854
+... Computing hydro advance
+[Level 2 step 2] Advanced 16384 cells
+PeleC::reflux() at level 1 : time = 0.0001446870156
+[Level 1 step 2] ADVANCE with dt = 0.001188498171
+... Computing hydro advance
+[Level 1 step 2] Advanced 8192 cells
+[Level 2 step 3] ADVANCE with dt = 0.0005942490854
+... Computing hydro advance
+[Level 2 step 3] Advanced 16384 cells
+[Level 2 step 4] ADVANCE with dt = 0.0005942490854
+... Computing hydro advance
+[Level 2 step 4] Advanced 16384 cells
+PeleC::reflux() at level 1 : time = 0.0001217019744
+PeleC::reflux() at level 0 : time = 4.537089262e-05
+
+TIME= 0.002376996341 MASS        = 0.03515625
+TIME= 0.002376996341 XMOM        = 0
+TIME= 0.002376996341 YMOM        = 0
+TIME= 0.002376996341 ZMOM        = 0.0001337060442
+TIME= 0.002376996341 RHO*e       = 0.08592078364
+TIME= 0.002376996341 RHO*K       = 1.671635798e-05
+TIME= 0.002376996341 RHO*E       = 0.0859375
+TIME= 0.002376996341 ENSTROPHY   = 0
+TIME= 0.002376996341 FUEL PROD   = 0
+TIME= 0.002376996341 TEMP        = 6.764292448e-10
+
+[STEP 1] Coarse TimeStep time: 0.244566076
+[STEP 1] FAB kilobyte spread across MPI nodes: [17901 ... 17901]
+
+STEP = 1 TIME = 0.002376996341 DT = 0.002376996341
+
+...estimated hydro-limited timestep at level 0: 0.02287278393
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.02287278393
+...estimated hydro-limited timestep at level 1: 0.01045863374
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.01045863374
+...estimated hydro-limited timestep at level 2: 0.004804706572
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.004804706572
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.02287278393
+ ... but limiting to: 0.002495846158 = 1.05 * 0.002376996341
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.01045863374
+ ... but limiting to: 0.001247923079 = 1.05 * 0.001188498171
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.004804706572
+ ... but limiting to: 0.0006239615396 = 1.05 * 0.0005942490854
+Now regridding at level lbase = 1
+grid_places() time: 0.002704245 new finest: 2
+TIME = 0.002376996341 : REGRID  with lbase = 1
+  Level 2   2 grids  16384 cells  12.5 % of domain
+            smallest grid: 32 x 16 x 16  biggest grid: 32 x 16 x 16
+
+[Level 0 step 2] ADVANCE with dt = 0.002495846158
+... Computing hydro advance
+[Level 0 step 2] Advanced 2048 cells
+[Level 1 step 3] ADVANCE with dt = 0.001247923079
+... Computing hydro advance
+[Level 1 step 3] Advanced 8192 cells
+[Level 2 step 5] ADVANCE with dt = 0.0006239615396
+... Computing hydro advance
+[Level 2 step 5] Advanced 16384 cells
+[Level 2 step 6] ADVANCE with dt = 0.0006239615396
+... Computing hydro advance
+[Level 2 step 6] Advanced 16384 cells
+PeleC::reflux() at level 1 : time = 0.0001490990398
+[Level 1 step 4] ADVANCE with dt = 0.001247923079
+... Computing hydro advance
+[Level 1 step 4] Advanced 8192 cells
+[Level 2 step 7] ADVANCE with dt = 0.0006239615396
+... Computing hydro advance
+[Level 2 step 7] Advanced 16384 cells
+[Level 2 step 8] ADVANCE with dt = 0.0006239615396
+... Computing hydro advance
+[Level 2 step 8] Advanced 16384 cells
+PeleC::reflux() at level 1 : time = 0.0001319559524
+PeleC::reflux() at level 0 : time = 3.170489799e-05
+
+TIME= 0.0048728425 MASS        = 0.03515625
+TIME= 0.0048728425 XMOM        = 0
+TIME= 0.0048728425 YMOM        = 0
+TIME= 0.0048728425 ZMOM        = 0.0002740973906
+TIME= 0.0048728425 RHO*e       = 0.08588204084
+TIME= 0.0048728425 RHO*K       = 5.545916357e-05
+TIME= 0.0048728425 RHO*E       = 0.0859375
+TIME= 0.0048728425 ENSTROPHY   = 0
+TIME= 0.0048728425 FUEL PROD   = 0
+TIME= 0.0048728425 TEMP        = 6.765353802e-10
+
+[STEP 2] Coarse TimeStep time: 0.250337149
+[STEP 2] FAB kilobyte spread across MPI nodes: [17901 ... 17901]
+
+STEP = 2 TIME = 0.0048728425 DT = 0.002495846158
+
+...estimated hydro-limited timestep at level 0: 0.01995379855
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01995379855
+...estimated hydro-limited timestep at level 1: 0.0088883602
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.0088883602
+...estimated hydro-limited timestep at level 2: 0.004190470832
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.004190470832
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01995379855
+ ... but limiting to: 0.002620638466 = 1.05 * 0.002495846158
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.0088883602
+ ... but limiting to: 0.001310319233 = 1.05 * 0.001247923079
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.004190470832
+ ... but limiting to: 0.0006551596166 = 1.05 * 0.0006239615396
+Now regridding at level lbase = 0
+grid_places() time: 0.003722836 new finest: 2
+STEP = 2 TIME = 0.0048728425 : REGRID  with lbase = 0
+  Level 1   2 grids  8192 cells  50 % of domain
+            smallest grid: 16 x 16 x 16  biggest grid: 16 x 16 x 16
+  Level 2   2 grids  16384 cells  12.5 % of domain
+            smallest grid: 32 x 16 x 16  biggest grid: 32 x 16 x 16
+
+[Level 0 step 3] ADVANCE with dt = 0.002620638466
+... Computing hydro advance
+[Level 0 step 3] Advanced 2048 cells
+[Level 1 step 5] ADVANCE with dt = 0.001310319233
+... Computing hydro advance
+[Level 1 step 5] Advanced 8192 cells
+[Level 2 step 9] ADVANCE with dt = 0.0006551596166
+... Computing hydro advance
+[Level 2 step 9] Advanced 16384 cells
+[Level 2 step 10] ADVANCE with dt = 0.0006551596166
+... Computing hydro advance
+[Level 2 step 10] Advanced 16384 cells
+PeleC::reflux() at level 1 : time = 0.000143139041
+[Level 1 step 6] ADVANCE with dt = 0.001310319233
+... Computing hydro advance
+[Level 1 step 6] Advanced 8192 cells
+[Level 2 step 11] ADVANCE with dt = 0.0006551596166
+... Computing hydro advance
+[Level 2 step 11] Advanced 16384 cells
+[Level 2 step 12] ADVANCE with dt = 0.0006551596166
+... Computing hydro advance
+[Level 2 step 12] Advanced 16384 cells
+PeleC::reflux() at level 1 : time = 0.0001363339834
+PeleC::reflux() at level 0 : time = 4.537496716e-05
+
+TIME= 0.007493480966 MASS        = 0.03515625
+TIME= 0.007493480966 XMOM        = 0
+TIME= 0.007493480966 YMOM        = 0
+TIME= 0.007493480966 ZMOM        = 0.0004215083044
+TIME= 0.007493480966 RHO*e       = 0.08581139275
+TIME= 0.007493480966 RHO*K       = 0.0001261072521
+TIME= 0.007493480966 RHO*E       = 0.0859375
+TIME= 0.007493480966 ENSTROPHY   = 0
+TIME= 0.007493480966 FUEL PROD   = 0
+TIME= 0.007493480966 TEMP        = 6.769574771e-10
+
+[STEP 3] Coarse TimeStep time: 0.254941483
+[STEP 3] FAB kilobyte spread across MPI nodes: [17901 ... 17901]
+
+STEP = 3 TIME = 0.007493480966 DT = 0.002620638466
+
+...estimated hydro-limited timestep at level 0: 0.01687323301
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01687323301
+...estimated hydro-limited timestep at level 1: 0.007461217911
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.007461217911
+...estimated hydro-limited timestep at level 2: 0.003486350207
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003486350207
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01687323301
+ ... but limiting to: 0.00275167039 = 1.05 * 0.002620638466
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.007461217911
+ ... but limiting to: 0.001375835195 = 1.05 * 0.001310319233
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003486350207
+ ... but limiting to: 0.0006879175974 = 1.05 * 0.0006551596166
+Now regridding at level lbase = 1
+grid_places() time: 0.002777794 new finest: 2
+TIME = 0.007493480966 : REGRID  with lbase = 1
+  Level 2   2 grids  16384 cells  12.5 % of domain
+            smallest grid: 32 x 16 x 16  biggest grid: 32 x 16 x 16
+
+[Level 0 step 4] ADVANCE with dt = 0.00275167039
+... Computing hydro advance
+[Level 0 step 4] Advanced 2048 cells
+[Level 1 step 7] ADVANCE with dt = 0.001375835195
+... Computing hydro advance
+[Level 1 step 7] Advanced 8192 cells
+[Level 2 step 13] ADVANCE with dt = 0.0006879175974
+... Computing hydro advance
+[Level 2 step 13] Advanced 16384 cells
+[Level 2 step 14] ADVANCE with dt = 0.0006879175974
+... Computing hydro advance
+[Level 2 step 14] Advanced 16384 cells
+PeleC::reflux() at level 1 : time = 0.0001427710522
+[Level 1 step 8] ADVANCE with dt = 0.001375835195
+... Computing hydro advance
+[Level 1 step 8] Advanced 8192 cells
+[Level 2 step 15] ADVANCE with dt = 0.0006879175974
+... Computing hydro advance
+[Level 2 step 15] Advanced 16384 cells
+[Level 2 step 16] ADVANCE with dt = 0.0006879175974
+... Computing hydro advance
+[Level 2 step 16] Advanced 16384 cells
+PeleC::reflux() at level 1 : time = 0.000250551966
+PeleC::reflux() at level 0 : time = 5.329994019e-05
+
+TIME= 0.01024515136 MASS        = 0.03515625
+TIME= 0.01024515136 XMOM        = 0
+TIME= 0.01024515136 YMOM        = 0
+TIME= 0.01024515136 ZMOM        = 0.0005762897638
+TIME= 0.01024515136 RHO*e       = 0.08573908224
+TIME= 0.01024515136 RHO*K       = 0.0001984177622
+TIME= 0.01024515136 RHO*E       = 0.0859375
+TIME= 0.01024515136 ENSTROPHY   = 0
+TIME= 0.01024515136 FUEL PROD   = 0
+TIME= 0.01024515136 TEMP        = 6.770588691e-10
+
+[STEP 4] Coarse TimeStep time: 0.25676195
+[STEP 4] FAB kilobyte spread across MPI nodes: [17901 ... 17901]
+
+STEP = 4 TIME = 0.01024515136 DT = 0.00275167039
+
+...estimated hydro-limited timestep at level 0: 0.01530125707
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01530125707
+...estimated hydro-limited timestep at level 1: 0.006896283174
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006896283174
+...estimated hydro-limited timestep at level 2: 0.003314994071
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003314994071
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01530125707
+ ... but limiting to: 0.002889253909 = 1.05 * 0.00275167039
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006896283174
+ ... but limiting to: 0.001444626955 = 1.05 * 0.001375835195
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003314994071
+ ... but limiting to: 0.0007223134773 = 1.05 * 0.0006879175974
+Now regridding at level lbase = 0
+grid_places() time: 0.003940014 new finest: 2
+STEP = 4 TIME = 0.01024515136 : REGRID  with lbase = 0
+  Level 1   2 grids  8192 cells  50 % of domain
+            smallest grid: 16 x 16 x 16  biggest grid: 16 x 16 x 16
+  Level 2   2 grids  32768 cells  25 % of domain
+            smallest grid: 32 x 32 x 16  biggest grid: 32 x 32 x 16
+
+[Level 0 step 5] ADVANCE with dt = 0.002889253909
+... Computing hydro advance
+[Level 0 step 5] Advanced 2048 cells
+[Level 1 step 9] ADVANCE with dt = 0.001444626955
+... Computing hydro advance
+[Level 1 step 9] Advanced 8192 cells
+[Level 2 step 17] ADVANCE with dt = 0.0007223134773
+... Computing hydro advance
+[Level 2 step 17] Advanced 32768 cells
+[Level 2 step 18] ADVANCE with dt = 0.0007223134773
+... Computing hydro advance
+[Level 2 step 18] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 0.0001112989848
+[Level 1 step 10] ADVANCE with dt = 0.001444626955
+... Computing hydro advance
+[Level 1 step 10] Advanced 8192 cells
+[Level 2 step 19] ADVANCE with dt = 0.0007223134773
+... Computing hydro advance
+[Level 2 step 19] Advanced 32768 cells
+[Level 2 step 20] ADVANCE with dt = 0.0007223134773
+... Computing hydro advance
+[Level 2 step 20] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 9.254692122e-05
+PeleC::reflux() at level 0 : time = 4.624691792e-05
+
+TIME= 0.01313440527 MASS        = 0.03515625
+TIME= 0.01313440527 XMOM        = 0
+TIME= 0.01313440527 YMOM        = 0
+TIME= 0.01313440527 ZMOM        = 0.0007388102962
+TIME= 0.01313440527 RHO*e       = 0.08567544569
+TIME= 0.01313440527 RHO*K       = 0.0002620543085
+TIME= 0.01313440527 RHO*E       = 0.0859375
+TIME= 0.01313440527 ENSTROPHY   = 0
+TIME= 0.01313440527 FUEL PROD   = 0
+TIME= 0.01313440527 TEMP        = 6.772725862e-10
+
+[STEP 5] Coarse TimeStep time: 0.472949127
+[STEP 5] FAB kilobyte spread across MPI nodes: [28510 ... 28510]
+
+STEP = 5 TIME = 0.01313440527 DT = 0.002889253909
+
+...estimated hydro-limited timestep at level 0: 0.01444659887
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01444659887
+...estimated hydro-limited timestep at level 1: 0.006773912847
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006773912847
+...estimated hydro-limited timestep at level 2: 0.003360140587
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003360140587
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01444659887
+ ... but limiting to: 0.003033716605 = 1.05 * 0.002889253909
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006773912847
+ ... but limiting to: 0.001516858302 = 1.05 * 0.001444626955
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003360140587
+ ... but limiting to: 0.0007584291512 = 1.05 * 0.0007223134773
+Now regridding at level lbase = 1
+grid_places() time: 0.002805287 new finest: 2
+TIME = 0.01313440527 : REGRID  with lbase = 1
+  Level 2   2 grids  32768 cells  25 % of domain
+            smallest grid: 32 x 32 x 16  biggest grid: 32 x 32 x 16
+
+[Level 0 step 6] ADVANCE with dt = 0.003033716605
+... Computing hydro advance
+[Level 0 step 6] Advanced 2048 cells
+[Level 1 step 11] ADVANCE with dt = 0.001516858302
+... Computing hydro advance
+[Level 1 step 11] Advanced 8192 cells
+[Level 2 step 21] ADVANCE with dt = 0.0007584291512
+... Computing hydro advance
+[Level 2 step 21] Advanced 32768 cells
+[Level 2 step 22] ADVANCE with dt = 0.0007584291512
+... Computing hydro advance
+[Level 2 step 22] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 0.0001160160173
+[Level 1 step 12] ADVANCE with dt = 0.001516858302
+... Computing hydro advance
+[Level 1 step 12] Advanced 8192 cells
+[Level 2 step 23] ADVANCE with dt = 0.0007584291512
+... Computing hydro advance
+[Level 2 step 23] Advanced 32768 cells
+[Level 2 step 24] ADVANCE with dt = 0.0007584291512
+... Computing hydro advance
+[Level 2 step 24] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 9.344005957e-05
+PeleC::reflux() at level 0 : time = 3.100198228e-05
+
+TIME= 0.01616812187 MASS        = 0.03515625
+TIME= 0.01616812187 XMOM        = 0
+TIME= 0.01616812187 YMOM        = 0
+TIME= 0.01616812187 ZMOM        = 0.0009094568552
+TIME= 0.01616812187 RHO*e       = 0.08560992767
+TIME= 0.01616812187 RHO*K       = 0.0003275723308
+TIME= 0.01616812187 RHO*E       = 0.0859375
+TIME= 0.01616812187 ENSTROPHY   = 0
+TIME= 0.01616812187 FUEL PROD   = 0
+TIME= 0.01616812187 TEMP        = 6.773401548e-10
+
+[STEP 6] Coarse TimeStep time: 0.465205853
+[STEP 6] FAB kilobyte spread across MPI nodes: [31969 ... 31969]
+
+STEP = 6 TIME = 0.01616812187 DT = 0.003033716605
+
+...estimated hydro-limited timestep at level 0: 0.0139883295
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.0139883295
+...estimated hydro-limited timestep at level 1: 0.006900142689
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006900142689
+...estimated hydro-limited timestep at level 2: 0.003358110587
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003358110587
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.0139883295
+ ... but limiting to: 0.003185402435 = 1.05 * 0.003033716605
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006900142689
+ ... but limiting to: 0.001592701217 = 1.05 * 0.001516858302
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003358110587
+ ... but limiting to: 0.0007963506087 = 1.05 * 0.0007584291512
+Now regridding at level lbase = 0
+grid_places() time: 0.0038351 new finest: 2
+STEP = 6 TIME = 0.01616812187 : REGRID  with lbase = 0
+  Level 1   2 grids  8192 cells  50 % of domain
+            smallest grid: 16 x 16 x 16  biggest grid: 16 x 16 x 16
+  Level 2   2 grids  32768 cells  25 % of domain
+            smallest grid: 32 x 32 x 16  biggest grid: 32 x 32 x 16
+
+[Level 0 step 7] ADVANCE with dt = 0.003185402435
+... Computing hydro advance
+[Level 0 step 7] Advanced 2048 cells
+[Level 1 step 13] ADVANCE with dt = 0.001592701217
+... Computing hydro advance
+[Level 1 step 13] Advanced 8192 cells
+[Level 2 step 25] ADVANCE with dt = 0.0007963506087
+... Computing hydro advance
+[Level 2 step 25] Advanced 32768 cells
+[Level 2 step 26] ADVANCE with dt = 0.0007963506087
+... Computing hydro advance
+[Level 2 step 26] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 0.0001137109939
+[Level 1 step 14] ADVANCE with dt = 0.001592701217
+... Computing hydro advance
+[Level 1 step 14] Advanced 8192 cells
+[Level 2 step 27] ADVANCE with dt = 0.0007963506087
+... Computing hydro advance
+[Level 2 step 27] Advanced 32768 cells
+[Level 2 step 28] ADVANCE with dt = 0.0007963506087
+... Computing hydro advance
+[Level 2 step 28] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 9.204400703e-05
+PeleC::reflux() at level 0 : time = 4.628300667e-05
+
+TIME= 0.0193535243 MASS        = 0.03515625
+TIME= 0.0193535243 XMOM        = 0
+TIME= 0.0193535243 YMOM        = 0
+TIME= 0.0193535243 ZMOM        = 0.001088635742
+TIME= 0.0193535243 RHO*e       = 0.08553865302
+TIME= 0.0193535243 RHO*K       = 0.000398846983
+TIME= 0.0193535243 RHO*E       = 0.0859375
+TIME= 0.0193535243 ENSTROPHY   = 0
+TIME= 0.0193535243 FUEL PROD   = 0
+TIME= 0.0193535243 TEMP        = 6.773381467e-10
+
+[STEP 7] Coarse TimeStep time: 0.465632218
+[STEP 7] FAB kilobyte spread across MPI nodes: [31969 ... 31969]
+
+STEP = 7 TIME = 0.0193535243 DT = 0.003185402435
+
+...estimated hydro-limited timestep at level 0: 0.0137771896
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.0137771896
+...estimated hydro-limited timestep at level 1: 0.006663789219
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006663789219
+...estimated hydro-limited timestep at level 2: 0.00328736964
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.00328736964
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.0137771896
+ ... but limiting to: 0.003344672557 = 1.05 * 0.003185402435
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006663789219
+ ... but limiting to: 0.001672336278 = 1.05 * 0.001592701217
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.00328736964
+ ... but limiting to: 0.0008361681392 = 1.05 * 0.0007963506087
+Now regridding at level lbase = 1
+grid_places() time: 0.002818987 new finest: 2
+TIME = 0.0193535243 : REGRID  with lbase = 1
+  Level 2   2 grids  32768 cells  25 % of domain
+            smallest grid: 32 x 32 x 16  biggest grid: 32 x 32 x 16
+
+[Level 0 step 8] ADVANCE with dt = 0.003344672557
+... Computing hydro advance
+[Level 0 step 8] Advanced 2048 cells
+[Level 1 step 15] ADVANCE with dt = 0.001672336278
+... Computing hydro advance
+[Level 1 step 15] Advanced 8192 cells
+[Level 2 step 29] ADVANCE with dt = 0.0008361681392
+... Computing hydro advance
+[Level 2 step 29] Advanced 32768 cells
+[Level 2 step 30] ADVANCE with dt = 0.0008361681392
+... Computing hydro advance
+[Level 2 step 30] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 0.0001129810698
+[Level 1 step 16] ADVANCE with dt = 0.001672336278
+... Computing hydro advance
+[Level 1 step 16] Advanced 8192 cells
+[Level 2 step 31] ADVANCE with dt = 0.0008361681392
+... Computing hydro advance
+[Level 2 step 31] Advanced 32768 cells
+[Level 2 step 32] ADVANCE with dt = 0.0008361681392
+... Computing hydro advance
+[Level 2 step 32] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 9.439501446e-05
+PeleC::reflux() at level 0 : time = 3.126694355e-05
+
+TIME= 0.02269819686 MASS        = 0.03515625
+TIME= 0.02269819686 XMOM        = 0
+TIME= 0.02269819686 YMOM        = 0
+TIME= 0.02269819686 ZMOM        = 0.001276773573
+TIME= 0.02269819686 RHO*e       = 0.08546520313
+TIME= 0.02269819686 RHO*K       = 0.0004722968659
+TIME= 0.02269819686 RHO*E       = 0.0859375
+TIME= 0.02269819686 ENSTROPHY   = 0
+TIME= 0.02269819686 FUEL PROD   = 0
+TIME= 0.02269819686 TEMP        = 6.774881591e-10
+
+[STEP 8] Coarse TimeStep time: 0.463310668
+[STEP 8] FAB kilobyte spread across MPI nodes: [31969 ... 31969]
+
+STEP = 8 TIME = 0.02269819686 DT = 0.003344672557
+
+...estimated hydro-limited timestep at level 0: 0.01386346489
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01386346489
+...estimated hydro-limited timestep at level 1: 0.006667002611
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006667002611
+...estimated hydro-limited timestep at level 2: 0.003263129662
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003263129662
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01386346489
+ ... but limiting to: 0.003511906185 = 1.05 * 0.003344672557
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006667002611
+ ... but limiting to: 0.001755953092 = 1.05 * 0.001672336278
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003263129662
+ ... but limiting to: 0.0008779765461 = 1.05 * 0.0008361681392
+Now regridding at level lbase = 0
+grid_places() time: 0.003837295 new finest: 2
+STEP = 8 TIME = 0.02269819686 : REGRID  with lbase = 0
+  Level 1   2 grids  8192 cells  50 % of domain
+            smallest grid: 16 x 16 x 16  biggest grid: 16 x 16 x 16
+  Level 2   2 grids  32768 cells  25 % of domain
+            smallest grid: 32 x 32 x 16  biggest grid: 32 x 32 x 16
+
+[Level 0 step 9] ADVANCE with dt = 0.003511906185
+... Computing hydro advance
+[Level 0 step 9] Advanced 2048 cells
+[Level 1 step 17] ADVANCE with dt = 0.001755953092
+... Computing hydro advance
+[Level 1 step 17] Advanced 8192 cells
+[Level 2 step 33] ADVANCE with dt = 0.0008779765461
+... Computing hydro advance
+[Level 2 step 33] Advanced 32768 cells
+[Level 2 step 34] ADVANCE with dt = 0.0008779765461
+... Computing hydro advance
+[Level 2 step 34] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 0.0001175949583
+[Level 1 step 18] ADVANCE with dt = 0.001755953092
+... Computing hydro advance
+[Level 1 step 18] Advanced 8192 cells
+[Level 2 step 35] ADVANCE with dt = 0.0008779765461
+... Computing hydro advance
+[Level 2 step 35] Advanced 32768 cells
+[Level 2 step 36] ADVANCE with dt = 0.0008779765461
+... Computing hydro advance
+[Level 2 step 36] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 9.289197624e-05
+PeleC::reflux() at level 0 : time = 4.549708683e-05
+
+TIME= 0.02621010305 MASS        = 0.03515625
+TIME= 0.02621010305 XMOM        = 0
+TIME= 0.02621010305 YMOM        = 0
+TIME= 0.02621010305 ZMOM        = 0.001474318296
+TIME= 0.02621010305 RHO*e       = 0.08538466718
+TIME= 0.02621010305 RHO*K       = 0.0005528328212
+TIME= 0.02621010305 RHO*E       = 0.0859375
+TIME= 0.02621010305 ENSTROPHY   = 0
+TIME= 0.02621010305 FUEL PROD   = 0
+TIME= 0.02621010305 TEMP        = 6.77519054e-10
+
+[STEP 9] Coarse TimeStep time: 0.467739578
+[STEP 9] FAB kilobyte spread across MPI nodes: [31969 ... 31969]
+
+STEP = 9 TIME = 0.02621010305 DT = 0.003511906185
+
+...estimated hydro-limited timestep at level 0: 0.0140422103
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.0140422103
+...estimated hydro-limited timestep at level 1: 0.006807749463
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006807749463
+...estimated hydro-limited timestep at level 2: 0.003225056542
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003225056542
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.0140422103
+ ... but limiting to: 0.003687501494 = 1.05 * 0.003511906185
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006807749463
+ ... but limiting to: 0.001843750747 = 1.05 * 0.001755953092
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003225056542
+ ... but limiting to: 0.0009218753734 = 1.05 * 0.0008779765461
+Now regridding at level lbase = 1
+grid_places() time: 0.002900648 new finest: 2
+TIME = 0.02621010305 : REGRID  with lbase = 1
+  Level 2   2 grids  32768 cells  25 % of domain
+            smallest grid: 32 x 32 x 16  biggest grid: 32 x 32 x 16
+
+[Level 0 step 10] ADVANCE with dt = 0.003687501494
+... Computing hydro advance
+[Level 0 step 10] Advanced 2048 cells
+[Level 1 step 19] ADVANCE with dt = 0.001843750747
+... Computing hydro advance
+[Level 1 step 19] Advanced 8192 cells
+[Level 2 step 37] ADVANCE with dt = 0.0009218753734
+... Computing hydro advance
+[Level 2 step 37] Advanced 32768 cells
+[Level 2 step 38] ADVANCE with dt = 0.0009218753734
+... Computing hydro advance
+[Level 2 step 38] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 0.0001120880479
+[Level 1 step 20] ADVANCE with dt = 0.001843750747
+... Computing hydro advance
+[Level 1 step 20] Advanced 8192 cells
+[Level 2 step 39] ADVANCE with dt = 0.0009218753734
+... Computing hydro advance
+[Level 2 step 39] Advanced 32768 cells
+[Level 2 step 40] ADVANCE with dt = 0.0009218753734
+... Computing hydro advance
+[Level 2 step 40] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 9.083398618e-05
+PeleC::reflux() at level 0 : time = 3.274495248e-05
+
+TIME= 0.02989760454 MASS        = 0.03515625
+TIME= 0.02989760454 XMOM        = 0
+TIME= 0.02989760454 YMOM        = 0
+TIME= 0.02989760454 ZMOM        = 0.001681740255
+TIME= 0.02989760454 RHO*e       = 0.08530109512
+TIME= 0.02989760454 RHO*K       = 0.0006364048752
+TIME= 0.02989760454 RHO*E       = 0.0859375
+TIME= 0.02989760454 ENSTROPHY   = 0
+TIME= 0.02989760454 FUEL PROD   = 0
+TIME= 0.02989760454 TEMP        = 6.775914046e-10
+
+[STEP 10] Coarse TimeStep time: 0.462687705
+[STEP 10] FAB kilobyte spread across MPI nodes: [31969 ... 31969]
+
+STEP = 10 TIME = 0.02989760454 DT = 0.003687501494
+
+...estimated hydro-limited timestep at level 0: 0.01418594566
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01418594566
+...estimated hydro-limited timestep at level 1: 0.006491374281
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006491374281
+...estimated hydro-limited timestep at level 2: 0.003236664169
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003236664169
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01418594566
+ ... but limiting to: 0.003871876568 = 1.05 * 0.003687501494
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006491374281
+ ... but limiting to: 0.001935938284 = 1.05 * 0.001843750747
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003236664169
+ ... but limiting to: 0.0009679691421 = 1.05 * 0.0009218753734
+Now regridding at level lbase = 0
+grid_places() time: 0.004275429 new finest: 2
+STEP = 10 TIME = 0.02989760454 : REGRID  with lbase = 0
+  Level 1   2 grids  8192 cells  50 % of domain
+            smallest grid: 16 x 16 x 16  biggest grid: 16 x 16 x 16
+  Level 2   2 grids  32768 cells  25 % of domain
+            smallest grid: 32 x 32 x 16  biggest grid: 32 x 32 x 16
+
+[Level 0 step 11] ADVANCE with dt = 0.003871876568
+... Computing hydro advance
+[Level 0 step 11] Advanced 2048 cells
+[Level 1 step 21] ADVANCE with dt = 0.001935938284
+... Computing hydro advance
+[Level 1 step 21] Advanced 8192 cells
+[Level 2 step 41] ADVANCE with dt = 0.0009679691421
+... Computing hydro advance
+[Level 2 step 41] Advanced 32768 cells
+[Level 2 step 42] ADVANCE with dt = 0.0009679691421
+... Computing hydro advance
+[Level 2 step 42] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 0.0001079019858
+[Level 1 step 22] ADVANCE with dt = 0.001935938284
+... Computing hydro advance
+[Level 1 step 22] Advanced 8192 cells
+[Level 2 step 43] ADVANCE with dt = 0.0009679691421
+... Computing hydro advance
+[Level 2 step 43] Advanced 32768 cells
+[Level 2 step 44] ADVANCE with dt = 0.0009679691421
+... Computing hydro advance
+[Level 2 step 44] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 9.129999671e-05
+PeleC::reflux() at level 0 : time = 4.521408118e-05
+
+TIME= 0.03376948111 MASS        = 0.03515625
+TIME= 0.03376948111 XMOM        = 0
+TIME= 0.03376948111 YMOM        = 0
+TIME= 0.03376948111 ZMOM        = 0.001899533312
+TIME= 0.03376948111 RHO*e       = 0.08521279406
+TIME= 0.03376948111 RHO*K       = 0.0007247059357
+TIME= 0.03376948111 RHO*E       = 0.0859375
+TIME= 0.03376948111 ENSTROPHY   = 0
+TIME= 0.03376948111 FUEL PROD   = 0
+TIME= 0.03376948111 TEMP        = 6.776024207e-10
+
+[STEP 11] Coarse TimeStep time: 0.477186585
+[STEP 11] FAB kilobyte spread across MPI nodes: [31969 ... 31969]
+
+STEP = 11 TIME = 0.03376948111 DT = 0.003871876568
+
+...estimated hydro-limited timestep at level 0: 0.01349297357
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01349297357
+...estimated hydro-limited timestep at level 1: 0.006532863774
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006532863774
+...estimated hydro-limited timestep at level 2: 0.003211974947
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003211974947
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01349297357
+ ... but limiting to: 0.004065470397 = 1.05 * 0.003871876568
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006532863774
+ ... but limiting to: 0.002032735198 = 1.05 * 0.001935938284
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003211974947
+ ... but limiting to: 0.001016367599 = 1.05 * 0.0009679691421
+Now regridding at level lbase = 1
+grid_places() time: 0.002919308 new finest: 2
+TIME = 0.03376948111 : REGRID  with lbase = 1
+  Level 2   2 grids  32768 cells  25 % of domain
+            smallest grid: 32 x 32 x 16  biggest grid: 32 x 32 x 16
+
+[Level 0 step 12] ADVANCE with dt = 0.004065470397
+... Computing hydro advance
+[Level 0 step 12] Advanced 2048 cells
+[Level 1 step 23] ADVANCE with dt = 0.002032735198
+... Computing hydro advance
+[Level 1 step 23] Advanced 8192 cells
+[Level 2 step 45] ADVANCE with dt = 0.001016367599
+... Computing hydro advance
+[Level 2 step 45] Advanced 32768 cells
+[Level 2 step 46] ADVANCE with dt = 0.001016367599
+... Computing hydro advance
+[Level 2 step 46] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 0.0001910499996
+[Level 1 step 24] ADVANCE with dt = 0.002032735198
+... Computing hydro advance
+[Level 1 step 24] Advanced 8192 cells
+[Level 2 step 47] ADVANCE with dt = 0.001016367599
+... Computing hydro advance
+[Level 2 step 47] Advanced 32768 cells
+[Level 2 step 48] ADVANCE with dt = 0.001016367599
+... Computing hydro advance
+[Level 2 step 48] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 0.0001038450282
+PeleC::reflux() at level 0 : time = 4.4076005e-05
+
+TIME= 0.03783495151 MASS        = 0.03515625
+TIME= 0.03783495151 XMOM        = 0
+TIME= 0.03783495151 YMOM        = 0
+TIME= 0.03783495151 ZMOM        = 0.002128216022
+TIME= 0.03783495151 RHO*e       = 0.08512052786
+TIME= 0.03783495151 RHO*K       = 0.0008169721422
+TIME= 0.03783495151 RHO*E       = 0.0859375
+TIME= 0.03783495151 ENSTROPHY   = 0
+TIME= 0.03783495151 FUEL PROD   = 0
+TIME= 0.03783495151 TEMP        = 6.77627788e-10
+
+[STEP 12] Coarse TimeStep time: 0.467476879
+[STEP 12] FAB kilobyte spread across MPI nodes: [31969 ... 31969]
+
+STEP = 12 TIME = 0.03783495151 DT = 0.004065470397
+
+...estimated hydro-limited timestep at level 0: 0.01316499437
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01316499437
+...estimated hydro-limited timestep at level 1: 0.006478374396
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006478374396
+...estimated hydro-limited timestep at level 2: 0.003189775955
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003189775955
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01316499437
+ ... but limiting to: 0.004268743917 = 1.05 * 0.004065470397
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006478374396
+ ... but limiting to: 0.002134371958 = 1.05 * 0.002032735198
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003189775955
+ ... but limiting to: 0.001067185979 = 1.05 * 0.001016367599
+Now regridding at level lbase = 0
+grid_places() time: 0.003924045 new finest: 2
+STEP = 12 TIME = 0.03783495151 : REGRID  with lbase = 0
+  Level 1   2 grids  8192 cells  50 % of domain
+            smallest grid: 16 x 16 x 16  biggest grid: 16 x 16 x 16
+  Level 2   2 grids  32768 cells  25 % of domain
+            smallest grid: 32 x 32 x 16  biggest grid: 32 x 32 x 16
+
+[Level 0 step 13] ADVANCE with dt = 0.004268743917
+... Computing hydro advance
+[Level 0 step 13] Advanced 2048 cells
+[Level 1 step 25] ADVANCE with dt = 0.002134371958
+... Computing hydro advance
+[Level 1 step 25] Advanced 8192 cells
+[Level 2 step 49] ADVANCE with dt = 0.001067185979
+... Computing hydro advance
+[Level 2 step 49] Advanced 32768 cells
+[Level 2 step 50] ADVANCE with dt = 0.001067185979
+... Computing hydro advance
+[Level 2 step 50] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 0.0001142860856
+[Level 1 step 26] ADVANCE with dt = 0.002134371958
+... Computing hydro advance
+[Level 1 step 26] Advanced 8192 cells
+[Level 2 step 51] ADVANCE with dt = 0.001067185979
+... Computing hydro advance
+[Level 2 step 51] Advanced 32768 cells
+[Level 2 step 52] ADVANCE with dt = 0.001067185979
+... Computing hydro advance
+[Level 2 step 52] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 9.030499496e-05
+PeleC::reflux() at level 0 : time = 4.43700701e-05
+
+TIME= 0.04210369542 MASS        = 0.03515625
+TIME= 0.04210369542 XMOM        = 0
+TIME= 0.04210369542 YMOM        = 0
+TIME= 0.04210369542 ZMOM        = 0.002368332867
+TIME= 0.04210369542 RHO*e       = 0.08502350127
+TIME= 0.04210369542 RHO*K       = 0.0009139987297
+TIME= 0.04210369542 RHO*E       = 0.0859375
+TIME= 0.04210369542 ENSTROPHY   = 0
+TIME= 0.04210369542 FUEL PROD   = 0
+TIME= 0.04210369542 TEMP        = 6.776554158e-10
+
+[STEP 13] Coarse TimeStep time: 0.465395456
+[STEP 13] FAB kilobyte spread across MPI nodes: [31969 ... 31969]
+
+STEP = 13 TIME = 0.04210369542 DT = 0.004268743917
+
+...estimated hydro-limited timestep at level 0: 0.01326369612
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01326369612
+...estimated hydro-limited timestep at level 1: 0.006408159229
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006408159229
+...estimated hydro-limited timestep at level 2: 0.003187645165
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003187645165
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01326369612
+ ... but limiting to: 0.004482181113 = 1.05 * 0.004268743917
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006408159229
+ ... but limiting to: 0.002241090556 = 1.05 * 0.002134371958
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003187645165
+ ... but limiting to: 0.001120545278 = 1.05 * 0.001067185979
+Now regridding at level lbase = 1
+grid_places() time: 0.002851343 new finest: 2
+TIME = 0.04210369542 : REGRID  with lbase = 1
+  Level 2   2 grids  32768 cells  25 % of domain
+            smallest grid: 32 x 32 x 16  biggest grid: 32 x 32 x 16
+
+[Level 0 step 14] ADVANCE with dt = 0.004482181113
+... Computing hydro advance
+[Level 0 step 14] Advanced 2048 cells
+[Level 1 step 27] ADVANCE with dt = 0.002241090556
+... Computing hydro advance
+[Level 1 step 27] Advanced 8192 cells
+[Level 2 step 53] ADVANCE with dt = 0.001120545278
+... Computing hydro advance
+[Level 2 step 53] Advanced 32768 cells
+[Level 2 step 54] ADVANCE with dt = 0.001120545278
+... Computing hydro advance
+[Level 2 step 54] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 0.00011304894
+[Level 1 step 28] ADVANCE with dt = 0.002241090556
+... Computing hydro advance
+[Level 1 step 28] Advanced 8192 cells
+[Level 2 step 55] ADVANCE with dt = 0.001120545278
+... Computing hydro advance
+[Level 2 step 55] Advanced 32768 cells
+[Level 2 step 56] ADVANCE with dt = 0.001120545278
+... Computing hydro advance
+[Level 2 step 56] Advanced 32768 cells
+PeleC::reflux() at level 1 : time = 9.342189878e-05
+PeleC::reflux() at level 0 : time = 3.180000931e-05
+
+TIME= 0.04658587653 MASS        = 0.03515625
+TIME= 0.04658587653 XMOM        = 0
+TIME= 0.04658587653 YMOM        = 0
+TIME= 0.04658587653 ZMOM        = 0.002620455555
+TIME= 0.04658587653 RHO*e       = 0.08492158529
+TIME= 0.04658587653 RHO*K       = 0.001015914707
+TIME= 0.04658587653 RHO*E       = 0.0859375
+TIME= 0.04658587653 ENSTROPHY   = 0
+TIME= 0.04658587653 FUEL PROD   = 0
+TIME= 0.04658587653 TEMP        = 6.776902317e-10
+
+[STEP 14] Coarse TimeStep time: 0.464937045
+[STEP 14] FAB kilobyte spread across MPI nodes: [31969 ... 31969]
+
+STEP = 14 TIME = 0.04658587653 DT = 0.004482181113
+
+...estimated hydro-limited timestep at level 0: 0.01350388425
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01350388425
+...estimated hydro-limited timestep at level 1: 0.006480594532
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006480594532
+...estimated hydro-limited timestep at level 2: 0.003184546416
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003184546416
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01350388425
+ ... but limiting to: 0.004706290168 = 1.05 * 0.004482181113
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006480594532
+ ... but limiting to: 0.002353145084 = 1.05 * 0.002241090556
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003184546416
+ ... but limiting to: 0.001176572542 = 1.05 * 0.001120545278
+Now regridding at level lbase = 0
+grid_places() time: 0.00398313 new finest: 2
+STEP = 14 TIME = 0.04658587653 : REGRID  with lbase = 0
+  Level 1   2 grids  10240 cells  62.5 % of domain
+            smallest grid: 16 x 16 x 16  biggest grid: 16 x 16 x 24
+  Level 2   2 grids  40960 cells  31.25 % of domain
+            smallest grid: 32 x 32 x 16  biggest grid: 32 x 32 x 24
+
+[Level 0 step 15] ADVANCE with dt = 0.004706290168
+... Computing hydro advance
+[Level 0 step 15] Advanced 2048 cells
+[Level 1 step 29] ADVANCE with dt = 0.002353145084
+... Computing hydro advance
+[Level 1 step 29] Advanced 10240 cells
+[Level 2 step 57] ADVANCE with dt = 0.001176572542
+... Computing hydro advance
+[Level 2 step 57] Advanced 40960 cells
+[Level 2 step 58] ADVANCE with dt = 0.001176572542
+... Computing hydro advance
+[Level 2 step 58] Advanced 40960 cells
+PeleC::reflux() at level 1 : time = 0.00154133304
+[Level 1 step 30] ADVANCE with dt = 0.002353145084
+... Computing hydro advance
+[Level 1 step 30] Advanced 10240 cells
+[Level 2 step 59] ADVANCE with dt = 0.001176572542
+... Computing hydro advance
+[Level 2 step 59] Advanced 40960 cells
+[Level 2 step 60] ADVANCE with dt = 0.001176572542
+... Computing hydro advance
+[Level 2 step 60] Advanced 40960 cells
+PeleC::reflux() at level 1 : time = 0.001506770961
+PeleC::reflux() at level 0 : time = 0.0002128500491
+
+TIME= 0.0512921667 MASS        = 0.03515625
+TIME= 0.0512921667 XMOM        = 0
+TIME= 0.0512921667 YMOM        = 0
+TIME= 0.0512921667 ZMOM        = 0.002885184377
+TIME= 0.0512921667 RHO*e       = 0.08481478481
+TIME= 0.0512921667 RHO*K       = 0.001122715185
+TIME= 0.0512921667 RHO*E       = 0.0859375
+TIME= 0.0512921667 ENSTROPHY   = 0
+TIME= 0.0512921667 FUEL PROD   = 0
+TIME= 0.0512921667 TEMP        = 6.777466733e-10
+
+[STEP 15] Coarse TimeStep time: 0.651790043
+[STEP 15] FAB kilobyte spread across MPI nodes: [33120 ... 38584]
+
+STEP = 15 TIME = 0.0512921667 DT = 0.004706290168
+
+...estimated hydro-limited timestep at level 0: 0.013383828
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.013383828
+...estimated hydro-limited timestep at level 1: 0.006379812366
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006379812366
+...estimated hydro-limited timestep at level 2: 0.003187410863
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003187410863
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.013383828
+ ... but limiting to: 0.004941604677 = 1.05 * 0.004706290168
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006379812366
+ ... but limiting to: 0.002470802338 = 1.05 * 0.002353145084
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003187410863
+ ... but limiting to: 0.001235401169 = 1.05 * 0.001176572542
+Now regridding at level lbase = 1
+grid_places() time: 0.003802452 new finest: 2
+TIME = 0.0512921667 : REGRID  with lbase = 1
+  Level 2   2 grids  40960 cells  31.25 % of domain
+            smallest grid: 32 x 32 x 16  biggest grid: 32 x 32 x 24
+
+[Level 0 step 16] ADVANCE with dt = 0.004941604677
+... Computing hydro advance
+[Level 0 step 16] Advanced 2048 cells
+[Level 1 step 31] ADVANCE with dt = 0.002470802338
+... Computing hydro advance
+[Level 1 step 31] Advanced 10240 cells
+[Level 2 step 61] ADVANCE with dt = 0.001235401169
+... Computing hydro advance
+[Level 2 step 61] Advanced 40960 cells
+[Level 2 step 62] ADVANCE with dt = 0.001235401169
+... Computing hydro advance
+[Level 2 step 62] Advanced 40960 cells
+PeleC::reflux() at level 1 : time = 0.001499679987
+[Level 1 step 32] ADVANCE with dt = 0.002470802338
+... Computing hydro advance
+[Level 1 step 32] Advanced 10240 cells
+[Level 2 step 63] ADVANCE with dt = 0.001235401169
+... Computing hydro advance
+[Level 2 step 63] Advanced 40960 cells
+[Level 2 step 64] ADVANCE with dt = 0.001235401169
+... Computing hydro advance
+[Level 2 step 64] Advanced 40960 cells
+PeleC::reflux() at level 1 : time = 0.001621339004
+PeleC::reflux() at level 0 : time = 0.0002225940116
+
+TIME= 0.05623377138 MASS        = 0.03515625
+TIME= 0.05623377138 XMOM        = 0
+TIME= 0.05623377138 YMOM        = 0
+TIME= 0.05623377138 ZMOM        = 0.00316314964
+TIME= 0.05623377138 RHO*e       = 0.08470281379
+TIME= 0.05623377138 RHO*K       = 0.001234686207
+TIME= 0.05623377138 RHO*E       = 0.0859375
+TIME= 0.05623377138 ENSTROPHY   = 0
+TIME= 0.05623377138 FUEL PROD   = 0
+TIME= 0.05623377138 TEMP        = 6.778149269e-10
+
+[STEP 16] Coarse TimeStep time: 0.651388573
+[STEP 16] FAB kilobyte spread across MPI nodes: [33538 ... 41479]
+
+STEP = 16 TIME = 0.05623377138 DT = 0.004941604677
+
+...estimated hydro-limited timestep at level 0: 0.0128634911
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.0128634911
+...estimated hydro-limited timestep at level 1: 0.006405172524
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006405172524
+...estimated hydro-limited timestep at level 2: 0.003188703877
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003188703877
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.0128634911
+ ... but limiting to: 0.00518868491 = 1.05 * 0.004941604677
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006405172524
+ ... but limiting to: 0.002594342455 = 1.05 * 0.002470802338
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003188703877
+ ... but limiting to: 0.001297171228 = 1.05 * 0.001235401169
+Now regridding at level lbase = 0
+grid_places() time: 0.005034867 new finest: 2
+STEP = 16 TIME = 0.05623377138 : REGRID  with lbase = 0
+  Level 1   2 grids  10240 cells  62.5 % of domain
+            smallest grid: 16 x 16 x 16  biggest grid: 16 x 16 x 24
+  Level 2   2 grids  40960 cells  31.25 % of domain
+            smallest grid: 32 x 32 x 16  biggest grid: 32 x 32 x 24
+
+[Level 0 step 17] ADVANCE with dt = 0.00518868491
+... Computing hydro advance
+[Level 0 step 17] Advanced 2048 cells
+[Level 1 step 33] ADVANCE with dt = 0.002594342455
+... Computing hydro advance
+[Level 1 step 33] Advanced 10240 cells
+[Level 2 step 65] ADVANCE with dt = 0.001297171228
+... Computing hydro advance
+[Level 2 step 65] Advanced 40960 cells
+[Level 2 step 66] ADVANCE with dt = 0.001297171228
+... Computing hydro advance
+[Level 2 step 66] Advanced 40960 cells
+PeleC::reflux() at level 1 : time = 0.00158145302
+[Level 1 step 34] ADVANCE with dt = 0.002594342455
+... Computing hydro advance
+[Level 1 step 34] Advanced 10240 cells
+[Level 2 step 67] ADVANCE with dt = 0.001297171228
+... Computing hydro advance
+[Level 2 step 67] Advanced 40960 cells
+[Level 2 step 68] ADVANCE with dt = 0.001297171228
+... Computing hydro advance
+[Level 2 step 68] Advanced 40960 cells
+PeleC::reflux() at level 1 : time = 0.00158676703
+PeleC::reflux() at level 0 : time = 0.0002189660445
+
+TIME= 0.06142245629 MASS        = 0.03515625
+TIME= 0.06142245629 XMOM        = 0
+TIME= 0.06142245629 YMOM        = 0
+TIME= 0.06142245629 ZMOM        = 0.003455013166
+TIME= 0.06142245629 RHO*e       = 0.08458495238
+TIME= 0.06142245629 RHO*K       = 0.001352547624
+TIME= 0.06142245629 RHO*E       = 0.0859375
+TIME= 0.06142245629 ENSTROPHY   = 0
+TIME= 0.06142245629 FUEL PROD   = 0
+TIME= 0.06142245629 TEMP        = 6.778677889e-10
+
+[STEP 17] Coarse TimeStep time: 0.645792715
+[STEP 17] FAB kilobyte spread across MPI nodes: [33538 ... 41479]
+
+STEP = 17 TIME = 0.06142245629 DT = 0.00518868491
+
+...estimated hydro-limited timestep at level 0: 0.01284904541
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01284904541
+...estimated hydro-limited timestep at level 1: 0.006381350848
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006381350848
+...estimated hydro-limited timestep at level 2: 0.003190105609
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003190105609
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01284904541
+ ... but limiting to: 0.005448119156 = 1.05 * 0.00518868491
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006381350848
+ ... but limiting to: 0.002724059578 = 1.05 * 0.002594342455
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003190105609
+ ... but limiting to: 0.001362029789 = 1.05 * 0.001297171228
+Now regridding at level lbase = 1
+grid_places() time: 0.003951843 new finest: 2
+TIME = 0.06142245629 : REGRID  with lbase = 1
+  Level 2   2 grids  49152 cells  37.5 % of domain
+            smallest grid: 32 x 32 x 16  biggest grid: 32 x 32 x 32
+
+[Level 0 step 18] ADVANCE with dt = 0.005448119156
+... Computing hydro advance
+[Level 0 step 18] Advanced 2048 cells
+[Level 1 step 35] ADVANCE with dt = 0.002724059578
+... Computing hydro advance
+[Level 1 step 35] Advanced 10240 cells
+[Level 2 step 69] ADVANCE with dt = 0.001362029789
+... Computing hydro advance
+[Level 2 step 69] Advanced 49152 cells
+[Level 2 step 70] ADVANCE with dt = 0.001362029789
+... Computing hydro advance
+[Level 2 step 70] Advanced 49152 cells
+PeleC::reflux() at level 1 : time = 0.0001334410626
+[Level 1 step 36] ADVANCE with dt = 0.002724059578
+... Computing hydro advance
+[Level 1 step 36] Advanced 10240 cells
+[Level 2 step 71] ADVANCE with dt = 0.001362029789
+... Computing hydro advance
+[Level 2 step 71] Advanced 49152 cells
+[Level 2 step 72] ADVANCE with dt = 0.001362029789
+... Computing hydro advance
+[Level 2 step 72] Advanced 49152 cells
+PeleC::reflux() at level 1 : time = 0.0001174060162
+PeleC::reflux() at level 0 : time = 0.0002128400374
+
+TIME= 0.06687057545 MASS        = 0.03515625
+TIME= 0.06687057545 XMOM        = 0
+TIME= 0.06687057545 YMOM        = 0
+TIME= 0.06687057545 ZMOM        = 0.003761469869
+TIME= 0.06687057545 RHO*e       = 0.08446066062
+TIME= 0.06687057545 RHO*K       = 0.001476839378
+TIME= 0.06687057545 RHO*E       = 0.0859375
+TIME= 0.06687057545 ENSTROPHY   = 0
+TIME= 0.06687057545 FUEL PROD   = 0
+TIME= 0.06687057545 TEMP        = 6.778882171e-10
+
+[STEP 18] Coarse TimeStep time: 0.891734859
+[STEP 18] FAB kilobyte spread across MPI nodes: [41479 ... 41525]
+
+STEP = 18 TIME = 0.06687057545 DT = 0.005448119156
+
+...estimated hydro-limited timestep at level 0: 0.0129810981
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.0129810981
+...estimated hydro-limited timestep at level 1: 0.006390990278
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006390990278
+...estimated hydro-limited timestep at level 2: 0.003189936831
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003189936831
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.0129810981
+ ... but limiting to: 0.005720525114 = 1.05 * 0.005448119156
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006390990278
+ ... but limiting to: 0.002860262557 = 1.05 * 0.002724059578
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003189936831
+ ... but limiting to: 0.001430131278 = 1.05 * 0.001362029789
+Now regridding at level lbase = 0
+grid_places() time: 0.005505253 new finest: 2
+STEP = 18 TIME = 0.06687057545 : REGRID  with lbase = 0
+  Level 1   2 grids  12288 cells  75 % of domain
+            smallest grid: 16 x 16 x 16  biggest grid: 16 x 16 x 32
+  Level 2   2 grids  49152 cells  37.5 % of domain
+            smallest grid: 32 x 32 x 16  biggest grid: 32 x 32 x 32
+
+[Level 0 step 19] ADVANCE with dt = 0.005720525114
+... Computing hydro advance
+[Level 0 step 19] Advanced 2048 cells
+[Level 1 step 37] ADVANCE with dt = 0.002860262557
+... Computing hydro advance
+[Level 1 step 37] Advanced 12288 cells
+[Level 2 step 73] ADVANCE with dt = 0.001430131278
+... Computing hydro advance
+[Level 2 step 73] Advanced 49152 cells
+[Level 2 step 74] ADVANCE with dt = 0.001430131278
+... Computing hydro advance
+[Level 2 step 74] Advanced 49152 cells
+PeleC::reflux() at level 1 : time = 0.003317744005
+[Level 1 step 38] ADVANCE with dt = 0.002860262557
+... Computing hydro advance
+[Level 1 step 38] Advanced 12288 cells
+[Level 2 step 75] ADVANCE with dt = 0.001430131278
+... Computing hydro advance
+[Level 2 step 75] Advanced 49152 cells
+[Level 2 step 76] ADVANCE with dt = 0.001430131278
+... Computing hydro advance
+[Level 2 step 76] Advanced 49152 cells
+PeleC::reflux() at level 1 : time = 0.004359106068
+PeleC::reflux() at level 0 : time = 7.442804053e-05
+
+TIME= 0.07259110056 MASS        = 0.03515625
+TIME= 0.07259110056 XMOM        = 0
+TIME= 0.07259110056 YMOM        = 0
+TIME= 0.07259110056 ZMOM        = 0.004083249406
+TIME= 0.07259110056 RHO*e       = 0.0843301051
+TIME= 0.07259110056 RHO*K       = 0.001607394897
+TIME= 0.07259110056 RHO*E       = 0.0859375
+TIME= 0.07259110056 ENSTROPHY   = 0
+TIME= 0.07259110056 FUEL PROD   = 0
+TIME= 0.07259110056 TEMP        = 6.779086912e-10
+
+[STEP 19] Coarse TimeStep time: 0.894993115
+[STEP 19] FAB kilobyte spread across MPI nodes: [41479 ... 46296]
+
+STEP = 19 TIME = 0.07259110056 DT = 0.005720525114
+
+...estimated hydro-limited timestep at level 0: 0.0129280857
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.0129280857
+...estimated hydro-limited timestep at level 1: 0.006384030509
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006384030509
+...estimated hydro-limited timestep at level 2: 0.003190853025
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003190853025
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.0129280857
+ ... but limiting to: 0.006006551369 = 1.05 * 0.005720525114
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006384030509
+ ... but limiting to: 0.003003275685 = 1.05 * 0.002860262557
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003190853025
+ ... but limiting to: 0.001501637842 = 1.05 * 0.001430131278
+Now regridding at level lbase = 1
+grid_places() time: 0.004835446 new finest: 2
+TIME = 0.07259110056 : REGRID  with lbase = 1
+  Level 2   2 grids  49152 cells  37.5 % of domain
+            smallest grid: 32 x 32 x 16  biggest grid: 32 x 32 x 32
+
+[Level 0 step 20] ADVANCE with dt = 0.006006551369
+... Computing hydro advance
+[Level 0 step 20] Advanced 2048 cells
+[Level 1 step 39] ADVANCE with dt = 0.003003275685
+... Computing hydro advance
+[Level 1 step 39] Advanced 12288 cells
+[Level 2 step 77] ADVANCE with dt = 0.001501637842
+... Computing hydro advance
+[Level 2 step 77] Advanced 49152 cells
+[Level 2 step 78] ADVANCE with dt = 0.001501637842
+... Computing hydro advance
+[Level 2 step 78] Advanced 49152 cells
+PeleC::reflux() at level 1 : time = 0.003419314977
+[Level 1 step 40] ADVANCE with dt = 0.003003275685
+... Computing hydro advance
+[Level 1 step 40] Advanced 12288 cells
+[Level 2 step 79] ADVANCE with dt = 0.001501637842
+... Computing hydro advance
+[Level 2 step 79] Advanced 49152 cells
+[Level 2 step 80] ADVANCE with dt = 0.001501637842
+... Computing hydro advance
+[Level 2 step 80] Advanced 49152 cells
+PeleC::reflux() at level 1 : time = 0.003367012949
+PeleC::reflux() at level 0 : time = 4.189705942e-05
+
+TIME= 0.07859765193 MASS        = 0.03515625
+TIME= 0.07859765193 XMOM        = 0
+TIME= 0.07859765193 YMOM        = 0
+TIME= 0.07859765193 ZMOM        = 0.004421117921
+TIME= 0.07859765193 RHO*e       = 0.08419467412
+TIME= 0.07859765193 RHO*K       = 0.001742825881
+TIME= 0.07859765193 RHO*E       = 0.0859375
+TIME= 0.07859765193 ENSTROPHY   = 0
+TIME= 0.07859765193 FUEL PROD   = 0
+TIME= 0.07859765193 TEMP        = 6.780345485e-10
+
+[STEP 20] Coarse TimeStep time: 0.878856028
+[STEP 20] FAB kilobyte spread across MPI nodes: [41479 ... 46405]
+
+STEP = 20 TIME = 0.07859765193 DT = 0.006006551369
+
+...estimated hydro-limited timestep at level 0: 0.01278069076
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01278069076
+...estimated hydro-limited timestep at level 1: 0.006385485427
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006385485427
+...estimated hydro-limited timestep at level 2: 0.003192275652
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003192275652
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01278069076
+ ... but limiting to: 0.006306878938 = 1.05 * 0.006006551369
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006385485427
+ ... but limiting to: 0.003153439469 = 1.05 * 0.003003275685
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003192275652
+ ... but limiting to: 0.001576719734 = 1.05 * 0.001501637842
+Now regridding at level lbase = 0
+grid_places() time: 0.006447496 new finest: 2
+STEP = 20 TIME = 0.07859765193 : REGRID  with lbase = 0
+  Level 1   2 grids  12288 cells  75 % of domain
+            smallest grid: 16 x 16 x 16  biggest grid: 16 x 16 x 32
+  Level 2   2 grids  57344 cells  43.75 % of domain
+            smallest grid: 32 x 32 x 24  biggest grid: 32 x 32 x 32
+
+[Level 0 step 21] ADVANCE with dt = 0.006306878938
+... Computing hydro advance
+[Level 0 step 21] Advanced 2048 cells
+[Level 1 step 41] ADVANCE with dt = 0.003153439469
+... Computing hydro advance
+[Level 1 step 41] Advanced 12288 cells
+[Level 2 step 81] ADVANCE with dt = 0.001576719734
+... Computing hydro advance
+[Level 2 step 81] Advanced 57344 cells
+[Level 2 step 82] ADVANCE with dt = 0.001576719734
+... Computing hydro advance
+[Level 2 step 82] Advanced 57344 cells
+PeleC::reflux() at level 1 : time = 0.0001802849583
+[Level 1 step 42] ADVANCE with dt = 0.003153439469
+... Computing hydro advance
+[Level 1 step 42] Advanced 12288 cells
+[Level 2 step 83] ADVANCE with dt = 0.001576719734
+... Computing hydro advance
+[Level 2 step 83] Advanced 57344 cells
+[Level 2 step 84] ADVANCE with dt = 0.001576719734
+... Computing hydro advance
+[Level 2 step 84] Advanced 57344 cells
+PeleC::reflux() at level 1 : time = 0.0001511849696
+PeleC::reflux() at level 0 : time = 4.783901386e-05
+
+TIME= 0.08490453087 MASS        = 0.03515625
+TIME= 0.08490453087 XMOM        = 0
+TIME= 0.08490453087 YMOM        = 0
+TIME= 0.08490453087 ZMOM        = 0.004775879861
+TIME= 0.08490453087 RHO*e       = 0.08405067878
+TIME= 0.08490453087 RHO*K       = 0.001886821223
+TIME= 0.08490453087 RHO*E       = 0.0859375
+TIME= 0.08490453087 ENSTROPHY   = 0
+TIME= 0.08490453087 FUEL PROD   = 0
+TIME= 0.08490453087 TEMP        = 6.78055954e-10
+
+[STEP 21] Coarse TimeStep time: 0.90622859
+[STEP 21] FAB kilobyte spread across MPI nodes: [45331 ... 48697]
+
+STEP = 21 TIME = 0.08490453087 DT = 0.006306878938
+
+...estimated hydro-limited timestep at level 0: 0.01280241531
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01280241531
+...estimated hydro-limited timestep at level 1: 0.006392690174
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006392690174
+...estimated hydro-limited timestep at level 2: 0.003194677591
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003194677591
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01280241531
+ ... but limiting to: 0.006622222885 = 1.05 * 0.006306878938
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006392690174
+ ... but limiting to: 0.003311111442 = 1.05 * 0.003153439469
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003194677591
+ ... but limiting to: 0.001655555721 = 1.05 * 0.001576719734
+Now regridding at level lbase = 1
+grid_places() time: 0.004535481 new finest: 2
+TIME = 0.08490453087 : REGRID  with lbase = 1
+  Level 2   2 grids  57344 cells  43.75 % of domain
+            smallest grid: 32 x 32 x 24  biggest grid: 32 x 32 x 32
+
+[Level 0 step 22] ADVANCE with dt = 0.006622222885
+... Computing hydro advance
+[Level 0 step 22] Advanced 2048 cells
+[Level 1 step 43] ADVANCE with dt = 0.003311111442
+... Computing hydro advance
+[Level 1 step 43] Advanced 12288 cells
+[Level 2 step 85] ADVANCE with dt = 0.001655555721
+... Computing hydro advance
+[Level 2 step 85] Advanced 57344 cells
+[Level 2 step 86] ADVANCE with dt = 0.001655555721
+... Computing hydro advance
+[Level 2 step 86] Advanced 57344 cells
+PeleC::reflux() at level 1 : time = 0.0001906059915
+[Level 1 step 44] ADVANCE with dt = 0.003311111442
+... Computing hydro advance
+[Level 1 step 44] Advanced 12288 cells
+[Level 2 step 87] ADVANCE with dt = 0.001655555721
+... Computing hydro advance
+[Level 2 step 87] Advanced 57344 cells
+[Level 2 step 88] ADVANCE with dt = 0.001655555721
+... Computing hydro advance
+[Level 2 step 88] Advanced 57344 cells
+PeleC::reflux() at level 1 : time = 0.000153014902
+PeleC::reflux() at level 0 : time = 3.335706424e-05
+
+TIME= 0.09152675375 MASS        = 0.03515625
+TIME= 0.09152675375 XMOM        = 0
+TIME= 0.09152675375 YMOM        = 0
+TIME= 0.09152675375 ZMOM        = 0.005148379898
+TIME= 0.09152675375 RHO*e       = 0.0839005434
+TIME= 0.09152675375 RHO*K       = 0.002036956601
+TIME= 0.09152675375 RHO*E       = 0.0859375
+TIME= 0.09152675375 ENSTROPHY   = 0
+TIME= 0.09152675375 FUEL PROD   = 0
+TIME= 0.09152675375 TEMP        = 6.781516366e-10
+
+[STEP 22] Coarse TimeStep time: 0.89899274
+[STEP 22] FAB kilobyte spread across MPI nodes: [48697 ... 51836]
+
+STEP = 22 TIME = 0.09152675375 DT = 0.006622222885
+
+...estimated hydro-limited timestep at level 0: 0.0128516954
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.0128516954
+...estimated hydro-limited timestep at level 1: 0.006393184861
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006393184861
+...estimated hydro-limited timestep at level 2: 0.003195107794
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003195107794
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.0128516954
+ ... but limiting to: 0.006953334029 = 1.05 * 0.006622222885
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006393184861
+ ... but limiting to: 0.003476667014 = 1.05 * 0.003311111442
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003195107794
+ ... but limiting to: 0.001738333507 = 1.05 * 0.001655555721
+Now regridding at level lbase = 0
+grid_places() time: 0.005899407 new finest: 2
+STEP = 22 TIME = 0.09152675375 : REGRID  with lbase = 0
+  Level 1   2 grids  12288 cells  75 % of domain
+            smallest grid: 16 x 16 x 16  biggest grid: 16 x 16 x 32
+  Level 2   2 grids  57344 cells  43.75 % of domain
+            smallest grid: 32 x 32 x 24  biggest grid: 32 x 32 x 32
+
+[Level 0 step 23] ADVANCE with dt = 0.006953334029
+... Computing hydro advance
+[Level 0 step 23] Advanced 2048 cells
+[Level 1 step 45] ADVANCE with dt = 0.003476667014
+... Computing hydro advance
+[Level 1 step 45] Advanced 12288 cells
+[Level 2 step 89] ADVANCE with dt = 0.001738333507
+... Computing hydro advance
+[Level 2 step 89] Advanced 57344 cells
+[Level 2 step 90] ADVANCE with dt = 0.001738333507
+... Computing hydro advance
+[Level 2 step 90] Advanced 57344 cells
+PeleC::reflux() at level 1 : time = 0.0001911619911
+[Level 1 step 46] ADVANCE with dt = 0.003476667014
+... Computing hydro advance
+[Level 1 step 46] Advanced 12288 cells
+[Level 2 step 91] ADVANCE with dt = 0.001738333507
+... Computing hydro advance
+[Level 2 step 91] Advanced 57344 cells
+[Level 2 step 92] ADVANCE with dt = 0.001738333507
+... Computing hydro advance
+[Level 2 step 92] Advanced 57344 cells
+PeleC::reflux() at level 1 : time = 0.0001668999903
+PeleC::reflux() at level 0 : time = 4.919501953e-05
+
+TIME= 0.09848008778 MASS        = 0.03515625
+TIME= 0.09848008778 XMOM        = 0
+TIME= 0.09848008778 YMOM        = 0
+TIME= 0.09848008778 ZMOM        = 0.005539504938
+TIME= 0.09848008778 RHO*e       = 0.08374213594
+TIME= 0.09848008778 RHO*K       = 0.002195364055
+TIME= 0.09848008778 RHO*E       = 0.0859375
+TIME= 0.09848008778 ENSTROPHY   = 0
+TIME= 0.09848008778 FUEL PROD   = 0
+TIME= 0.09848008778 TEMP        = 6.781880403e-10
+
+[STEP 23] Coarse TimeStep time: 0.90402654
+[STEP 23] FAB kilobyte spread across MPI nodes: [48697 ... 51836]
+
+STEP = 23 TIME = 0.09848008778 DT = 0.006953334029
+
+...estimated hydro-limited timestep at level 0: 0.01279752207
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01279752207
+...estimated hydro-limited timestep at level 1: 0.006395430196
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006395430196
+...estimated hydro-limited timestep at level 2: 0.003197705994
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003197705994
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01279752207
+ ... but limiting to: 0.00730100073 = 1.05 * 0.006953334029
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006395430196
+ ... but limiting to: 0.003650500365 = 1.05 * 0.003476667014
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003197705994
+ ... but limiting to: 0.001825250183 = 1.05 * 0.001738333507
+Now regridding at level lbase = 1
+grid_places() time: 0.004987876 new finest: 2
+TIME = 0.09848008778 : REGRID  with lbase = 1
+  Level 2   2 grids  57344 cells  43.75 % of domain
+            smallest grid: 32 x 32 x 24  biggest grid: 32 x 32 x 32
+
+[Level 0 step 24] ADVANCE with dt = 0.00730100073
+... Computing hydro advance
+[Level 0 step 24] Advanced 2048 cells
+[Level 1 step 47] ADVANCE with dt = 0.003650500365
+... Computing hydro advance
+[Level 1 step 47] Advanced 12288 cells
+[Level 2 step 93] ADVANCE with dt = 0.001825250183
+... Computing hydro advance
+[Level 2 step 93] Advanced 57344 cells
+[Level 2 step 94] ADVANCE with dt = 0.001825250183
+... Computing hydro advance
+[Level 2 step 94] Advanced 57344 cells
+PeleC::reflux() at level 1 : time = 0.0003217810299
+[Level 1 step 48] ADVANCE with dt = 0.003650500365
+... Computing hydro advance
+[Level 1 step 48] Advanced 12288 cells
+[Level 2 step 95] ADVANCE with dt = 0.001825250183
+... Computing hydro advance
+[Level 2 step 95] Advanced 57344 cells
+[Level 2 step 96] ADVANCE with dt = 0.001825250183
+... Computing hydro advance
+[Level 2 step 96] Advanced 57344 cells
+PeleC::reflux() at level 1 : time = 0.0001538449433
+PeleC::reflux() at level 0 : time = 5.465408321e-05
+
+TIME= 0.1057810885 MASS        = 0.03515625
+TIME= 0.1057810885 XMOM        = 0
+TIME= 0.1057810885 YMOM        = 0
+TIME= 0.1057810885 ZMOM        = 0.005950186229
+TIME= 0.1057810885 RHO*e       = 0.08357710661
+TIME= 0.1057810885 RHO*K       = 0.002360393389
+TIME= 0.1057810885 RHO*E       = 0.0859375
+TIME= 0.1057810885 ENSTROPHY   = 0
+TIME= 0.1057810885 FUEL PROD   = 0
+TIME= 0.1057810885 TEMP        = 6.783200729e-10
+
+[STEP 24] Coarse TimeStep time: 0.906848541
+[STEP 24] FAB kilobyte spread across MPI nodes: [48697 ... 51836]
+
+STEP = 24 TIME = 0.1057810885 DT = 0.00730100073
+
+...estimated hydro-limited timestep at level 0: 0.01280821864
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01280821864
+...estimated hydro-limited timestep at level 1: 0.006401547508
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006401547508
+...estimated hydro-limited timestep at level 2: 0.003200175305
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003200175305
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01280821864
+ ... but limiting to: 0.007666050767 = 1.05 * 0.00730100073
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006401547508
+ ... but limiting to: 0.003833025383 = 1.05 * 0.003650500365
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003200175305
+ ... but limiting to: 0.001916512692 = 1.05 * 0.001825250183
+Now regridding at level lbase = 0
+grid_places() time: 0.005858388 new finest: 2
+STEP = 24 TIME = 0.1057810885 : REGRID  with lbase = 0
+  Level 1   2 grids  12288 cells  75 % of domain
+            smallest grid: 16 x 16 x 16  biggest grid: 16 x 16 x 32
+  Level 2   2 grids  57344 cells  43.75 % of domain
+            smallest grid: 32 x 32 x 24  biggest grid: 32 x 32 x 32
+
+[Level 0 step 25] ADVANCE with dt = 0.007666050767
+... Computing hydro advance
+[Level 0 step 25] Advanced 2048 cells
+[Level 1 step 49] ADVANCE with dt = 0.003833025383
+... Computing hydro advance
+[Level 1 step 49] Advanced 12288 cells
+[Level 2 step 97] ADVANCE with dt = 0.001916512692
+... Computing hydro advance
+[Level 2 step 97] Advanced 57344 cells
+[Level 2 step 98] ADVANCE with dt = 0.001916512692
+... Computing hydro advance
+[Level 2 step 98] Advanced 57344 cells
+PeleC::reflux() at level 1 : time = 0.0001890780404
+[Level 1 step 50] ADVANCE with dt = 0.003833025383
+... Computing hydro advance
+[Level 1 step 50] Advanced 12288 cells
+[Level 2 step 99] ADVANCE with dt = 0.001916512692
+... Computing hydro advance
+[Level 2 step 99] Advanced 57344 cells
+[Level 2 step 100] ADVANCE with dt = 0.001916512692
+... Computing hydro advance
+[Level 2 step 100] Advanced 57344 cells
+PeleC::reflux() at level 1 : time = 0.0001553039765
+PeleC::reflux() at level 0 : time = 4.989199806e-05
+
+TIME= 0.1134471393 MASS        = 0.03515625
+TIME= 0.1134471393 XMOM        = 0
+TIME= 0.1134471393 YMOM        = 0
+TIME= 0.1134471393 ZMOM        = 0.006381401584
+TIME= 0.1134471393 RHO*e       = 0.08340213976
+TIME= 0.1134471393 RHO*K       = 0.002535360244
+TIME= 0.1134471393 RHO*E       = 0.0859375
+TIME= 0.1134471393 ENSTROPHY   = 0
+TIME= 0.1134471393 FUEL PROD   = 0
+TIME= 0.1134471393 TEMP        = 6.783530758e-10
+
+[STEP 25] Coarse TimeStep time: 0.898929615
+[STEP 25] FAB kilobyte spread across MPI nodes: [48697 ... 51836]
+
+STEP = 25 TIME = 0.1134471393 DT = 0.007666050767
+
+...estimated hydro-limited timestep at level 0: 0.01281010151
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01281010151
+...estimated hydro-limited timestep at level 1: 0.00640450662
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.00640450662
+...estimated hydro-limited timestep at level 2: 0.003200593849
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003200593849
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01281010151
+ ... but limiting to: 0.008049353305 = 1.05 * 0.007666050767
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.00640450662
+ ... but limiting to: 0.004024676653 = 1.05 * 0.003833025383
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003200593849
+ ... but limiting to: 0.002012338326 = 1.05 * 0.001916512692
+Now regridding at level lbase = 1
+grid_places() time: 0.004952114 new finest: 2
+TIME = 0.1134471393 : REGRID  with lbase = 1
+  Level 2   2 grids  57344 cells  43.75 % of domain
+            smallest grid: 32 x 32 x 24  biggest grid: 32 x 32 x 32
+
+[Level 0 step 26] ADVANCE with dt = 0.008049353305
+... Computing hydro advance
+[Level 0 step 26] Advanced 2048 cells
+[Level 1 step 51] ADVANCE with dt = 0.004024676653
+... Computing hydro advance
+[Level 1 step 51] Advanced 12288 cells
+[Level 2 step 101] ADVANCE with dt = 0.002012338326
+... Computing hydro advance
+[Level 2 step 101] Advanced 57344 cells
+[Level 2 step 102] ADVANCE with dt = 0.002012338326
+... Computing hydro advance
+[Level 2 step 102] Advanced 57344 cells
+PeleC::reflux() at level 1 : time = 0.0001845050137
+[Level 1 step 52] ADVANCE with dt = 0.004024676653
+... Computing hydro advance
+[Level 1 step 52] Advanced 12288 cells
+[Level 2 step 103] ADVANCE with dt = 0.002012338326
+... Computing hydro advance
+[Level 2 step 103] Advanced 57344 cells
+[Level 2 step 104] ADVANCE with dt = 0.002012338326
+... Computing hydro advance
+[Level 2 step 104] Advanced 57344 cells
+PeleC::reflux() at level 1 : time = 0.0001464359229
+PeleC::reflux() at level 0 : time = 3.23819695e-05
+
+TIME= 0.1214964926 MASS        = 0.03515625
+TIME= 0.1214964926 XMOM        = 0
+TIME= 0.1214964926 YMOM        = 0
+TIME= 0.1214964926 ZMOM        = 0.006834177708
+TIME= 0.1214964926 RHO*e       = 0.08321914136
+TIME= 0.1214964926 RHO*K       = 0.002718358644
+TIME= 0.1214964926 RHO*E       = 0.0859375
+TIME= 0.1214964926 ENSTROPHY   = 0
+TIME= 0.1214964926 FUEL PROD   = 0
+TIME= 0.1214964926 TEMP        = 6.78422769e-10
+
+[STEP 26] Coarse TimeStep time: 0.897423818
+[STEP 26] FAB kilobyte spread across MPI nodes: [48697 ... 51836]
+
+STEP = 26 TIME = 0.1214964926 DT = 0.008049353305
+
+...estimated hydro-limited timestep at level 0: 0.01282019842
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01282019842
+...estimated hydro-limited timestep at level 1: 0.006404611571
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006404611571
+...estimated hydro-limited timestep at level 2: 0.00320161836
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.00320161836
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01282019842
+ ... but limiting to: 0.008451820971 = 1.05 * 0.008049353305
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006404611571
+ ... but limiting to: 0.004225910485 = 1.05 * 0.004024676653
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.00320161836
+ ... but limiting to: 0.002112955243 = 1.05 * 0.002012338326
+Now regridding at level lbase = 0
+grid_places() time: 0.005813387 new finest: 2
+STEP = 26 TIME = 0.1214964926 : REGRID  with lbase = 0
+  Level 1   2 grids  14336 cells  87.5 % of domain
+            smallest grid: 16 x 16 x 24  biggest grid: 16 x 16 x 32
+  Level 2   2 grids  73728 cells  56.25 % of domain
+            smallest grid: 32 x 32 x 32  biggest grid: 32 x 32 x 40
+
+[Level 0 step 27] ADVANCE with dt = 0.008451820971
+... Computing hydro advance
+[Level 0 step 27] Advanced 2048 cells
+[Level 1 step 53] ADVANCE with dt = 0.004225910485
+... Computing hydro advance
+[Level 1 step 53] Advanced 14336 cells
+[Level 2 step 105] ADVANCE with dt = 0.002112955243
+... Computing hydro advance
+[Level 2 step 105] Advanced 73728 cells
+[Level 2 step 106] ADVANCE with dt = 0.002112955243
+... Computing hydro advance
+[Level 2 step 106] Advanced 73728 cells
+PeleC::reflux() at level 1 : time = 0.0001847899985
+[Level 1 step 54] ADVANCE with dt = 0.004225910485
+... Computing hydro advance
+[Level 1 step 54] Advanced 14336 cells
+[Level 2 step 107] ADVANCE with dt = 0.002112955243
+... Computing hydro advance
+[Level 2 step 107] Advanced 73728 cells
+[Level 2 step 108] ADVANCE with dt = 0.002112955243
+... Computing hydro advance
+[Level 2 step 108] Advanced 73728 cells
+PeleC::reflux() at level 1 : time = 0.0001478199847
+PeleC::reflux() at level 0 : time = 0.001843914972
+
+TIME= 0.1299483136 MASS        = 0.03515625
+TIME= 0.1299483136 XMOM        = 0
+TIME= 0.1299483136 YMOM        = 0
+TIME= 0.1299483136 ZMOM        = 0.007309592637
+TIME= 0.1299483136 RHO*e       = 0.08302690518
+TIME= 0.1299483136 RHO*K       = 0.002910594816
+TIME= 0.1299483136 RHO*E       = 0.0859375
+TIME= 0.1299483136 ENSTROPHY   = 0
+TIME= 0.1299483136 FUEL PROD   = 0
+TIME= 0.1299483136 TEMP        = 6.784977353e-10
+
+[STEP 27] Coarse TimeStep time: 1.06943608
+[STEP 27] FAB kilobyte spread across MPI nodes: [51836 ... 52237]
+
+STEP = 27 TIME = 0.1299483136 DT = 0.008451820971
+
+...estimated hydro-limited timestep at level 0: 0.01281766593
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01281766593
+...estimated hydro-limited timestep at level 1: 0.006405343119
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006405343119
+...estimated hydro-limited timestep at level 2: 0.003202487227
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003202487227
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01281766593
+ ... but limiting to: 0.008874412019 = 1.05 * 0.008451820971
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006405343119
+ ... but limiting to: 0.00443720601 = 1.05 * 0.004225910485
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003202487227
+ ... but limiting to: 0.002218603005 = 1.05 * 0.002112955243
+Now regridding at level lbase = 1
+grid_places() time: 0.004328985 new finest: 2
+TIME = 0.1299483136 : REGRID  with lbase = 1
+  Level 2   2 grids  73728 cells  56.25 % of domain
+            smallest grid: 32 x 32 x 32  biggest grid: 32 x 32 x 40
+
+[Level 0 step 28] ADVANCE with dt = 0.008874412019
+... Computing hydro advance
+[Level 0 step 28] Advanced 2048 cells
+[Level 1 step 55] ADVANCE with dt = 0.00443720601
+... Computing hydro advance
+[Level 1 step 55] Advanced 14336 cells
+[Level 2 step 109] ADVANCE with dt = 0.002218603005
+... Computing hydro advance
+[Level 2 step 109] Advanced 73728 cells
+[Level 2 step 110] ADVANCE with dt = 0.002218603005
+... Computing hydro advance
+[Level 2 step 110] Advanced 73728 cells
+PeleC::reflux() at level 1 : time = 0.0001859199256
+[Level 1 step 56] ADVANCE with dt = 0.00443720601
+... Computing hydro advance
+[Level 1 step 56] Advanced 14336 cells
+[Level 2 step 111] ADVANCE with dt = 0.002218603005
+... Computing hydro advance
+[Level 2 step 111] Advanced 73728 cells
+[Level 2 step 112] ADVANCE with dt = 0.002218603005
+... Computing hydro advance
+[Level 2 step 112] Advanced 73728 cells
+PeleC::reflux() at level 1 : time = 0.0001551709138
+PeleC::reflux() at level 0 : time = 0.001841309015
+
+TIME= 0.1388227256 MASS        = 0.03515625
+TIME= 0.1388227256 XMOM        = 0
+TIME= 0.1388227256 YMOM        = 0
+TIME= 0.1388227256 ZMOM        = 0.007808778313
+TIME= 0.1388227256 RHO*e       = 0.08282528891
+TIME= 0.1388227256 RHO*K       = 0.003112211095
+TIME= 0.1388227256 RHO*E       = 0.0859375
+TIME= 0.1388227256 ENSTROPHY   = 0
+TIME= 0.1388227256 FUEL PROD   = 0
+TIME= 0.1388227256 TEMP        = 6.785861347e-10
+
+[STEP 28] Coarse TimeStep time: 1.069293853
+[STEP 28] FAB kilobyte spread across MPI nodes: [51836 ... 59050]
+
+STEP = 28 TIME = 0.1388227256 DT = 0.008874412019
+
+...estimated hydro-limited timestep at level 0: 0.01281266975
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01281266975
+...estimated hydro-limited timestep at level 1: 0.00640455897
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.00640455897
+...estimated hydro-limited timestep at level 2: 0.003202167086
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003202167086
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01281266975
+ ... but limiting to: 0.00931813262 = 1.05 * 0.008874412019
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.00640455897
+ ... but limiting to: 0.00465906631 = 1.05 * 0.00443720601
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003202167086
+ ... but limiting to: 0.002329533155 = 1.05 * 0.002218603005
+Now regridding at level lbase = 0
+grid_places() time: 0.005507076 new finest: 2
+STEP = 28 TIME = 0.1388227256 : REGRID  with lbase = 0
+  Level 1   2 grids  14336 cells  87.5 % of domain
+            smallest grid: 16 x 16 x 24  biggest grid: 16 x 16 x 32
+  Level 2   2 grids  73728 cells  56.25 % of domain
+            smallest grid: 32 x 32 x 32  biggest grid: 32 x 32 x 40
+
+[Level 0 step 29] ADVANCE with dt = 0.00931813262
+... Computing hydro advance
+[Level 0 step 29] Advanced 2048 cells
+[Level 1 step 57] ADVANCE with dt = 0.00465906631
+... Computing hydro advance
+[Level 1 step 57] Advanced 14336 cells
+[Level 2 step 113] ADVANCE with dt = 0.002329533155
+... Computing hydro advance
+[Level 2 step 113] Advanced 73728 cells
+[Level 2 step 114] ADVANCE with dt = 0.002329533155
+... Computing hydro advance
+[Level 2 step 114] Advanced 73728 cells
+PeleC::reflux() at level 1 : time = 0.0001913369633
+[Level 1 step 58] ADVANCE with dt = 0.00465906631
+... Computing hydro advance
+[Level 1 step 58] Advanced 14336 cells
+[Level 2 step 115] ADVANCE with dt = 0.002329533155
+... Computing hydro advance
+[Level 2 step 115] Advanced 73728 cells
+[Level 2 step 116] ADVANCE with dt = 0.002329533155
+... Computing hydro advance
+[Level 2 step 116] Advanced 73728 cells
+PeleC::reflux() at level 1 : time = 0.0001610110048
+PeleC::reflux() at level 0 : time = 0.001918955008
+
+TIME= 0.1481408582 MASS        = 0.03515625
+TIME= 0.1481408582 XMOM        = 0
+TIME= 0.1481408582 YMOM        = 0
+TIME= 0.1481408582 ZMOM        = 0.008332923273
+TIME= 0.1481408582 RHO*e       = 0.08261333321
+TIME= 0.1481408582 RHO*K       = 0.003324166795
+TIME= 0.1481408582 RHO*E       = 0.0859375
+TIME= 0.1481408582 ENSTROPHY   = 0
+TIME= 0.1481408582 FUEL PROD   = 0
+TIME= 0.1481408582 TEMP        = 6.78665921e-10
+
+[STEP 29] Coarse TimeStep time: 1.07277026
+[STEP 29] FAB kilobyte spread across MPI nodes: [51836 ... 59050]
+
+STEP = 29 TIME = 0.1481408582 DT = 0.00931813262
+
+...estimated hydro-limited timestep at level 0: 0.0128106975
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.0128106975
+...estimated hydro-limited timestep at level 1: 0.00640510241
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.00640510241
+...estimated hydro-limited timestep at level 2: 0.00320199658
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.00320199658
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.0128106975
+ ... but limiting to: 0.009784039251 = 1.05 * 0.00931813262
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.00640510241
+ ... but limiting to: 0.004892019626 = 1.05 * 0.00465906631
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.00320199658
+ ... but limiting to: 0.002446009813 = 1.05 * 0.002329533155
+Now regridding at level lbase = 1
+grid_places() time: 0.004609394 new finest: 2
+TIME = 0.1481408582 : REGRID  with lbase = 1
+  Level 2   2 grids  73728 cells  56.25 % of domain
+            smallest grid: 32 x 32 x 32  biggest grid: 32 x 32 x 40
+
+[Level 0 step 30] ADVANCE with dt = 0.009784039251
+... Computing hydro advance
+[Level 0 step 30] Advanced 2048 cells
+[Level 1 step 59] ADVANCE with dt = 0.004892019626
+... Computing hydro advance
+[Level 1 step 59] Advanced 14336 cells
+[Level 2 step 117] ADVANCE with dt = 0.002446009813
+... Computing hydro advance
+[Level 2 step 117] Advanced 73728 cells
+[Level 2 step 118] ADVANCE with dt = 0.002446009813
+... Computing hydro advance
+[Level 2 step 118] Advanced 73728 cells
+PeleC::reflux() at level 1 : time = 0.0001861030469
+[Level 1 step 60] ADVANCE with dt = 0.004892019626
+... Computing hydro advance
+[Level 1 step 60] Advanced 14336 cells
+[Level 2 step 119] ADVANCE with dt = 0.002446009813
+... Computing hydro advance
+[Level 2 step 119] Advanced 73728 cells
+[Level 2 step 120] ADVANCE with dt = 0.002446009813
+... Computing hydro advance
+[Level 2 step 120] Advanced 73728 cells
+PeleC::reflux() at level 1 : time = 0.0001544900006
+PeleC::reflux() at level 0 : time = 0.001856221003
+
+TIME= 0.1579248974 MASS        = 0.03515625
+TIME= 0.1579248974 XMOM        = 0
+TIME= 0.1579248974 YMOM        = 0
+TIME= 0.1579248974 ZMOM        = 0.008883275481
+TIME= 0.1579248974 RHO*e       = 0.08239133901
+TIME= 0.1579248974 RHO*K       = 0.003546160987
+TIME= 0.1579248974 RHO*E       = 0.0859375
+TIME= 0.1579248974 ENSTROPHY   = 0
+TIME= 0.1579248974 FUEL PROD   = 0
+TIME= 0.1579248974 TEMP        = 6.787902735e-10
+
+[STEP 30] Coarse TimeStep time: 1.068072182
+[STEP 30] FAB kilobyte spread across MPI nodes: [51836 ... 59050]
+
+STEP = 30 TIME = 0.1579248974 DT = 0.009784039251
+
+...estimated hydro-limited timestep at level 0: 0.01281989603
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01281989603
+...estimated hydro-limited timestep at level 1: 0.006404086549
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006404086549
+...estimated hydro-limited timestep at level 2: 0.003201979851
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003201979851
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01281989603
+ ... but limiting to: 0.01027324121 = 1.05 * 0.009784039251
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006404086549
+ ... but limiting to: 0.005136620607 = 1.05 * 0.004892019626
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003201979851
+ ... but limiting to: 0.002568310303 = 1.05 * 0.002446009813
+Now regridding at level lbase = 0
+grid_places() time: 0.005994611 new finest: 2
+STEP = 30 TIME = 0.1579248974 : REGRID  with lbase = 0
+  Level 1   2 grids  14336 cells  87.5 % of domain
+            smallest grid: 16 x 16 x 24  biggest grid: 16 x 16 x 32
+  Level 2   2 grids  81920 cells  62.5 % of domain
+            smallest grid: 32 x 32 x 32  biggest grid: 32 x 32 x 48
+
+[Level 0 step 31] ADVANCE with dt = 0.01027324121
+... Computing hydro advance
+[Level 0 step 31] Advanced 2048 cells
+[Level 1 step 61] ADVANCE with dt = 0.005136620607
+... Computing hydro advance
+[Level 1 step 61] Advanced 14336 cells
+[Level 2 step 121] ADVANCE with dt = 0.002568310303
+... Computing hydro advance
+[Level 2 step 121] Advanced 81920 cells
+[Level 2 step 122] ADVANCE with dt = 0.002568310303
+... Computing hydro advance
+[Level 2 step 122] Advanced 81920 cells
+PeleC::reflux() at level 1 : time = 0.003658918082
+[Level 1 step 62] ADVANCE with dt = 0.005136620607
+... Computing hydro advance
+[Level 1 step 62] Advanced 14336 cells
+[Level 2 step 123] ADVANCE with dt = 0.002568310303
+... Computing hydro advance
+[Level 2 step 123] Advanced 81920 cells
+[Level 2 step 124] ADVANCE with dt = 0.002568310303
+... Computing hydro advance
+[Level 2 step 124] Advanced 81920 cells
+PeleC::reflux() at level 1 : time = 0.003078090958
+PeleC::reflux() at level 0 : time = 0.0002276609885
+
+TIME= 0.1681981387 MASS        = 0.03515625
+TIME= 0.1681981387 XMOM        = 0
+TIME= 0.1681981387 YMOM        = 0
+TIME= 0.1681981387 ZMOM        = 0.009461145299
+TIME= 0.1681981387 RHO*e       = 0.08215868224
+TIME= 0.1681981387 RHO*K       = 0.00377881776
+TIME= 0.1681981387 RHO*E       = 0.0859375
+TIME= 0.1681981387 ENSTROPHY   = 0
+TIME= 0.1681981387 FUEL PROD   = 0
+TIME= 0.1681981387 TEMP        = 6.789487318e-10
+
+[STEP 31] Coarse TimeStep time: 1.291788471
+[STEP 31] FAB kilobyte spread across MPI nodes: [58327 ... 59050]
+
+STEP = 31 TIME = 0.1681981387 DT = 0.01027324121
+
+...estimated hydro-limited timestep at level 0: 0.01281448961
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01281448961
+...estimated hydro-limited timestep at level 1: 0.006404754081
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006404754081
+...estimated hydro-limited timestep at level 2: 0.003202165567
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003202165567
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01281448961
+ ... but limiting to: 0.01078690327 = 1.05 * 0.01027324121
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006404754081
+ ... but limiting to: 0.005393451637 = 1.05 * 0.005136620607
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003202165567
+ ... but limiting to: 0.002696725819 = 1.05 * 0.002568310303
+Now regridding at level lbase = 1
+grid_places() time: 0.004557557 new finest: 2
+TIME = 0.1681981387 : REGRID  with lbase = 1
+  Level 2   2 grids  90112 cells  68.75 % of domain
+            smallest grid: 32 x 32 x 40  biggest grid: 32 x 32 x 48
+
+[Level 0 step 32] ADVANCE with dt = 0.01078690327
+... Computing hydro advance
+[Level 0 step 32] Advanced 2048 cells
+[Level 1 step 63] ADVANCE with dt = 0.005393451637
+... Computing hydro advance
+[Level 1 step 63] Advanced 14336 cells
+[Level 2 step 125] ADVANCE with dt = 0.002696725819
+... Computing hydro advance
+[Level 2 step 125] Advanced 90112 cells
+[Level 2 step 126] ADVANCE with dt = 0.002696725819
+... Computing hydro advance
+[Level 2 step 126] Advanced 90112 cells
+PeleC::reflux() at level 1 : time = 0.0001873060828
+[Level 1 step 64] ADVANCE with dt = 0.005393451637
+... Computing hydro advance
+[Level 1 step 64] Advanced 14336 cells
+[Level 2 step 127] ADVANCE with dt = 0.002696725819
+... Computing hydro advance
+[Level 2 step 127] Advanced 90112 cells
+[Level 2 step 128] ADVANCE with dt = 0.002696725819
+... Computing hydro advance
+[Level 2 step 128] Advanced 90112 cells
+PeleC::reflux() at level 1 : time = 0.0001544950064
+PeleC::reflux() at level 0 : time = 0.001803920022
+
+TIME= 0.1789850419 MASS        = 0.03515625
+TIME= 0.1789850419 XMOM        = 0
+TIME= 0.1789850419 YMOM        = 0
+TIME= 0.1789850419 ZMOM        = 0.01006790861
+TIME= 0.1789850419 RHO*e       = 0.08191254718
+TIME= 0.1789850419 RHO*K       = 0.004024952816
+TIME= 0.1789850419 RHO*E       = 0.0859375
+TIME= 0.1789850419 ENSTROPHY   = 0
+TIME= 0.1789850419 FUEL PROD   = 0
+TIME= 0.1789850419 TEMP        = 6.789719016e-10
+
+[STEP 32] Coarse TimeStep time: 1.28318657
+[STEP 32] FAB kilobyte spread across MPI nodes: [59946 ... 61560]
+
+STEP = 32 TIME = 0.1789850419 DT = 0.01078690327
+
+...estimated hydro-limited timestep at level 0: 0.01281213435
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01281213435
+...estimated hydro-limited timestep at level 1: 0.006405183906
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006405183906
+...estimated hydro-limited timestep at level 2: 0.003202412279
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003202412279
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01281213435
+ ... but limiting to: 0.01132624844 = 1.05 * 0.01078690327
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006405183906
+ ... but limiting to: 0.005663124219 = 1.05 * 0.005393451637
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003202412279
+ ... but limiting to: 0.002831562109 = 1.05 * 0.002696725819
+Now regridding at level lbase = 0
+grid_places() time: 0.00573395 new finest: 2
+STEP = 32 TIME = 0.1789850419 : REGRID  with lbase = 0
+  Level 1   2 grids  16384 cells  100 % of domain
+            smallest grid: 16 x 16 x 32  biggest grid: 16 x 16 x 32
+  Level 2   2 grids  90112 cells  68.75 % of domain
+            smallest grid: 32 x 32 x 40  biggest grid: 32 x 32 x 48
+
+[Level 0 step 33] ADVANCE with dt = 0.01132624844
+... Computing hydro advance
+[Level 0 step 33] Advanced 2048 cells
+[Level 1 step 65] ADVANCE with dt = 0.005663124219
+... Computing hydro advance
+[Level 1 step 65] Advanced 16384 cells
+[Level 2 step 129] ADVANCE with dt = 0.002831562109
+... Computing hydro advance
+[Level 2 step 129] Advanced 90112 cells
+[Level 2 step 130] ADVANCE with dt = 0.002831562109
+... Computing hydro advance
+[Level 2 step 130] Advanced 90112 cells
+PeleC::reflux() at level 1 : time = 0.0001927890116
+[Level 1 step 66] ADVANCE with dt = 0.005663124219
+... Computing hydro advance
+[Level 1 step 66] Advanced 16384 cells
+[Level 2 step 131] ADVANCE with dt = 0.002831562109
+... Computing hydro advance
+[Level 2 step 131] Advanced 90112 cells
+[Level 2 step 132] ADVANCE with dt = 0.002831562109
+... Computing hydro advance
+[Level 2 step 132] Advanced 90112 cells
+PeleC::reflux() at level 1 : time = 0.000223563984
+PeleC::reflux() at level 0 : time = 4.529394209e-05
+
+TIME= 0.1903112904 MASS        = 0.03515625
+TIME= 0.1903112904 XMOM        = 0
+TIME= 0.1903112904 YMOM        = 0
+TIME= 0.1903112904 ZMOM        = 0.01070501008
+TIME= 0.1903112904 RHO*e       = 0.08165607477
+TIME= 0.1903112904 RHO*K       = 0.004281425234
+TIME= 0.1903112904 RHO*E       = 0.0859375
+TIME= 0.1903112904 ENSTROPHY   = 0
+TIME= 0.1903112904 FUEL PROD   = 0
+TIME= 0.1903112904 TEMP        = 6.791671984e-10
+
+[STEP 33] Coarse TimeStep time: 1.292773208
+[STEP 33] FAB kilobyte spread across MPI nodes: [61560 ... 65749]
+
+STEP = 33 TIME = 0.1903112904 DT = 0.01132624844
+
+...estimated hydro-limited timestep at level 0: 0.01282220436
+PeleC::estTimeStep (hydro-limited) at level 0:  estdt = 0.01282220436
+...estimated hydro-limited timestep at level 1: 0.006405622524
+PeleC::estTimeStep (hydro-limited) at level 1:  estdt = 0.006405622524
+...estimated hydro-limited timestep at level 2: 0.003202732114
+PeleC::estTimeStep (hydro-limited) at level 2:  estdt = 0.003202732114
+PeleC::compute_new_dt : limiting dt at level 0
+ ... new dt computed: 0.01282220436
+ ... but limiting to: 0.01189256086 = 1.05 * 0.01132624844
+PeleC::compute_new_dt : limiting dt at level 1
+ ... new dt computed: 0.006405622524
+ ... but limiting to: 0.00594628043 = 1.05 * 0.005663124219
+PeleC::compute_new_dt : limiting dt at level 2
+ ... new dt computed: 0.003202732114
+ ... but limiting to: 0.002973140215 = 1.05 * 0.002831562109
+Now regridding at level lbase = 1
+grid_places() time: 0.00405535 new finest: 2
+TIME = 0.1903112904 : REGRID  with lbase = 1
+  Level 2   2 grids  98304 cells  75 % of domain
+            smallest grid: 32 x 32 x 32  biggest grid: 32 x 32 x 64
+
+[Level 0 step 34] ADVANCE with dt = 0.009688709631
+... Computing hydro advance
+[Level 0 step 34] Advanced 2048 cells
+[Level 1 step 67] ADVANCE with dt = 0.004844354816
+... Computing hydro advance
+[Level 1 step 67] Advanced 16384 cells
+[Level 2 step 133] ADVANCE with dt = 0.002422177408
+... Computing hydro advance
+[Level 2 step 133] Advanced 98304 cells
+[Level 2 step 134] ADVANCE with dt = 0.002422177408
+... Computing hydro advance
+[Level 2 step 134] Advanced 98304 cells
+PeleC::reflux() at level 1 : time = 0.006220508018
+[Level 1 step 68] ADVANCE with dt = 0.004844354816
+... Computing hydro advance
+[Level 1 step 68] Advanced 16384 cells
+[Level 2 step 135] ADVANCE with dt = 0.002422177408
+... Computing hydro advance
+[Level 2 step 135] Advanced 98304 cells
+[Level 2 step 136] ADVANCE with dt = 0.002422177408
+... Computing hydro advance
+[Level 2 step 136] Advanced 98304 cells
+PeleC::reflux() at level 1 : time = 0.006154234987
+PeleC::reflux() at level 0 : time = 2.489890903e-05
+
+TIME= 0.2 MASS        = 0.03515625
+TIME= 0.2 XMOM        = 0
+TIME= 0.2 YMOM        = 0
+TIME= 0.2 ZMOM        = 0.01125
+TIME= 0.2 RHO*e       = 0.08143617256
+TIME= 0.2 RHO*K       = 0.004501327438
+TIME= 0.2 RHO*E       = 0.0859375
+TIME= 0.2 ENSTROPHY   = 0
+TIME= 0.2 FUEL PROD   = 0
+TIME= 0.2 TEMP        = 6.792580455e-10
+
+[STEP 34] Coarse TimeStep time: 1.628681181
+[STEP 34] FAB kilobyte spread across MPI nodes: [65749 ... 71367]
+
+STEP = 34 TIME = 0.2 DT = 0.009688709631
+
+PLOTFILE: file = Sod-3_plt00034
+Write plotfile time = 0.096794382  seconds
+
+
+Ending run at 07:17:11 UTC on 2018-12-24.
+Run time = 25.64573097
+Run time w/o init = 25.58539246
+AMReX (18.12-374-gd18c55b82cd5) finalized

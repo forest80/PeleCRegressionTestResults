@@ -1,0 +1,15 @@
+/projects/ExaCT/Pele/PeleTests/AMReX/Tools/Postprocessing/F_Src//fcompare.Linux.gfortran.test.exe -n 0 /projects/ExaCT/Pele/PeleTests/PeleC-benchmarks/hit-3d-2_plt00068 hit-3d-2_plt00068
+  
+            variable name            absolute error            relative error
+                                        (||A - B||)         (||A - B||/||A||)
+ ----------------------------------------------------------------------
+ level =  1
+ density                            0.000000000               0.000000000    
+ Temp                               0.000000000               0.000000000    
+ pressure                           0.000000000               0.000000000    
+ magvort                            0.000000000               0.000000000    
+ x_velocity                         0.000000000               0.000000000    
+ y_velocity                         0.000000000               0.000000000    
+ z_velocity                         0.000000000               0.000000000    
+ magvel                             0.000000000               0.000000000    
+ PLOTFILES AGREE

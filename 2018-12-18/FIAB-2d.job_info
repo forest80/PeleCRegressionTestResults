@@ -1,0 +1,115 @@
+===============================================================================
+ PeleC Job Information
+===============================================================================
+job name: 
+
+inputs file: inputs-2d-regt
+
+number of MPI processes: 4
+
+CPU time used since start of simulation (CPU-hours): 0.0079384
+
+===============================================================================
+ Plotfile Information
+===============================================================================
+output data / time: Tue Dec 18 01:03:44 2018
+output dir:         /projects/ExaCT/Pele/PeleTests/PeleC-tests/2018-12-18/FIAB-2d
+
+
+===============================================================================
+ Build Information
+===============================================================================
+build date:    2018-12-18 01:02:51.286671
+build machine: Linux n2465 3.10.0-514.6.1.el7_lustre.x86_64 #1 SMP Thu Feb 23 04:58:43 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+build dir:     /projects/ExaCT/Pele/PeleTests/PeleC/Exec/RegTests/PMF
+AMReX dir:     /projects/ExaCT/Pele/PeleTests/AMReX/
+
+COMP:          g++
+COMP version:  7.3.0
+FCOMP:         
+FCOMP version: 
+
+EOS: /projects/ExaCT/Pele/PeleTests/PelePhysics/Eos/Fuego
+REACTIONS: /projects/ExaCT/Pele/PeleTests/PelePhysics/Reactions/Fuego
+CHEMISTRY: LiDryer
+TRANSPORT: /projects/ExaCT/Pele/PeleTests/PelePhysics/Transport
+
+PeleC       git hash: 5125bd1
+AMReX       git hash: 18.12-336-g900ce1f3b
+PelePhysics git hash: 6767379
+
+
+===============================================================================
+ Grid Information
+===============================================================================
+ level: 0
+   number of boxes = 4
+   maximum zones   = 8 128 
+
+ level: 1
+   number of boxes = 5
+   maximum zones   = 16 256 
+
+ level: 2
+   number of boxes = 6
+   maximum zones   = 32 512 
+
+ Boundary conditions
+   -x: interior
+   +x: interior
+   -y: inflow
+   +y: outflow
+
+
+===============================================================================
+ Species Information
+===============================================================================
+ index                         name              A              Z
+--------------------------------------------------------------------------------
+
+
+===============================================================================
+ Inputs File Parameters
+===============================================================================
+stop_time = 6
+max_step = 30
+geometry.is_periodic = 1 0
+geometry.coord_sys = 0
+geometry.prob_lo = 0.0 1.0
+geometry.prob_hi = 0.3125 6.0
+amr.n_cell = 8 128
+pelec.lo_bc = 0 1
+pelec.hi_bc = 0 2
+pelec.cfl = 0.5
+pelec.init_shrink = 0.3
+pelec.change_max = 1.1
+pelec.dt_cutoff = 5.e-20
+pelec.sum_interval = 1
+pelec.v = 1
+amr.v = 1
+amr.max_level = 2
+amr.ref_ratio = 2 2 2 2
+amr.regrid_int = 2 2 2 2
+amr.blocking_factor = 8
+amr.max_grid_size = 64
+amr.n_error_buf = 2 8 2 2
+amr.checkpoint_files_output = 1
+amr.check_file = chk
+amr.check_int = 500
+amr.plot_files_output = 1
+amr.plot_file = plt
+amr.plot_int = 100
+amr.probin_file = probin-regt
+amr.derive_plot_vars = density xmom ymom zmom eden Temp pressure x_velocity y_velocity
+pelec.plot_rhoy = 0
+pelec.plot_massfrac = 1
+pelec.do_react = 1
+pelec.diffuse_temp = 1
+pelec.diffuse_enth = 1
+pelec.diffuse_spec = 1
+pelec.diffuse_vel = 1
+pelec.sdc_iters = 2
+pelec.flame_trac_name = HO2
+amr.plot_file = FIAB-2d_plt
+amr.check_file = FIAB-2d_chk
+amr.checkpoint_files_output = 0

@@ -1,0 +1,161 @@
+Already up to date.
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+From https://github.com/AMReX-Combustion/PelePhysics
+ * [new branch]      gpu        -> origin/gpu
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+From https://github.com/AMReX-Combustion/PelePhysics
+   09fb517..0c7210e  gpu        -> origin/gpu
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+From https://github.com/AMReX-Combustion/PelePhysics
+   0c7210e..fe0a210  gpu        -> origin/gpu
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+From https://github.com/AMReX-Combustion/PelePhysics
+ * [new branch]      cvode      -> origin/cvode
+   fe0a210..6eba294  gpu        -> origin/gpu
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+From https://github.com/AMReX-Combustion/PelePhysics
+   45b8345..2dc0baf  cvode      -> origin/cvode
+   6eba294..26c8dec  gpu        -> origin/gpu
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+From https://github.com/AMReX-Combustion/PelePhysics
+ * [new branch]      feature_pyjac -> origin/feature_pyjac
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+From https://github.com/AMReX-Combustion/PelePhysics
+   2dc0baf..c4acdd2  cvode      -> origin/cvode
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+From https://github.com/AMReX-Combustion/PelePhysics
+   26c8dec..5d53acc  gpu        -> origin/gpu
+ * [new branch]      reorg      -> origin/reorg
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+From https://github.com/AMReX-Combustion/PelePhysics
+   5d53acc..88eadd7  gpu        -> origin/gpu
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+From https://github.com/AMReX-Combustion/PelePhysics
+   88eadd7..79feb3d  gpu        -> origin/gpu
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+From https://github.com/AMReX-Combustion/PelePhysics
+   79feb3d..d45c5fb  gpu        -> origin/gpu
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+From https://github.com/AMReX-Combustion/PelePhysics
+   d45c5fb..402ead1  gpu        -> origin/gpu
+Your branch is up to date with 'origin/master'.
+Switched to branch 'master'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+From https://github.com/AMReX-Combustion/PelePhysics
+   c4acdd2..036d45f  cvode      -> origin/cvode
+Updating dfaf0f7..6767379
+Fast-forward
+ Testing/Exec/ReactEval/main_nd.F90 | 1 +
+ 1 file changed, 1 insertion(+)
+From https://github.com/AMReX-Combustion/PelePhysics
+   dfaf0f7..6767379  development -> origin/development
+   036d45f..0584942  cvode       -> origin/cvode
+   402ead1..2a02744  gpu         -> origin/gpu
+ * [new branch]      marc/merge_reorg_into_gpu -> origin/marc/merge_reorg_into_gpu
+   ec2bd0c..f218c85  reorg       -> origin/reorg
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+From https://github.com/AMReX-Combustion/PelePhysics
+   2a02744..b401479  gpu        -> origin/gpu
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+From https://github.com/AMReX-Combustion/PelePhysics
+   0584942..7e36b10  cvode      -> origin/cvode
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+From https://github.com/AMReX-Combustion/PelePhysics
+   b401479..dbc2c55  gpu        -> origin/gpu
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+From https://github.com/AMReX-Combustion/PelePhysics
+   7e36b10..a835fc6  cvode      -> origin/cvode
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+From https://github.com/AMReX-Combustion/PelePhysics
+   a835fc6..fd161c3  cvode      -> origin/cvode
